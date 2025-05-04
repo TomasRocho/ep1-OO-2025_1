@@ -150,7 +150,6 @@ public class AlunoMatriculado extends ClasseBase{
         resultado += "Percentual de faltas: "+ calcularPercentualFaltas()+"\n";
         resultado += "Nota final: " + calcularMediaFinal()+"\n";
         resultado += "Resultado final: "+ this.getStatus();
-
         return resultado;
     }
 
