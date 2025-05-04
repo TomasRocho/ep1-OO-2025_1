@@ -98,6 +98,16 @@ public class Turma extends ClasseBase{
         this.setAtiva(true);
 
     }
+
+    public void emitirBoletins(){
+        for (AlunoMatriculado matricula:this.getListaAlunosMatriculados()){
+            System.out.println("----------");
+            System.out.println(matricula.getAluno().getMatricula()+" - "+ matricula.getAluno().getNome());
+            System.out.println(matricula.exibirResultado());
+            System.out.println("----------");
+        }
+    }
+
     public String toString(){
         return super.toString()+ ";" + disciplina.getId()+";"+professor.getId()+ ";"
                 + sala + ";" + horario + ";" + avaliacaoMediaAritmetica +";" +

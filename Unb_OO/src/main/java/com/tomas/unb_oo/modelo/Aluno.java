@@ -53,7 +53,9 @@ public class Aluno extends Pessoa{
     }
     public void emitirBoletim(){
         for (AlunoMatriculado matricula:this.getListaMatriculas()){
+            System.out.println("----------");
             System.out.println(matricula.exibirResultado());
+            System.out.println("----------");
         }
     }
     public List<Disciplina> getDisciplinasConcluidas(){

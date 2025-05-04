@@ -144,6 +144,8 @@ public class AlunoMatriculado extends ClasseBase{
         String resultado = "";
         resultado += "Disciplina: "+ this.getTurma().getDisciplina().getTitulo() +"\n";
         resultado += "Semestre: "+ this.getTurma().getSemestreAno()+"\n";
+        resultado += "Professor: "+ this.getTurma().getProfessor().getNome()+"\n";
+        resultado += "Horário: "+ this.getTurma().getHorario()+ " - Sala: " + this.getTurma().getSala() +"\n";
         resultado += "P1: " + this.getNotaP1() + ", P2: "+ this.getNotaP2() + ", P3: "
                 + this.getNotaP3() + ", Nota da lista de exercicios: "+this.getNotaL()
                 +", Nota do seminário: "+ this.getNotaS()+"\n";
