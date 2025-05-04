@@ -55,7 +55,7 @@ public class StarterApplication extends Application {
 
         alunoMatriculado.setNotaP1(5.5F);
         alunoMatriculado.setNotaP2(3.5F);
-        alunoMatriculado.setNotaP3(1.2F);
+        alunoMatriculado.setNotaP3(9.2F);
         alunoMatriculado.setNotaL(6.83F);
         alunoMatriculado.setNotaS(5.7F);
 
