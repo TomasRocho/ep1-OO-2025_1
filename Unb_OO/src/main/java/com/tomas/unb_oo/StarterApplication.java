@@ -54,7 +54,7 @@ public class StarterApplication extends Application {
         disciplina3.exibirPreRequisitos();
 
         alunoMatriculado.setNotaP1(5.5F);
-        alunoMatriculado.setNotaP2(3.5F);
+        alunoMatriculado.setNotaP2(4.5F);
         alunoMatriculado.setNotaP3(9.2F);
         alunoMatriculado.setNotaL(6.83F);
         alunoMatriculado.setNotaS(5.7F);
