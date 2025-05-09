@@ -84,40 +84,126 @@ public class StarterApplication extends Application {
          */
 
         ServicoCurso servicoCurso = new ServicoCurso();
+
+        try {
+            servicoCurso.incluir(new Curso("arquitetura"));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
         Curso direito = new Curso("Direito");
         Curso engenharia = new Curso("Engenharia");
         Curso medicina = new Curso("Medicina");
-        servicoCurso.criar(direito);
-        servicoCurso.criar(engenharia);
-        servicoCurso.criar(medicina);
+        try {
+            servicoCurso.incluir(direito);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            servicoCurso.incluir(direito);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            servicoCurso.incluir(engenharia);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            servicoCurso.incluir(medicina);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
 
         System.out.println("lista original: ");
         servicoCurso.exibirLista();
 
-        Curso copiaCursoEngenharia= null;
+        Curso copiaCursoEngenharia = null;
         try {
             copiaCursoEngenharia = (Curso) servicoCurso.retornar(engenharia.getId());
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            System.out.println("Erro ao retornar objeto - " + e.getMessage());
         }
         System.out.println("Curso retornado:");
         copiaCursoEngenharia.exibirDados();
 
         copiaCursoEngenharia.setTitulo("Nova Engenharia");
         System.out.println("Curso alterado:");
-        servicoCurso.alterar(copiaCursoEngenharia);
+        try {
+            servicoCurso.alterar(copiaCursoEngenharia);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         servicoCurso.exibirLista();
 
-        servicoCurso.excluir(medicina);
+        try {
+            servicoCurso.excluir(medicina);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("Elemento excluido: ");
         servicoCurso.exibirLista();
 
 
-        Disciplina disciplina = new Disciplina("Calculo 2", "7299123",60);
+        Disciplina disciplina = new Disciplina("Calculo 2", "7299123", 60);
         ServicoDisciplina servicoDisciplina = new ServicoDisciplina();
-        servicoDisciplina.criar(disciplina);
-        servicoDisciplina.criar(new Disciplina("TED","852935123",45));
+        try {
+            servicoDisciplina.incluir(disciplina);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            servicoDisciplina.incluir(new Disciplina("TED", "852935123", 45));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         servicoDisciplina.exibirLista();
+
+        Curso meuCurso = null;
+        try {
+            meuCurso = servicoCurso.retornarPorTitulo("arquitetura");
+            meuCurso.exibirDados();
+
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        meuCurso.setTitulo("nova arquitetura");
+        try {
+            servicoCurso.alterar(meuCurso);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        meuCurso.exibirDados();
+
+
+        ServicoDisciplina servicoDisciplina1 = new ServicoDisciplina();
+        try {
+            servicoDisciplina1.incluir(new Disciplina("Calculo 2","5150",60));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            servicoDisciplina1.incluir(new Disciplina("IAL","5654",45));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        servicoDisciplina1.exibirLista();
+        Disciplina disciplina1=null;
+        try {
+            disciplina1 = servicoDisciplina1.retornarPorCodigo("5150");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        disciplina1.exibirDados();
+        disciplina1.setTitulo("IAL");
+        try {
+            servicoDisciplina1.alterar(disciplina1);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 
         launch();

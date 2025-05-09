@@ -19,28 +19,49 @@ public abstract class ClasseServicoBase {
         this.lista = lista;
     }
 
-    public void criar(ClasseBase classeBase){
-        if (this.getLista() == null){
-            this.setLista(new ArrayList<>());
-        }
-        this.getLista().add(classeBase);
-    }
-    public void excluir(ClasseBase classeBase){
-        if (this.getLista() != null) {
-            this.getLista().remove(classeBase);
-        }
+    public boolean podeIncluir(ClasseBase objClasseBase)throws Exception{
+        return true;
     }
 
+    public boolean podeAlterar(ClasseBase objClasseBase)throws Exception{
+        return true;
+    }
 
-    public void alterar(ClasseBase objAlterado){
-        ClasseBase objOriginal= null;
-        try {
-            objOriginal = retornar(objAlterado.getId());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+    public boolean podeExcluir(ClasseBase objClasseBase)throws Exception{
+        return true;
+    }
+
+    public void incluir(ClasseBase objClasseBase) throws Exception{
+        if (this.podeIncluir(objClasseBase)){
+            if (this.getLista() == null){
+                this.setLista(new ArrayList<>());
+            }
+            this.getLista().add(objClasseBase);
         }
-        excluir(objOriginal);
-        criar(objAlterado);
+
+    }
+
+    public void excluir(ClasseBase objClasseBase)throws Exception {
+        if (this.podeExcluir(objClasseBase)){
+            if (this.getLista() != null) {
+                this.getLista().remove(objClasseBase);
+            }
+        }
+
+    }
+
+    public void alterar(ClasseBase objAlterado) throws Exception{
+        if (this.podeAlterar(objAlterado)){
+            ClasseBase objOriginal= null;
+            try {
+                objOriginal = retornar(objAlterado.getId());
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            excluir(objOriginal);
+            incluir(objAlterado);
+        }
+
     }
 
     public ClasseBase retornar(UUID id) throws Exception{
@@ -52,20 +73,27 @@ public abstract class ClasseServicoBase {
         }
         return null;
         */
-
-        ClasseBase objRetornado = null;
-        try {
-            objRetornado = (ClasseBase) lista.stream()
-                    .filter(curso -> curso.getId()==id)
-                    .findFirst()
-                    .orElse(null).clone();
-        } catch (CloneNotSupportedException e) {
-            throw new Exception("Erro ao retornar o objeto");
+        if (lista==null){
+            return null;
         }
-
-        return objRetornado;
-
+        ClasseBase objRetornado = null;
+        objRetornado = (ClasseBase) lista.stream()
+                .filter(obj -> obj.getId()==id)
+                .findFirst()
+                .orElse(null);
+        if (objRetornado!=null){
+            return objRetornado.clone();
+        }
+        return null;
     }
+
+    public boolean existe(UUID id){
+        if (lista==null){
+            return false;
+        }
+        return lista.stream().anyMatch(obj -> obj.getId()==id);
+    }
+
     public void exibirLista() {
         for (ClasseBase obj : this.getLista()) {
             obj.exibirDados();
