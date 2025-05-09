@@ -1,4 +1,4 @@
-package com.tomas.unb_oo.modelo.enumeration;
+package com.tomas.matriculaunb.modelo.enumerations;
 
 public enum StatusAlunoMatriculado {
     Trancado,

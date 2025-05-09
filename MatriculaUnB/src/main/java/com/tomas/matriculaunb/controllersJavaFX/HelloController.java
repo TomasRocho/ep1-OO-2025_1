@@ -1,4 +1,4 @@
-package com.tomas.unb_oo;
+package com.tomas.matriculaunb.controllersJavaFX;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

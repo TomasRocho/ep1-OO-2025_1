@@ -1,6 +1,6 @@
-package com.tomas.unb_oo;
+package com.tomas.matriculaunb;
 
-import com.tomas.unb_oo.modelo.*;
+import com.tomas.matriculaunb.modelo.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -20,6 +20,7 @@ public class StarterApplication extends Application {
     }
 
     public static void main(String[] args) {
+
         Curso curso = new Curso("Engenharia");
         curso.setTitulo("engenharia");
         System.out.println(curso.toString());
@@ -64,16 +65,13 @@ public class StarterApplication extends Application {
         //alunoMatriculado.getAluno().setEspecial(true);
         alunoMatriculado.getTurma().setAvaliacaoMediaAritmetica(false);
         System.out.println("A media final de " + alunoMatriculado.getAluno().getNome()+ " em "
-                    + alunoMatriculado.getTurma().getDisciplina().getTitulo()+ " é");
+                + alunoMatriculado.getTurma().getDisciplina().getTitulo()+ " é");
         System.out.println(alunoMatriculado.calcularMediaFinal());
         alunoMatriculado.setFaltas(5);
         System.out.println(alunoMatriculado.calcularPercentualFaltas());
         System.out.println(alunoMatriculado.getStatus());
         System.out.println(alunoMatriculado.exibirResultado());
 
-
-
-        launch()
-        ;
+        launch();
     }
 }

@@ -1,4 +1,4 @@
-package com.tomas.unb_oo.modelo;
+package com.tomas.matriculaunb.modelo;
 
 public abstract class Pessoa extends ClasseBase{
     private String nome;

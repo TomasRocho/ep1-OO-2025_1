@@ -1,4 +1,4 @@
-package com.tomas.unb_oo.modelo;
+package com.tomas.matriculaunb.modelo;
 
 import java.util.UUID;
 
@@ -24,7 +24,7 @@ public class Curso extends ClasseBase{
         this.titulo = titulo;
     }
 
-    public Curso(UUID id,String titulo) {
+    public Curso(UUID id, String titulo) {
         super(id);
         this.titulo = titulo;
     }

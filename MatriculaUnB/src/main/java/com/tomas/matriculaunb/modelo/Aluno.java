@@ -1,6 +1,6 @@
-package com.tomas.unb_oo.modelo;
+package com.tomas.matriculaunb.modelo;
 
-import com.tomas.unb_oo.modelo.enumeration.StatusAlunoMatriculado;
+import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tomas</groupId>
-    <artifactId>Unb_OO</artifactId>
+    <artifactId>MatriculaUnB</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Unb_OO</name>
+    <name>MatriculaUnB</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.tomas.unb_oo/com.tomas.unb_oo.StarterApplication</mainClass>
+                            <mainClass>com.tomas.matriculaunb/com.tomas.matriculaunb.StarterApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

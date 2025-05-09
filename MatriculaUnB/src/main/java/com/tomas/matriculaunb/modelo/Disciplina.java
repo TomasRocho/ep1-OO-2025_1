@@ -1,4 +1,5 @@
-package com.tomas.unb_oo.modelo;
+package com.tomas.matriculaunb.modelo;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,3 +81,4 @@ public class Disciplina extends ClasseBase{
 
 
 }
+
