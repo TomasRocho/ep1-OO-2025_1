@@ -1,12 +1,16 @@
 package com.tomas.matriculaunb;
 
 import com.tomas.matriculaunb.modelo.*;
+import com.tomas.matriculaunb.servicos.ClasseServicoBase;
+import com.tomas.matriculaunb.servicos.ServicoCurso;
+import com.tomas.matriculaunb.servicos.ServicoDisciplina;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.UUID;
 
 public class StarterApplication extends Application {
@@ -21,6 +25,7 @@ public class StarterApplication extends Application {
 
     public static void main(String[] args) {
 
+        /*
         Curso curso = new Curso("Engenharia");
         curso.setTitulo("engenharia");
         System.out.println(curso.toString());
@@ -28,8 +33,7 @@ public class StarterApplication extends Application {
         System.out.println(curso2.toString());
         Curso curso3 = new Curso(UUID.randomUUID(),"Direito");
         System.out.println(curso3.toString());
-        Curso curso4 = new Curso(UUID.randomUUID(),100);
-        System.out.println(curso4.toString());
+
         if (curso2.equals(curso3)){
             System.out.println("são iguais");
         }
@@ -62,7 +66,7 @@ public class StarterApplication extends Application {
 
 
         alunoMatriculado.getTurma().setAtiva(false);
-        //alunoMatriculado.getAluno().setEspecial(true);
+        alunoMatriculado.getAluno().setEspecial(true);
         alunoMatriculado.getTurma().setAvaliacaoMediaAritmetica(false);
         System.out.println("A media final de " + alunoMatriculado.getAluno().getNome()+ " em "
                 + alunoMatriculado.getTurma().getDisciplina().getTitulo()+ " é");
@@ -71,6 +75,50 @@ public class StarterApplication extends Application {
         System.out.println(alunoMatriculado.calcularPercentualFaltas());
         System.out.println(alunoMatriculado.getStatus());
         System.out.println(alunoMatriculado.exibirResultado());
+
+        System.out.println("emitindo boletim:");
+        aluno.setListaMatriculas(new ArrayList<>());
+        aluno.getListaMatriculas().add(alunoMatriculado);
+        aluno.emitirBoletim();
+
+         */
+
+        ServicoCurso servicoCurso = new ServicoCurso();
+        Curso direito = new Curso("Direito");
+        Curso engenharia = new Curso("Engenharia");
+        Curso medicina = new Curso("Medicina");
+        servicoCurso.criar(direito);
+        servicoCurso.criar(engenharia);
+        servicoCurso.criar(medicina);
+
+        System.out.println("lista original: ");
+        servicoCurso.exibirLista();
+
+        Curso copiaCursoEngenharia= null;
+        try {
+            copiaCursoEngenharia = (Curso) servicoCurso.retornar(engenharia.getId());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Curso retornado:");
+        copiaCursoEngenharia.exibirDados();
+
+        copiaCursoEngenharia.setTitulo("Nova Engenharia");
+        System.out.println("Curso alterado:");
+        servicoCurso.alterar(copiaCursoEngenharia);
+        servicoCurso.exibirLista();
+
+        servicoCurso.excluir(medicina);
+        System.out.println("Elemento excluido: ");
+        servicoCurso.exibirLista();
+
+
+        Disciplina disciplina = new Disciplina("Calculo 2", "7299123",60);
+        ServicoDisciplina servicoDisciplina = new ServicoDisciplina();
+        servicoDisciplina.criar(disciplina);
+        servicoDisciplina.criar(new Disciplina("TED","852935123",45));
+        servicoDisciplina.exibirLista();
+
 
         launch();
     }

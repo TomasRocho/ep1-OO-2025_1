@@ -60,9 +60,9 @@ public class Aluno extends Pessoa{
     }
     public List<Disciplina> getDisciplinasConcluidas(){
         List<Disciplina> listaFinal = new ArrayList<>();
-        for (AlunoMatriculado matricula:this.getListaMatriculas()){
-            if (matricula.getStatus() == StatusAlunoMatriculado.Aprovado){
-                listaFinal.add(matricula.getTurma().getDisciplina());
+        for (AlunoMatriculado obj:this.getListaMatriculas()){
+            if (obj.getStatus() == StatusAlunoMatriculado.Aprovado){
+                listaFinal.add(obj.getTurma().getDisciplina());
             }
         }
         return listaFinal;

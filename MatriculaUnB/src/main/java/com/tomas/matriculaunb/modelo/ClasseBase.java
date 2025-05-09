@@ -3,7 +3,7 @@ package com.tomas.matriculaunb.modelo;
 import java.util.Objects;
 import java.util.UUID;
 
-public abstract class ClasseBase {
+public abstract class ClasseBase implements Cloneable {
     private UUID id;
 
     public UUID getId() {
@@ -41,6 +41,11 @@ public abstract class ClasseBase {
 
     public void exibirDados(){
         System.out.println(this.toString());
+    }
+
+    @Override
+    public ClasseBase clone() throws CloneNotSupportedException {
+        return (ClasseBase) super.clone();
     }
 
 
