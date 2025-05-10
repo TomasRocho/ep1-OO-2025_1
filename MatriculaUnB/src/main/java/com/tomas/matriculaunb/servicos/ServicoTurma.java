@@ -8,12 +8,16 @@ import com.tomas.matriculaunb.modelo.Turma;
 import java.util.UUID;
 
 public class ServicoTurma extends ClasseServicoBase{
-    //Atributos obrigatorios: id,Disciplina,Proefssor,Sala,Horario,semestreAno
-    //nao podem duplicar:
-    //id
-    //-dispilina,horario,semestreAno
-    //-professor,horario,semestreAno
-    //-sala,horario,semstreAno;
+
+    //CLASSE SINGLETON
+    private static ServicoTurma instance = null;
+    private ServicoTurma(){}
+    public static ServicoTurma getInstance() {
+        if (instance == null) {
+            instance = new ServicoTurma();
+        }
+        return instance;
+    }
 
     @Override
     public boolean podeIncluir(ClasseBase turma) throws Exception{
@@ -53,7 +57,10 @@ public class ServicoTurma extends ClasseServicoBase{
     @Override
     public boolean podeExcluir(ClasseBase turma) throws Exception{
 
-        //todo: verificar se essa turma nao esta sendo por algum AlunoMatriculado
+        ServicoAlunoMatriculado servicoAlunoMatriculado = ServicoAlunoMatriculado.getInstance();
+        if (servicoAlunoMatriculado.existeTurma(turma.getId())){
+            throw new Exception("Impossível Excluir Turma - Alunos matriculados nesta turma");
+        }
 
         return true;
     }
@@ -123,6 +130,20 @@ public class ServicoTurma extends ClasseServicoBase{
                         && ((Turma)obj).getHorario().equals(turma.getHorario())
                         && ((Turma)obj).getSemestreAno().equals(turma.getSemestreAno())
                         && !obj.getId().equals(turma.getId())));
+    }
+    public boolean existeDisciplina(UUID idDisciplina){
+        if (this.getLista()==null){
+            return false;
+        }
+        return this.getLista().stream()
+                .anyMatch( obj->((Turma)obj).getDisciplina().getId().equals(idDisciplina));
+    }
+    public boolean existeProfessor(UUID idProfessor){
+        if (this.getLista()==null){
+            return false;
+        }
+        return this.getLista().stream()
+                .anyMatch( obj->((Turma)obj).getProfessor().getId().equals(idProfessor));
     }
 
 }

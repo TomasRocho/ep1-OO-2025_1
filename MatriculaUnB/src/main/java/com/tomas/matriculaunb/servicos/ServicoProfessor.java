@@ -4,6 +4,17 @@ import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Professor;
 
 public class ServicoProfessor extends ClasseServicoBase{
+
+    //CLASSE SINGLETON
+    private static ServicoProfessor instance = null;
+    private ServicoProfessor(){}
+    public static ServicoProfessor getInstance() {
+        if (instance == null) {
+            instance = new ServicoProfessor();
+        }
+        return instance;
+    }
+
     @Override
     public boolean podeIncluir(ClasseBase professor) throws Exception{
 
@@ -25,7 +36,10 @@ public class ServicoProfessor extends ClasseServicoBase{
     @Override
     public boolean podeExcluir(ClasseBase professor) throws Exception{
 
-        //todo: verificar se esse professor não está sendo usado por alguma turma
+        ServicoTurma servicoTurma = ServicoTurma.getInstance();
+        if (servicoTurma.existeProfessor(professor.getId())){
+            throw new Exception("Impossível Excluir Professor - Professor utilizado por alguma turma");
+        }
 
         return true;
     }

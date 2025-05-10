@@ -5,7 +5,23 @@ import com.tomas.matriculaunb.modelo.AlunoMatriculado;
 import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Professor;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
 public class ServicoAlunoMatriculado extends ClasseServicoBase{
+
+    //CLASSE SINGLETON
+    private static ServicoAlunoMatriculado instance = null;
+    private ServicoAlunoMatriculado(){}
+    public static ServicoAlunoMatriculado getInstance() {
+        if (instance == null) {
+            instance = new ServicoAlunoMatriculado();
+        }
+        return instance;
+    }
+
+
     @Override
     public boolean podeIncluir(ClasseBase alunoMatriculado) throws Exception{
 
@@ -33,13 +49,6 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
         return true;
     }
 
-    @Override
-    public boolean podeExcluir(ClasseBase alunoMatricula) throws Exception{
-
-
-
-        return true;
-    }
 
     public boolean matriculaDuplicada(AlunoMatriculado alunoMatriculado, boolean alteracao) {
         if (this.getLista() == null) {
@@ -57,4 +66,41 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                                 && ((AlunoMatriculado) obj).getTurma().equals(alunoMatriculado.getTurma())
                                 && !obj.getId().equals(alunoMatriculado.getId()));
     }
+
+    public boolean existeAluno(UUID idAluno){
+        if (this.getLista() == null) {
+            return false;
+        }
+        return this.getLista().stream()
+                .anyMatch(obj ->
+                        ((AlunoMatriculado) obj).getAluno().getId().equals(idAluno));
+    }
+    public boolean existeTurma(UUID idTurma){
+        if (this.getLista() == null) {
+            return false;
+        }
+        return this.getLista().stream()
+                .anyMatch(obj ->
+                        ((AlunoMatriculado) obj).getTurma().getId().equals(idTurma));
+    }
+
+    public List<AlunoMatriculado> getListaMatriculasPorAluno(UUID idAluno){
+        List<AlunoMatriculado> listaFinal = new ArrayList<>();
+        for (ClasseBase alunoMatriculado:this.getLista()){
+            if (((AlunoMatriculado)alunoMatriculado).getAluno().getId().equals(idAluno)){
+                listaFinal.add((AlunoMatriculado) alunoMatriculado);
+            }
+        }
+        return listaFinal;
+    }
+    public List<AlunoMatriculado> getListaMatriculasPorTurma(UUID idTurma){
+        List<AlunoMatriculado> listaFinal = new ArrayList<>();
+        for (ClasseBase alunoMatriculado:this.getLista()){
+            if (((AlunoMatriculado)alunoMatriculado).getTurma().getId().equals(idTurma)){
+                listaFinal.add((AlunoMatriculado) alunoMatriculado);
+            }
+        }
+        return listaFinal;
+    }
+
 }

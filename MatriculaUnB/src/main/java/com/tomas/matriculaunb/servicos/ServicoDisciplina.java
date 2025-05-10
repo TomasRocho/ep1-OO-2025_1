@@ -8,6 +8,17 @@ import com.tomas.matriculaunb.modelo.Disciplina;
 import java.util.UUID;
 
 public class ServicoDisciplina extends ClasseServicoBase{
+
+    //CLASSE SINGLETON
+    private static ServicoDisciplina instance = null;
+    private ServicoDisciplina(){}
+    public static ServicoDisciplina getInstance() {
+        if (instance == null) {
+            instance = new ServicoDisciplina();
+        }
+        return instance;
+    }
+
     @Override
     public boolean podeIncluir(ClasseBase disciplina) throws Exception{
 
@@ -43,7 +54,10 @@ public class ServicoDisciplina extends ClasseServicoBase{
     @Override
     public boolean podeExcluir(ClasseBase disciplina) throws Exception{
 
-        //todo: verificar se essa disciplina nao esta sendo usada por alguma turma
+        ServicoTurma servicoTurma = ServicoTurma.getInstance();
+        if (servicoTurma.existeDisciplina(disciplina.getId())){
+            throw new Exception("Impossível Excluir Disciplina - Disciplina utilizada por alguma turma");
+        }
 
         return true;
     }
@@ -104,4 +118,6 @@ public class ServicoDisciplina extends ClasseServicoBase{
         }
         return null;
     }
+
+
 }

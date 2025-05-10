@@ -9,6 +9,17 @@ import java.util.UUID;
 
 public class ServicoCurso extends ClasseServicoBase {
 
+    //CLASSE SINGLETON
+    private static ServicoCurso instance = null;
+    private ServicoCurso(){}
+    public static ServicoCurso getInstance() {
+        if (instance == null) {
+            instance = new ServicoCurso();
+        }
+        return instance;
+    }
+
+
     @Override
     public boolean podeIncluir(ClasseBase curso) throws Exception{
 
@@ -37,8 +48,10 @@ public class ServicoCurso extends ClasseServicoBase {
     @Override
     public boolean podeExcluir(ClasseBase curso) throws Exception{
 
-        //todo: verificar se esse curso não está sendo usado por algum Aluno
-
+        ServicoAluno servicoAluno = ServicoAluno.getInstance();
+        if (servicoAluno.existeCurso(curso.getId())){
+            throw new Exception("Impossível excluir Curso - curso utilizado por algum aluno");
+        }
         return true;
     }
 

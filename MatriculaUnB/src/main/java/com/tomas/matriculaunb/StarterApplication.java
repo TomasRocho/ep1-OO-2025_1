@@ -1,9 +1,8 @@
 package com.tomas.matriculaunb;
 
 import com.tomas.matriculaunb.modelo.*;
-import com.tomas.matriculaunb.servicos.ClasseServicoBase;
-import com.tomas.matriculaunb.servicos.ServicoCurso;
-import com.tomas.matriculaunb.servicos.ServicoDisciplina;
+import com.tomas.matriculaunb.servicos.*;
+import com.tomas.matriculaunb.util.DadosTeste;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -81,7 +80,7 @@ public class StarterApplication extends Application {
         aluno.getListaMatriculas().add(alunoMatriculado);
         aluno.emitirBoletim();
 
-         */
+
 
         ServicoCurso servicoCurso = new ServicoCurso();
 
@@ -210,6 +209,24 @@ public class StarterApplication extends Application {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
+
+         */
+
+        DadosTeste dadosTeste=new DadosTeste();
+        dadosTeste.geraTudo();
+
+        ServicoPreRequisito servicoPreRequisito=ServicoPreRequisito.getInstance();
+        ServicoDisciplina servicoDisciplina=ServicoDisciplina.getInstance();
+        try {
+            servicoPreRequisito.incluir(new PreRequisito(servicoDisciplina.getLista().get(0).getId(),servicoDisciplina.getLista().get(1).getId()));
+            servicoPreRequisito.incluir(new PreRequisito(servicoDisciplina.getLista().get(0).getId(),servicoDisciplina.getLista().get(2).getId()));
+            servicoPreRequisito.incluir(new PreRequisito(servicoDisciplina.getLista().get(3).getId(),servicoDisciplina.getLista().get(1).getId()));
+            servicoPreRequisito.exibirLista();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
 
         launch();
     }

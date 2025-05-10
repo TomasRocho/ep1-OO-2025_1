@@ -8,6 +8,17 @@ import com.tomas.matriculaunb.modelo.Disciplina;
 import java.util.UUID;
 
 public class ServicoAluno extends ClasseServicoBase{
+
+    //CLASSE SINGLETON
+    private static ServicoAluno instance = null;
+    private ServicoAluno(){}
+    public static ServicoAluno getInstance() {
+        if (instance == null) {
+            instance = new ServicoAluno();
+        }
+        return instance;
+    }
+
     @Override
     public boolean podeIncluir(ClasseBase aluno) throws Exception{
 
@@ -35,8 +46,10 @@ public class ServicoAluno extends ClasseServicoBase{
 
     @Override
     public boolean podeExcluir(ClasseBase alunoAlterado) throws Exception{
-
-        //todo: verificar se esse aluno não está sendo usado por algum AlunoMatriculado
+        ServicoAlunoMatriculado servicoAlunoMatriculado = ServicoAlunoMatriculado.getInstance();
+        if (servicoAlunoMatriculado.existeAluno(alunoAlterado.getId())){
+            throw new Exception("Impossível Excluir Aluno - aluno matriculado em alguma turma");
+        }
 
         return true;
     }
@@ -84,4 +97,13 @@ public class ServicoAluno extends ClasseServicoBase{
                 .anyMatch( obj->((Aluno)obj).getMatricula().equals(aluno.getMatricula())
                         && !obj.getId().equals(aluno.getId()));
     }
+
+    public boolean existeCurso(UUID idCurso){
+        if (this.getLista()==null){
+            return false;
+        }
+        return this.getLista().stream()
+                .anyMatch(aluno->((Aluno)aluno).getCurso().getId().equals(idCurso));
+    }
+
 }
