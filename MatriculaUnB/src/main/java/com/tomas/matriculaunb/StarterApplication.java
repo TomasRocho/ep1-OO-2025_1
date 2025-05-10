@@ -205,6 +205,11 @@ public class StarterApplication extends Application {
             System.out.println(e.getMessage());
         }
 
+        try {
+            servicoCurso.incluir(new Curso(null,"odonto"));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
         launch();
     }

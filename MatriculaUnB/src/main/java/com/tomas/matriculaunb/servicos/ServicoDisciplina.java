@@ -11,19 +11,15 @@ public class ServicoDisciplina extends ClasseServicoBase{
     @Override
     public boolean podeIncluir(ClasseBase disciplina) throws Exception{
 
-        if (((Disciplina)disciplina).getTitulo()==null || ((Disciplina)disciplina).getTitulo().isBlank()){
-            throw new Exception("Impossível Incluir Disciplina - titulo não preenchido ");
-        }
-        if (((Disciplina)disciplina).getCodigo()==null || ((Disciplina)disciplina).getCodigo().isBlank()){
-            throw new Exception("Impossível Incluir Disciplina - codigo não preenchido ");
-        }
+        disciplina.validar();
+
         if (this.existe(disciplina.getId())){
             throw new Exception("Impossível Incluir Disciplina - id duplicado");
         }
-        if (tituloDuplicado(((Disciplina) disciplina).getTitulo(),null)){
+        if (tituloDuplicado((Disciplina) disciplina,false)){
             throw new Exception("Impossível Incluir Disciplina - título duplicado");
         }
-        if (codigoDuplicado(((Disciplina) disciplina).getCodigo(),null)){
+        if (codigoDuplicado((Disciplina) disciplina,false)){
             throw new Exception("Impossível Incluir Disciplina - codigo duplicado");
         }
         return true;
@@ -32,23 +28,20 @@ public class ServicoDisciplina extends ClasseServicoBase{
     @Override
     public boolean podeAlterar(ClasseBase disciplinaAlterada) throws Exception{
 
-        if (((Disciplina)disciplinaAlterada).getTitulo()==null || ((Disciplina)disciplinaAlterada).getTitulo().isBlank()){
-            throw new Exception("Impossível Alterar Disciplina - titulo não preenchido ");
-        }
-        if (((Disciplina)disciplinaAlterada).getCodigo()==null || ((Disciplina)disciplinaAlterada).getCodigo().isBlank()){
-            throw new Exception("Impossível Alterar Disciplina - codigo não preenchido ");
-        }
-        if (tituloDuplicado(((Disciplina) disciplinaAlterada).getTitulo(),disciplinaAlterada.getId())){
+
+        disciplinaAlterada.validar();
+
+        if (tituloDuplicado((Disciplina) disciplinaAlterada,true)){
             throw new Exception("Impossível Alterar Disciplina - título duplicado");
         }
-        if (codigoDuplicado(((Disciplina) disciplinaAlterada).getCodigo(),disciplinaAlterada.getId())){
+        if (codigoDuplicado((Disciplina) disciplinaAlterada,true)){
             throw new Exception("Impossível Alterar Disciplina - codigo duplicado");
         }
         return true;
     }
 
     @Override
-    public boolean podeExcluir(ClasseBase disciplinaAlterada) throws Exception{
+    public boolean podeExcluir(ClasseBase disciplina) throws Exception{
 
         //todo: verificar se essa disciplina nao esta sendo usada por alguma turma
 
@@ -71,29 +64,29 @@ public class ServicoDisciplina extends ClasseServicoBase{
         return null;
     }
 
-    public boolean tituloDuplicado(String titulo, UUID id){
+    public boolean tituloDuplicado(Disciplina disciplina, boolean alteracao){
         if (this.getLista()==null){
             return false;
         }
-        if (id==null){
+        if (!alteracao){
             return this.getLista().stream()
-                    .anyMatch( obj->((Disciplina)obj).getTitulo().equals(titulo));
+                    .anyMatch( obj->((Disciplina)obj).getTitulo().equals(disciplina.getTitulo()));
         }
         return this.getLista().stream()
-                .anyMatch( obj->((Disciplina)obj).getTitulo().equals(titulo)
-                        && !obj.getId().equals(id));
+                .anyMatch( obj->((Disciplina)obj).getTitulo().equals(disciplina.getTitulo())
+                        && !obj.getId().equals(disciplina.getId()));
     }
-    public boolean codigoDuplicado(String codigo, UUID id){
+    public boolean codigoDuplicado(Disciplina disciplina, boolean alteracao){
         if (this.getLista()==null){
             return false;
         }
-        if (id==null){
+        if (!alteracao){
             return this.getLista().stream()
-                    .anyMatch( obj->((Disciplina)obj).getCodigo().equals(codigo));
+                    .anyMatch( obj->((Disciplina)obj).getCodigo().equals(disciplina.getCodigo()));
         }
         return this.getLista().stream()
-                .anyMatch( obj->((Disciplina)obj).getCodigo().equals(codigo)
-                        && !obj.getId().equals(id));
+                .anyMatch( obj->((Disciplina)obj).getCodigo().equals(disciplina.getCodigo())
+                        && !obj.getId().equals(disciplina.getId()));
     }
 
     public Disciplina retornarPorCodigo(String codigo) throws Exception{

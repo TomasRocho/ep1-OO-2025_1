@@ -28,6 +28,16 @@ public class Curso extends ClasseBase{
         super(id);
         this.titulo = titulo;
     }
+
+    @Override
+    public void validar()throws Exception{
+        super.validar();
+        if (this.getTitulo()==null || this.getTitulo().isBlank()){
+            throw new Exception("Curso inválido - titulo não preenchido");
+        }
+    }
+
+
     /* exemplo de um construtor com mesmo numero de parametros mas tipos diferentes
     public Curso(UUID id,int titulo) {
         super(id);

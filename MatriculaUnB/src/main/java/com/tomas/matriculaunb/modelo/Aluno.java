@@ -77,4 +77,22 @@ public class Aluno extends Pessoa{
         return listaFinal;
     }
 
+    @Override
+    public void validar()throws Exception{
+        super.validar();
+
+        if (this.getNome()==null || this.getNome().isBlank()){
+            throw new Exception("Aluno inválido - Nome não preenchido ");
+        }
+
+        if (this.getMatricula()==null || this.getMatricula().isBlank()){
+            throw new Exception("Aluno inválido - Matricula não preenchida ");
+        }
+
+        if (this.getCurso()==null){
+            throw new Exception("Aluno inválido - Curso não preenchida ");
+        }
+
+    }
+
 }

@@ -78,7 +78,16 @@ public class Disciplina extends ClasseBase{
         }
     }
 
-
+    @Override
+    public void validar()throws Exception{
+        super.validar();
+        if (this.getTitulo()==null || this.getTitulo().isBlank()){
+            throw new Exception("Disciplina inválida - titulo não preenchido");
+        }
+        if (this.getCodigo()==null || this.getCodigo().isBlank()){
+            throw new Exception("Disciplina inválida - código não preenchido");
+        }
+    }
 
 }
 

@@ -3,16 +3,44 @@ package com.tomas.matriculaunb.modelo;
 
 import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
 
+import java.math.BigDecimal;
+
 public class AlunoMatriculado extends ClasseBase{
     private Turma turma;
     private Aluno aluno;
-    private float notaP1;
-    private float notaP2;
-    private float notaP3;
-    private float notaL;
-    private float notaS;
+    private Float notaP1;
+    private Float notaP2;
+    private Float notaP3;
+    private Float notaL;
+    private Float notaS;
     private int faltas;
     private boolean trancado;
+
+    @Override
+    public void validar()throws Exception{
+        super.validar();
+        if (this.getTurma()==null){
+            throw new Exception("AlunoMatriculado inválido - turma não preenchida");
+        }
+        if (this.getAluno()==null){
+            throw new Exception("AlunoMatriculado inválido - aluno não preenchido");
+        }
+        if (this.getNotaP1()==null){
+            throw new Exception("AlunoMatriculado inválido - nota 1 inválida");
+        }
+        if (this.getNotaP2()==null){
+            throw new Exception("AlunoMatriculado inválido - nota 2 inválida");
+        }
+        if (this.getNotaP3()==null){
+            throw new Exception("AlunoMatriculado inválido - nota 3 inválida");
+        }
+        if (this.getNotaS()==null){
+            throw new Exception("AlunoMatriculado inválido - nota seminário inválida");
+        }
+        if (this.getNotaL()==null){
+            throw new Exception("AlunoMatriculado inválido - nota lista de exercícios inválida");
+        }
+    }
 
     public Turma getTurma() {
         return turma;
@@ -30,43 +58,43 @@ public class AlunoMatriculado extends ClasseBase{
         this.aluno = aluno;
     }
 
-    public float getNotaP1() {
+    public Float getNotaP1() {
         return notaP1;
     }
 
-    public void setNotaP1(float notaP1) {
+    public void setNotaP1(Float notaP1) {
         this.notaP1 = notaP1;
     }
 
-    public float getNotaP2() {
+    public Float getNotaP2() {
         return notaP2;
     }
 
-    public void setNotaP2(float notaP2) {
+    public void setNotaP2(Float notaP2) {
         this.notaP2 = notaP2;
     }
 
-    public float getNotaP3() {
+    public Float getNotaP3() {
         return notaP3;
     }
 
-    public void setNotaP3(float notaP3) {
+    public void setNotaP3(Float notaP3) {
         this.notaP3 = notaP3;
     }
 
-    public float getNotaL() {
+    public Float getNotaL() {
         return notaL;
     }
 
-    public void setNotaL(float notaL) {
+    public void setNotaL(Float notaL) {
         this.notaL = notaL;
     }
 
-    public float getNotaS() {
+    public Float getNotaS() {
         return notaS;
     }
 
-    public void setNotaS(float notaS) {
+    public void setNotaS(Float notaS) {
         this.notaS = notaS;
     }
 
@@ -89,11 +117,11 @@ public class AlunoMatriculado extends ClasseBase{
         super();
         this.setTurma(turma);
         this.setAluno(aluno);
-        this.setNotaP1(0);
-        this.setNotaP2(0);
-        this.setNotaP3(0);
-        this.setNotaL(0);
-        this.setNotaS(0);
+        this.setNotaP1((float) 0);
+        this.setNotaP2((float) 0);
+        this.setNotaP3((float) 0);
+        this.setNotaL((float) 0);
+        this.setNotaS((float) 0);
         this.setFaltas(0);
         this.setTrancado(false);
 
@@ -105,7 +133,7 @@ public class AlunoMatriculado extends ClasseBase{
         }
 
         if (this.getTurma().isAvaliacaoMediaAritmetica()){
-            return (notaP1+notaP2+notaP3+notaS+notaL)/5;
+            return (notaP1 + notaP2  +notaP3 +notaS+notaL)/5;
         }
         return (notaP1 + notaP2 * 2 +notaP3 * 3 +notaS+notaL)/8;
     }
@@ -155,6 +183,8 @@ public class AlunoMatriculado extends ClasseBase{
         resultado += "Resultado final: "+ this.getStatus();
         return resultado;
     }
+
+
 
 
 

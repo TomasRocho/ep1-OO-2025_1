@@ -48,5 +48,10 @@ public abstract class ClasseBase implements Cloneable {
         return (ClasseBase) super.clone();
     }
 
+    public void validar() throws Exception{
+        if (this.getId()==null){
+            throw new Exception("Objeto inválido - id não preenchido");
+        }
+    }
 
 }

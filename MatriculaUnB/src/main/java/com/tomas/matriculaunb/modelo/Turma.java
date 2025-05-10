@@ -115,4 +115,24 @@ public class Turma extends ClasseBase{
                 semestreAno+ ";" + presencial +";" + ativa;
     }
 
+    @Override
+    public void validar()throws Exception{
+        super.validar();
+        if (this.getDisciplina()==null){
+            throw new Exception("Turma inválida - disciplina não preenchida");
+        }
+        if (this.getProfessor()==null){
+            throw new Exception("Turma inválida - professor não preenchido");
+        }
+        if (this.getSala()==null || this.getSala().isBlank()){
+            throw new Exception("Turma inválida - sala não preenchida");
+        }
+        if (this.getHorario()==null || this.getHorario().isBlank()){
+            throw new Exception("Turma inválida - horário não preenchido");
+        }
+        if (this.getSemestreAno()==null || this.getSemestreAno().isBlank()){
+            throw new Exception("Turma inválida - semestre não preenchido");
+        }
+    }
+
 }

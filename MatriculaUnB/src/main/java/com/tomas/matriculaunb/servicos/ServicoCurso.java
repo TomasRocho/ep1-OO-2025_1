@@ -12,14 +12,12 @@ public class ServicoCurso extends ClasseServicoBase {
     @Override
     public boolean podeIncluir(ClasseBase curso) throws Exception{
 
-        if (((Curso)curso).getTitulo()==null || ((Curso)curso).getTitulo().isBlank()){
-            throw new Exception("Impossível Incluir Curso - titulo não preenchido ");
-        }
+        curso.validar();
 
         if (this.existe(curso.getId())){
             throw new Exception("Impossível Incluir Curso - id duplicado");
         }
-        if (tituloDuplicado(((Curso) curso).getTitulo(),null)){
+        if (tituloDuplicado((Curso) curso,false)){
             throw new Exception("Impossível Incluir Curso - título duplicado");
         }
         return true;
@@ -28,18 +26,16 @@ public class ServicoCurso extends ClasseServicoBase {
     @Override
     public boolean podeAlterar(ClasseBase cursoAlterado) throws Exception{
 
-        if (((Curso)cursoAlterado).getTitulo()==null || ((Curso)cursoAlterado).getTitulo().isBlank()){
-            throw new Exception("Impossível Alterar Curso - titulo não preenchido ");
-        }
+        cursoAlterado.validar();
 
-        if (tituloDuplicado(((Curso) cursoAlterado).getTitulo(),cursoAlterado.getId())){
+        if (tituloDuplicado((Curso) cursoAlterado,true)){
             throw new Exception("Impossível Alterar Curso - título duplicado");
         }
         return true;
     }
 
     @Override
-    public boolean podeExcluir(ClasseBase cursoAlterado) throws Exception{
+    public boolean podeExcluir(ClasseBase curso) throws Exception{
 
         //todo: verificar se esse curso não está sendo usado por algum Aluno
 
@@ -62,16 +58,16 @@ public class ServicoCurso extends ClasseServicoBase {
         return null;
     }
 
-    public boolean tituloDuplicado(String titulo, UUID id){
+    public boolean tituloDuplicado(Curso curso,boolean alteracao){
         if (this.getLista()==null){
             return false;
         }
-        if (id==null){
+        if (!alteracao){
             return this.getLista().stream()
-                    .anyMatch( obj->((Curso)obj).getTitulo().equals(titulo));
+                    .anyMatch( obj->((Curso)obj).getTitulo().equals(curso.getTitulo()));
         }
         return this.getLista().stream()
-                .anyMatch( obj->((Curso)obj).getTitulo().equals(titulo)
-                                            && !obj.getId().equals(id));
+                .anyMatch( obj->((Curso)obj).getTitulo().equals(curso.getTitulo())
+                                            && !obj.getId().equals(curso.getId()));
     }
 }
