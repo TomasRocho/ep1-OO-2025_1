@@ -1,13 +1,14 @@
 package com.tomas.matriculaunb.servicos;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Curso;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class ServicoCurso extends ClasseServicoBase {
+
+    final String nomeArquivo="curso.txt";
 
     //CLASSE SINGLETON
     private static ServicoCurso instance = null;
@@ -60,7 +61,7 @@ public class ServicoCurso extends ClasseServicoBase {
         if (this.getLista()==null){
             return null;
         }
-        Curso cursoRetornado = null;
+        Curso cursoRetornado;
         cursoRetornado = (Curso)this.getLista().stream()
                 .filter(obj -> ((Curso)obj).getTitulo().equals(titulo))
                 .findFirst()
@@ -82,5 +83,13 @@ public class ServicoCurso extends ClasseServicoBase {
         return this.getLista().stream()
                 .anyMatch( obj->((Curso)obj).getTitulo().equals(curso.getTitulo())
                                             && !obj.getId().equals(curso.getId()));
+    }
+
+    public void salvarArquivo() throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+    }
+
+    public void carregarArquivo() throws Exception{
+        this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Curso>>() {});
     }
 }

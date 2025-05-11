@@ -14,6 +14,8 @@ public abstract class ClasseBase implements Cloneable {
         this.id = id;
     }
 
+
+
     @Override
     public String toString() {
         return (id!=null?id.toString():null);
@@ -35,12 +37,17 @@ public abstract class ClasseBase implements Cloneable {
     public ClasseBase(UUID id) {
         this.id = id;
     }
+
+    /*
     public ClasseBase() {
         this.id = UUID.randomUUID();
     }
+    */
+
+    public ClasseBase(){}
 
     public void exibirDados(){
-        System.out.println(this.toString());
+        System.out.println(this);
     }
 
     @Override

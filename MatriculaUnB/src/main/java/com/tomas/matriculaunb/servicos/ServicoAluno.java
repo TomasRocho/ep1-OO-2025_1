@@ -1,13 +1,15 @@
 package com.tomas.matriculaunb.servicos;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.Aluno;
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
-import com.tomas.matriculaunb.modelo.Disciplina;
 
+import java.util.List;
 import java.util.UUID;
 
 public class ServicoAluno extends ClasseServicoBase{
+
+    final String nomeArquivo="aluno.txt";
 
     //CLASSE SINGLETON
     private static ServicoAluno instance = null;
@@ -59,7 +61,7 @@ public class ServicoAluno extends ClasseServicoBase{
         if (this.getLista()==null){
             return null;
         }
-        Aluno alunoRetornado = null;
+        Aluno alunoRetornado ;
         alunoRetornado = (Aluno)this.getLista().stream()
                 .filter(obj -> ((Aluno)obj).getNome().equals(nome))
                 .findFirst()
@@ -74,7 +76,7 @@ public class ServicoAluno extends ClasseServicoBase{
         if (this.getLista()==null){
             return null;
         }
-        Aluno alunoRetornado = null;
+        Aluno alunoRetornado;
         alunoRetornado = (Aluno)this.getLista().stream()
                 .filter(obj -> ((Aluno)obj).getMatricula().equals(matricula))
                 .findFirst()
@@ -105,5 +107,10 @@ public class ServicoAluno extends ClasseServicoBase{
         return this.getLista().stream()
                 .anyMatch(aluno->((Aluno)aluno).getCurso().getId().equals(idCurso));
     }
-
+    public void salvarArquivo() throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+    }
+    public void carregarArquivo() throws Exception{
+        this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Aluno>>() {});
+    }
 }

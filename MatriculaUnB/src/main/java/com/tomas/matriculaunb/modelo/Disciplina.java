@@ -3,6 +3,7 @@ package com.tomas.matriculaunb.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Disciplina extends ClasseBase{
     private String titulo;
@@ -41,8 +42,10 @@ public class Disciplina extends ClasseBase{
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
+
+    public Disciplina(){super();}
     public Disciplina(String titulo, String codigo, int cargaHoraria){
-        super();
+        this.setId(UUID.randomUUID());
         this.setTitulo(titulo);
         this.setCodigo(codigo);
         this.setCargaHoraria(cargaHoraria);

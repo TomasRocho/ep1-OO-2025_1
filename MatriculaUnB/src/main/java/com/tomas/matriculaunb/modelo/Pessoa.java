@@ -1,7 +1,20 @@
 package com.tomas.matriculaunb.modelo;
 
+import java.util.UUID;
+
 public abstract class Pessoa extends ClasseBase{
+    private String matricula;
     private String nome;
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+
 
     public String getNome() {
         return nome;
@@ -12,10 +25,13 @@ public abstract class Pessoa extends ClasseBase{
     }
 
     public String toString(){
-        return super.toString() + ";" + nome;
+        return super.toString() + ";" + matricula + ";" + nome;
     }
-    public Pessoa(String nome){
-        super();
+
+    public Pessoa(){super();}
+    public Pessoa(String matricula,String nome){
+        this.setId(UUID.randomUUID());
+        this.setMatricula(matricula);
         this.setNome(nome);
     }
 

@@ -1,15 +1,24 @@
 package com.tomas.matriculaunb.servicos;
 
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public abstract class ClasseServicoBase {
     private List<ClasseBase> lista;
+    final String diretorioArquivos="dados";
+
 
     public List<ClasseBase> getLista() {
         return lista;
@@ -52,7 +61,7 @@ public abstract class ClasseServicoBase {
 
     public void alterar(ClasseBase objAlterado) throws Exception{
         if (this.podeAlterar(objAlterado)){
-            ClasseBase objOriginal= null;
+            ClasseBase objOriginal;
             try {
                 objOriginal = retornar(objAlterado.getId());
             } catch (Exception e) {
@@ -76,8 +85,8 @@ public abstract class ClasseServicoBase {
         if (lista==null){
             return null;
         }
-        ClasseBase objRetornado = null;
-        objRetornado = (ClasseBase) lista.stream()
+        ClasseBase objRetornado;
+        objRetornado = lista.stream()
                 .filter(obj -> obj.getId()==id)
                 .findFirst()
                 .orElse(null);
@@ -98,6 +107,34 @@ public abstract class ClasseServicoBase {
         for (ClasseBase obj : this.getLista()) {
             obj.exibirDados();
         }
+    }
+    public void salvarListaParaArquivo(String nomeArquivo) throws Exception{
+
+        Path path = Paths.get(diretorioArquivos);
+        if (!Files.exists(path)) {
+            Files.createDirectories(path);
+        }
+        ObjectMapper mapper = new ObjectMapper();
+        File arquivo = new File(diretorioArquivos + File.separator + nomeArquivo);
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        mapper.writeValue(arquivo, this.getLista());
+    }
+
+    public <T> void  lerArquivoParaLista(String nomeArquivo, TypeReference<List<T>> typeRef) throws Exception{
+        Path path = Paths.get(diretorioArquivos);
+        if (!Files.exists(path)) {
+            Files.createDirectories(path);
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            List<T> listaLida =mapper.readValue(new File(diretorioArquivos + File.separator + nomeArquivo),typeRef);
+            this.setLista((List<ClasseBase>) listaLida);
+        } catch (IOException e) {
+            this.setLista(new ArrayList<>());
+            //throw new Exception("Erro ao carregar a lista");
+        }
+
     }
 }
 

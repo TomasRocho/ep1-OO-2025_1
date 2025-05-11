@@ -1,15 +1,16 @@
 package com.tomas.matriculaunb.servicos;
 
-import com.tomas.matriculaunb.modelo.Aluno;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.AlunoMatriculado;
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Professor;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public class ServicoAlunoMatriculado extends ClasseServicoBase{
+
+    final String nomeArquivo="alunoMatriculado.txt";
 
     //CLASSE SINGLETON
     private static ServicoAlunoMatriculado instance = null;
@@ -102,5 +103,11 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
         }
         return listaFinal;
     }
+    public void salvarArquivo() throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+    }
 
+    public void carregarArquivo() throws Exception{
+        this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<AlunoMatriculado>>() {});
+    }
 }

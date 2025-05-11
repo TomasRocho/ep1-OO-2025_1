@@ -22,6 +22,8 @@ public class PreRequisito extends ClasseBase{
         this.idDisciplinaPreRequisito = idDisciplinaPreRequisito;
     }
 
+    public PreRequisito(){super();}
+
     public PreRequisito(UUID id, UUID idDisciplina, UUID idDisciplinaPreRequisito) {
         super(id);
         this.idDisciplina = idDisciplina;
@@ -29,7 +31,7 @@ public class PreRequisito extends ClasseBase{
     }
 
     public PreRequisito(UUID idDisciplina, UUID idDisciplinaPreRequisito) {
-        super();
+        this.setId(UUID.randomUUID());
         this.idDisciplina = idDisciplina;
         this.idDisciplinaPreRequisito = idDisciplinaPreRequisito;
     }

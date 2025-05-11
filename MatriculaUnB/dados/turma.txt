@@ -1,0 +1,841 @@
+[ {
+  "id" : "56b0c816-321a-4dad-aa75-70da5d299070",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-1",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "1/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "5b8dd0cb-f268-4f3d-9a6a-1397dc888ef4",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-2",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "2/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "15b8a607-6266-49cf-a409-4e3de26674a9",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-3",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "3/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "0bb7fa2f-9d76-4197-99b6-38e78e183dff",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-4",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "4/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "8323a0dd-c1bb-4dfc-855b-7d829a5a4984",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-5",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "5/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "c712d8c5-258d-4ae1-9e0f-9b23d18436eb",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-6",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "6/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "b3f3be6c-f1fc-40ba-b9ce-4471ac52aef2",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-7",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "7/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "dace9fe9-c9f0-4464-bbb2-436a337a6564",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-8",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "8/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "dc8b1a5a-a92c-4aca-8570-aad5091bcc9f",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-9",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "9/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "d13ee2b1-d1dc-4caa-959f-b6279c4359d7",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-10",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "10/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "07c14d85-907e-4958-b98e-34a756582c9e",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-11",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "11/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "0260293e-0f84-449a-b7ba-18bfed468622",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-12",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "12/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "36450d2b-5617-4d9c-800d-3ec256b7bbbc",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-13",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "13/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "5b59d69f-8685-4837-9ac2-d1f873bed30f",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-14",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "14/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "9f9d171d-25a7-4111-982d-ad7632b3f345",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-15",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "15/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "734dda94-565e-4661-b385-8321a67cbc27",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-16",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "16/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "efa21547-2d7d-4f63-8f9d-53fd706bd837",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-17",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "17/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "39004151-4115-4ce2-a108-430aede26999",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-18",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "18/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "7c5c5ae4-4cbe-430c-b0e6-f865e3274226",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-19",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "19/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "49381b8a-d33f-4d92-b670-e7abbdaa48d1",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-20",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "20/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "9b0e478d-3cd9-4197-89aa-139598552935",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-21",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "21/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "9a963206-0f33-41b8-acd3-cedca37e4290",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-22",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "22/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "a686f33e-3915-4aa1-8d6e-a8768307dbad",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-23",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "23/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "fc03e337-2170-4da4-98a7-360b63ec03c8",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-24",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "24/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "167c3836-8c31-47f9-bda4-9dbb5721c881",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-25",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "25/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "bced63ad-ac30-49be-85f4-7601f01c906f",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-26",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "26/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "f479568d-c2ea-49c5-a30c-33bc2f8a806a",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-27",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "27/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "bf5bbb55-d4aa-4f2b-9910-7c018e24c97f",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-28",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "28/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "6484134e-da67-4e76-b92a-4d48deca7883",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-29",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "29/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "e08f370d-8188-468d-a599-ae4972ed0b6a",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-30",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "30/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "eddfa2ef-cc2a-4428-8b47-851595c95ec4",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-31",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "31/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "d8a1b4a3-eb4a-403b-816d-1ca7ff795d05",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-32",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "32/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "80ec7d22-5751-4f2d-aeb7-6731fdc17fb5",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-33",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "33/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "26bf671a-5cac-4ced-8620-375ba51f7f5e",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-34",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "34/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "c2f91d29-2637-4647-9996-b1152ac31bc5",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-35",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "35/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "63512393-fa43-44ca-a1d1-8246e192db28",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-36",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "36/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "cfd68ef5-3d3c-44d4-94b8-2d06490ff189",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-37",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "37/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "f94da3ed-4b55-4e28-95a2-e5aca1eb6990",
+  "disciplina" : {
+    "id" : "96fb27b7-f782-45b4-b0e9-4e3b6d029e61",
+    "titulo" : "Disciplina-3",
+    "codigo" : "3",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "dc760161-ea83-4c5d-b2bb-48bb955f1b1c",
+    "matricula" : "3",
+    "nome" : "Professor-3"
+  },
+  "sala" : "Sala-38",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "38/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "b06a5f54-0d86-4110-8135-92883c7ecde0",
+  "disciplina" : {
+    "id" : "515aa139-3bbd-437b-b7c4-be30f021d1d6",
+    "titulo" : "Disciplina-1",
+    "codigo" : "1",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "a7e8b3f1-c3f0-41cc-bb10-3f7ca8e4d7ca",
+    "matricula" : "1",
+    "nome" : "Professor-1"
+  },
+  "sala" : "Sala-39",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "39/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+}, {
+  "id" : "5c1b0d14-eb21-44bd-a3fa-0a636c925a78",
+  "disciplina" : {
+    "id" : "cbdd9bea-dc2a-4ca9-8774-f1da17b067cb",
+    "titulo" : "Disciplina-2",
+    "codigo" : "2",
+    "cargaHoraria" : 60,
+    "listaPreRequisitos" : null
+  },
+  "professor" : {
+    "id" : "02269b26-78fd-4b2a-89ce-be07a9dca8b6",
+    "matricula" : "2",
+    "nome" : "Professor-2"
+  },
+  "sala" : "Sala-40",
+  "horario" : "SQ12",
+  "avaliacaoMediaAritmetica" : true,
+  "semestreAno" : "40/2025",
+  "presencial" : true,
+  "ativa" : true,
+  "listaAlunosMatriculados" : null
+} ]

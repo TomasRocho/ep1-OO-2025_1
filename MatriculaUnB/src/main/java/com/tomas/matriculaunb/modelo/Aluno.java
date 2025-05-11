@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aluno extends Pessoa{
-    private String matricula;
     private Curso curso;
     private boolean especial;
     private List<AlunoMatriculado> listaMatriculas;
@@ -35,21 +34,16 @@ public class Aluno extends Pessoa{
         this.curso = curso;
     }
 
-    public String getMatricula() {
-        return matricula;
-    }
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
+
+    public Aluno(){super();}
     public Aluno(String nome, String matricula,Curso curso,boolean especial){
-        super(nome);
-        this.setMatricula(matricula);
+        super(matricula, nome);
         this.setCurso(curso);
         this.setEspecial(especial);
     }
     public String toString() {
-        return super.toString() + ";" + matricula + ";" + curso.getId() + ";" + especial;
+        return super.toString() + ";"  + curso.getId() + ";" + especial;
     }
     public void emitirBoletim(){
         for (AlunoMatriculado matricula:this.getListaMatriculas()){
@@ -58,7 +52,8 @@ public class Aluno extends Pessoa{
             System.out.println("----------");
         }
     }
-    public List<Disciplina> getDisciplinasConcluidas(){
+
+    public List<Disciplina> retornarDisciplinasConcluidas(){
         List<Disciplina> listaFinal = new ArrayList<>();
         for (AlunoMatriculado obj:this.getListaMatriculas()){
             if (obj.getStatus() == StatusAlunoMatriculado.Aprovado){
@@ -67,7 +62,7 @@ public class Aluno extends Pessoa{
         }
         return listaFinal;
     }
-    public List<Turma> getTurmasAtuais(){
+    public List<Turma> retornarTurmasAtuais(){
         List<Turma> listaFinal = new ArrayList<>();
         for (AlunoMatriculado matricula:this.getListaMatriculas()){
             if (matricula.getTurma().isAtiva()){
@@ -76,6 +71,8 @@ public class Aluno extends Pessoa{
         }
         return listaFinal;
     }
+
+
 
     @Override
     public void validar()throws Exception{
@@ -94,5 +91,7 @@ public class Aluno extends Pessoa{
         }
 
     }
+
+
 
 }

@@ -2,7 +2,7 @@ package com.tomas.matriculaunb.modelo;
 
 import java.util.UUID;
 
-public class Curso extends ClasseBase{
+public class Curso extends ClasseBase  {
     private String titulo;
 
     public void setTitulo(String titulo) {
@@ -18,9 +18,12 @@ public class Curso extends ClasseBase{
         return super.toString()+ ";"+ titulo;
     }
 
+    public Curso() {
+        super();
+    }
 
     public Curso(String titulo) {
-        super();
+        this.setId(UUID.randomUUID());
         this.titulo = titulo;
     }
 

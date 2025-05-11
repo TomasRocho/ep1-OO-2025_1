@@ -1,13 +1,16 @@
 package com.tomas.matriculaunb.servicos;
 
-import com.tomas.matriculaunb.modelo.Aluno;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Disciplina;
 import com.tomas.matriculaunb.modelo.Turma;
 
+import java.util.List;
 import java.util.UUID;
 
 public class ServicoTurma extends ClasseServicoBase{
+
+    final String nomeArquivo="turma.txt";
 
     //CLASSE SINGLETON
     private static ServicoTurma instance = null;
@@ -70,7 +73,7 @@ public class ServicoTurma extends ClasseServicoBase{
         if (this.getLista()==null){
             return null;
         }
-        Disciplina disciplinaRetornada = null;
+        Disciplina disciplinaRetornada;
         disciplinaRetornada = (Disciplina) this.getLista().stream()
                 .filter(obj -> ((Disciplina)obj).getTitulo().equals(titulo))
                 .findFirst()
@@ -145,5 +148,10 @@ public class ServicoTurma extends ClasseServicoBase{
         return this.getLista().stream()
                 .anyMatch( obj->((Turma)obj).getProfessor().getId().equals(idProfessor));
     }
-
+    public void salvarArquivo() throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+    }
+    public void carregarArquivo() throws Exception{
+        this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Turma>>() {});
+    }
 }

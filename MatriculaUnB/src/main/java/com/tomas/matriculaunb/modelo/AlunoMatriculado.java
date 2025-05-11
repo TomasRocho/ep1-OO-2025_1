@@ -3,7 +3,7 @@ package com.tomas.matriculaunb.modelo;
 
 import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
 
-import java.math.BigDecimal;
+import java.util.UUID;
 
 public class AlunoMatriculado extends ClasseBase{
     private Turma turma;
@@ -113,8 +113,10 @@ public class AlunoMatriculado extends ClasseBase{
     public void setTrancado(boolean trancado) {
         this.trancado = trancado;
     }
+
+    public AlunoMatriculado(){super();}
     public AlunoMatriculado(Turma turma, Aluno aluno){
-        super();
+        this.setId(UUID.randomUUID());
         this.setTurma(turma);
         this.setAluno(aluno);
         this.setNotaP1((float) 0);
@@ -183,6 +185,8 @@ public class AlunoMatriculado extends ClasseBase{
         resultado += "Resultado final: "+ this.getStatus();
         return resultado;
     }
+
+
 
 
 

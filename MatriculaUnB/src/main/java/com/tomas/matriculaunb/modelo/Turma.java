@@ -2,6 +2,7 @@ package com.tomas.matriculaunb.modelo;
 
 
 import java.util.List;
+import java.util.UUID;
 
 public class Turma extends ClasseBase{
     private Disciplina disciplina;
@@ -86,9 +87,10 @@ public class Turma extends ClasseBase{
         this.ativa = ativa;
     }
 
+    public Turma(){super();}
     public Turma(Disciplina disciplina, Professor professor, String sala,
                  String horario,String semestreAno){
-        super();
+        this.setId(UUID.randomUUID());
         this.setDisciplina(disciplina);
         this.setProfessor(professor);
         this.setSala(sala);

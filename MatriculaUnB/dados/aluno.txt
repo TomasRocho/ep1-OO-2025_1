@@ -1,0 +1,1001 @@
+[ {
+  "id" : "2ce7f08d-9119-4aa2-a185-1882fe08fe9f",
+  "matricula" : "1",
+  "nome" : "Aluno-1",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "77eda2d1-3765-495d-954f-d44f86602821",
+  "matricula" : "2",
+  "nome" : "Aluno-2",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "1ae4b84c-fc0b-4e7b-8978-9b85dc9b86e3",
+  "matricula" : "3",
+  "nome" : "Aluno-3",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "d7ffabfb-809e-4129-b7a2-41065489b22e",
+  "matricula" : "4",
+  "nome" : "Aluno-4",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "8603af27-2ec9-482a-8015-2a94cf3a252f",
+  "matricula" : "5",
+  "nome" : "Aluno-5",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "8e37afe6-1422-459c-88fd-770866217502",
+  "matricula" : "6",
+  "nome" : "Aluno-6",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "32cbfb84-835a-492b-9090-74c4c66973ae",
+  "matricula" : "7",
+  "nome" : "Aluno-7",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "50f6b650-a9bd-4929-a731-d2a4387c0ce0",
+  "matricula" : "8",
+  "nome" : "Aluno-8",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "5086b97e-3bff-4508-b7ac-4d3b6936e899",
+  "matricula" : "9",
+  "nome" : "Aluno-9",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "74c08c95-de49-4d7e-88c7-1c6601db008f",
+  "matricula" : "10",
+  "nome" : "Aluno-10",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "6ab12d9e-a600-44cf-8b2f-305b46a7e0f4",
+  "matricula" : "11",
+  "nome" : "Aluno-11",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "9e9fe119-f02f-4fca-bbae-0c2443dacc44",
+  "matricula" : "12",
+  "nome" : "Aluno-12",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "3028fcc7-5884-4c1f-81b6-d7bf2f83bca2",
+  "matricula" : "13",
+  "nome" : "Aluno-13",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "44ed8ca3-2f58-42b1-988c-6d437368127f",
+  "matricula" : "14",
+  "nome" : "Aluno-14",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "b6e73768-d881-4999-8584-231be2e0e661",
+  "matricula" : "15",
+  "nome" : "Aluno-15",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "4beb4001-2702-4cab-8527-e8ecf6d74202",
+  "matricula" : "16",
+  "nome" : "Aluno-16",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "ac6e0a34-c2d4-4d51-8611-274c2b57e527",
+  "matricula" : "17",
+  "nome" : "Aluno-17",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "0e6341e8-5fc9-4811-bee6-8c11e8cf70ae",
+  "matricula" : "18",
+  "nome" : "Aluno-18",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a1dac962-bff7-493c-b0d1-bb8786dae355",
+  "matricula" : "19",
+  "nome" : "Aluno-19",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "8bb6aeae-26b9-423f-8553-a3b8cb0266d4",
+  "matricula" : "20",
+  "nome" : "Aluno-20",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "fd55dae4-0587-4ef3-8171-7c82378ea090",
+  "matricula" : "21",
+  "nome" : "Aluno-21",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "830edaae-8c6e-43d4-ad6d-098e5496af00",
+  "matricula" : "22",
+  "nome" : "Aluno-22",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "867c0348-c34a-4a54-889f-e83a7e3afc3d",
+  "matricula" : "23",
+  "nome" : "Aluno-23",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "25db46b0-19b4-40f5-9195-b350ef9eb8cc",
+  "matricula" : "24",
+  "nome" : "Aluno-24",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "cf301232-e060-4c7d-86fb-72924ecaea35",
+  "matricula" : "25",
+  "nome" : "Aluno-25",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "401f4955-f596-43ff-8aa2-896559bb5185",
+  "matricula" : "26",
+  "nome" : "Aluno-26",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "7135b4a2-d32e-47ed-9781-be52ad2f090c",
+  "matricula" : "27",
+  "nome" : "Aluno-27",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "bc576477-0569-43a8-8e03-df0eeab3f0e7",
+  "matricula" : "28",
+  "nome" : "Aluno-28",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "9b69d636-9929-4866-9945-d561a9a7c650",
+  "matricula" : "29",
+  "nome" : "Aluno-29",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a80918db-101b-4073-a177-1efa480eda3c",
+  "matricula" : "30",
+  "nome" : "Aluno-30",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "ab4de22f-232e-4fed-90a2-b414a1d42a23",
+  "matricula" : "31",
+  "nome" : "Aluno-31",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "b857f285-3147-46d3-932a-f88583604584",
+  "matricula" : "32",
+  "nome" : "Aluno-32",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a0cce75b-b0ce-442e-9707-c044b94b38a2",
+  "matricula" : "33",
+  "nome" : "Aluno-33",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "c4ad56dc-acb7-4ba9-9956-c6ce450efc2a",
+  "matricula" : "34",
+  "nome" : "Aluno-34",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "25c7f6bb-686c-4e22-a1f0-f9b21d5ea0aa",
+  "matricula" : "35",
+  "nome" : "Aluno-35",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "b5e16ef7-9ad7-4796-b976-4ca467e9be0c",
+  "matricula" : "36",
+  "nome" : "Aluno-36",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "f879e3c3-0e89-4b4d-a782-29ed84f9792f",
+  "matricula" : "37",
+  "nome" : "Aluno-37",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "08eb2a70-3ece-456a-84c1-8176a05790b9",
+  "matricula" : "38",
+  "nome" : "Aluno-38",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "df46d739-2087-4d23-afc9-46bad5283513",
+  "matricula" : "39",
+  "nome" : "Aluno-39",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "56f679d3-33ec-4e80-9ec3-cb5f7f7c6248",
+  "matricula" : "40",
+  "nome" : "Aluno-40",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "511f1b43-dd34-40d4-b225-18c6f1d1cdb3",
+  "matricula" : "41",
+  "nome" : "Aluno-41",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "072f479f-5f09-4028-8b4f-588dd457fef2",
+  "matricula" : "42",
+  "nome" : "Aluno-42",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "1eb2b480-8054-4c8a-b52e-36dddeddaec1",
+  "matricula" : "43",
+  "nome" : "Aluno-43",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a9808622-70e6-46ca-9408-8f32931246a9",
+  "matricula" : "44",
+  "nome" : "Aluno-44",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "0bd8dacd-65e0-4f3c-bdba-2f0a9ab8284d",
+  "matricula" : "45",
+  "nome" : "Aluno-45",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "6d7ca80d-b0f7-44d7-b329-93cba5786d87",
+  "matricula" : "46",
+  "nome" : "Aluno-46",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "8ad9bf79-10a5-4e9c-94e4-d55058550136",
+  "matricula" : "47",
+  "nome" : "Aluno-47",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "c6dceffb-e953-4f7c-acb5-4c5344065297",
+  "matricula" : "48",
+  "nome" : "Aluno-48",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "e5cff5cd-de95-4416-9d4f-fa1716c55194",
+  "matricula" : "49",
+  "nome" : "Aluno-49",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "74a44a2e-bbc1-4a3e-872c-e952be82c2f8",
+  "matricula" : "50",
+  "nome" : "Aluno-50",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "836a9607-96d0-4865-889b-bd646b87c44d",
+  "matricula" : "51",
+  "nome" : "Aluno-51",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "e3e736b7-20fd-42f1-833f-a127266ddad5",
+  "matricula" : "52",
+  "nome" : "Aluno-52",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "384ca39c-68a9-48f8-abeb-ff52a702b90e",
+  "matricula" : "53",
+  "nome" : "Aluno-53",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "37edac0b-32e6-45ea-8bcc-45159770a8b0",
+  "matricula" : "54",
+  "nome" : "Aluno-54",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "4a92103a-6611-4251-a33a-4e7395a03fb8",
+  "matricula" : "55",
+  "nome" : "Aluno-55",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "232281b6-e59c-408d-aa48-a7c22fab9ada",
+  "matricula" : "56",
+  "nome" : "Aluno-56",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "1e9a41b1-222d-4ecd-93d5-dbfce26587c4",
+  "matricula" : "57",
+  "nome" : "Aluno-57",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "126e1359-f322-4ab8-8361-c05df924e09e",
+  "matricula" : "58",
+  "nome" : "Aluno-58",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "2625e061-1a2d-494d-9ffc-802d034cd60c",
+  "matricula" : "59",
+  "nome" : "Aluno-59",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "526230b6-6fa7-4016-adbf-8fe3615cf79c",
+  "matricula" : "60",
+  "nome" : "Aluno-60",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "adefcb0b-42a5-49d5-9c3d-5d881fabceb5",
+  "matricula" : "61",
+  "nome" : "Aluno-61",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "1c433cd1-6502-4018-8aac-b17b19e10871",
+  "matricula" : "62",
+  "nome" : "Aluno-62",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "e2271c5d-0d58-4954-80c1-969abd97ca17",
+  "matricula" : "63",
+  "nome" : "Aluno-63",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "7b17e878-5377-4dac-8ada-51fc5616e570",
+  "matricula" : "64",
+  "nome" : "Aluno-64",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "94115f96-8da1-479d-8606-ca37ea473707",
+  "matricula" : "65",
+  "nome" : "Aluno-65",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "bcb6be51-0726-4e26-8c21-6fe43a135336",
+  "matricula" : "66",
+  "nome" : "Aluno-66",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "456c9165-bdfa-44c9-9de5-cb864ed818eb",
+  "matricula" : "67",
+  "nome" : "Aluno-67",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "83858b1f-9d46-47b0-891c-65eb5379e5a7",
+  "matricula" : "68",
+  "nome" : "Aluno-68",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "c49fed0a-b95c-4dfd-a8d7-19d563d07784",
+  "matricula" : "69",
+  "nome" : "Aluno-69",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "13e9df81-85d4-40da-913d-821e2ec69dca",
+  "matricula" : "70",
+  "nome" : "Aluno-70",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "64419151-07a7-4d66-a26f-1aca87c0d2ab",
+  "matricula" : "71",
+  "nome" : "Aluno-71",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "878fbf29-24e5-48fb-8ec5-2446791e9324",
+  "matricula" : "72",
+  "nome" : "Aluno-72",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "efa2c28a-18cc-4d84-9913-b1cf9ca0a111",
+  "matricula" : "73",
+  "nome" : "Aluno-73",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "8350a481-bca3-4ac1-9623-a92bdbffe24d",
+  "matricula" : "74",
+  "nome" : "Aluno-74",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "ffe89b3e-58f2-4535-8a38-c985b5e83b2f",
+  "matricula" : "75",
+  "nome" : "Aluno-75",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "bd569745-0f05-452c-876b-146c2df55b4b",
+  "matricula" : "76",
+  "nome" : "Aluno-76",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "326124a6-3879-4e3f-8e64-0f9e1dcf4977",
+  "matricula" : "77",
+  "nome" : "Aluno-77",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "7cafa2ab-9520-4d05-8c05-0500c9404850",
+  "matricula" : "78",
+  "nome" : "Aluno-78",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "5c2caff6-fa10-40b9-b4eb-43c05955bdd2",
+  "matricula" : "79",
+  "nome" : "Aluno-79",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a2d41b47-0ffa-4667-bc89-44c2df9111ef",
+  "matricula" : "80",
+  "nome" : "Aluno-80",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "1bdeb671-44a8-4344-860e-67e559a40b4b",
+  "matricula" : "81",
+  "nome" : "Aluno-81",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "8b8b6f09-5e07-4cdb-bf59-2aa7dd5f5a7e",
+  "matricula" : "82",
+  "nome" : "Aluno-82",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "e59dea7f-35fb-47c4-a93f-f9689eba6d67",
+  "matricula" : "83",
+  "nome" : "Aluno-83",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "9b22a05e-a338-4b7f-a959-88d2b4f9b67f",
+  "matricula" : "84",
+  "nome" : "Aluno-84",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "efe50cd8-1ae5-451c-bf6a-205d16ef54be",
+  "matricula" : "85",
+  "nome" : "Aluno-85",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "d5fe29be-5e07-4226-a83b-51f15bbd7260",
+  "matricula" : "86",
+  "nome" : "Aluno-86",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "2a3dfdc7-feb9-483e-836f-7b179b649a99",
+  "matricula" : "87",
+  "nome" : "Aluno-87",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "05566d57-dbe8-4e2f-bc46-6ee2a734d59e",
+  "matricula" : "88",
+  "nome" : "Aluno-88",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "77cc59f7-a96a-4a7e-bf94-d4712d1ce653",
+  "matricula" : "89",
+  "nome" : "Aluno-89",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "152cfa33-6dc1-4824-87c2-72c0b5624650",
+  "matricula" : "90",
+  "nome" : "Aluno-90",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "5f121c4d-b243-41cb-9b03-7191c5d05d27",
+  "matricula" : "91",
+  "nome" : "Aluno-91",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "ca7b26dd-1327-4583-8afb-0c33ccc55cb8",
+  "matricula" : "92",
+  "nome" : "Aluno-92",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "edecdfa9-7400-41d7-ba08-540bc416b997",
+  "matricula" : "93",
+  "nome" : "Aluno-93",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a4bcae26-e38e-4ad5-ad1b-e5b120574f42",
+  "matricula" : "94",
+  "nome" : "Aluno-94",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "a2d1ca2c-3399-430f-8247-6d8767f51c45",
+  "matricula" : "95",
+  "nome" : "Aluno-95",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "463c8311-1579-467d-94dc-ea8184f21571",
+  "matricula" : "96",
+  "nome" : "Aluno-96",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "9e155dac-3044-407a-a42f-4a15310b9888",
+  "matricula" : "97",
+  "nome" : "Aluno-97",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "e0644b04-e4ad-4758-b705-ef2b9f4da82c",
+  "matricula" : "98",
+  "nome" : "Aluno-98",
+  "curso" : {
+    "id" : "82412b8f-9847-46af-85d4-84770ae8b57c",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "41e240a3-7ab9-480f-9eec-e12d9b2a3ef3",
+  "matricula" : "99",
+  "nome" : "Aluno-99",
+  "curso" : {
+    "id" : "54c97113-0281-469c-bf9f-8a930bac662b",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+}, {
+  "id" : "ed2df35d-c64f-4cda-a004-aeb983c34961",
+  "matricula" : "100",
+  "nome" : "Aluno-100",
+  "curso" : {
+    "id" : "468dd556-c5ae-4958-884d-603f967c9052",
+    "titulo" : "Curso-2"
+  },
+  "especial" : false,
+  "listaMatriculas" : null
+} ]

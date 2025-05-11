@@ -1,15 +1,15 @@
 package com.tomas.matriculaunb.servicos;
 
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
-import com.tomas.matriculaunb.modelo.Disciplina;
-import com.tomas.matriculaunb.modelo.PreRequisito;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.tomas.matriculaunb.modelo.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public class ServicoPreRequisito extends ClasseServicoBase{
+
+    final String nomeArquivo="preRequisito.txt";
 
     //CLASSE SINGLETON
     private static ServicoPreRequisito instance = null;
@@ -70,7 +70,7 @@ public class ServicoPreRequisito extends ClasseServicoBase{
         List<Disciplina> listaFinal = new ArrayList<>();
         for (ClasseBase preRequisito:this.getLista()){
             if (((PreRequisito)preRequisito).getIdDisciplina().equals(idDisciplina)){
-                Disciplina disciplinaPreRequisito = null;
+                Disciplina disciplinaPreRequisito;
                 try {
                     disciplinaPreRequisito = (Disciplina) servicoDisciplina.retornar(((PreRequisito) preRequisito).getIdDisciplinaPreRequisito());
                     listaFinal.add(disciplinaPreRequisito);
@@ -81,6 +81,11 @@ public class ServicoPreRequisito extends ClasseServicoBase{
         }
         return listaFinal;
     }
-
+    public void salvarArquivo() throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+    }
+    public void carregarArquivo() throws Exception{
+        this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<PreRequisito>>() {});
+    }
 
 }
