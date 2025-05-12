@@ -148,6 +148,13 @@ public class ServicoTurma extends ClasseServicoBase{
         return this.getLista().stream()
                 .anyMatch( obj->((Turma)obj).getProfessor().getId().equals(idProfessor));
     }
+    public boolean existeSala(UUID idSala){
+        if (this.getLista()==null){
+            return false;
+        }
+        return this.getLista().stream()
+                .anyMatch( obj->((Turma)obj).getSala().getId().equals(idSala));
+    }
     public void salvarArquivo() throws Exception{
         this.salvarListaParaArquivo(nomeArquivo);
     }

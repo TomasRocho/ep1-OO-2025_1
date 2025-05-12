@@ -1,6 +1,7 @@
 package com.tomas.matriculaunb.util;
 
 import com.tomas.matriculaunb.modelo.*;
+import com.tomas.matriculaunb.modelo.enumerations.Campus;
 import com.tomas.matriculaunb.servicos.*;
 
 public class DadosTeste {
@@ -10,6 +11,7 @@ public class DadosTeste {
     private ServicoDisciplina servicoDisciplina;
     private ServicoAluno servicoAluno;
     private ServicoTurma servicoTurma;
+    private ServicoSala servicoSala;
 
 
     private void geraCursos(int qtd){
@@ -27,6 +29,23 @@ public class DadosTeste {
             throw new RuntimeException(e);
         }
     }
+
+    private void geraSalas(int qtd){
+        this.servicoSala = ServicoSala.getInstance();
+        for(int i=1;i<=qtd;i++){
+            try {
+                servicoSala.incluir(new Sala("Sala-"+i, Campus.Gama));
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+        try {
+            this.servicoSala.salvarArquivo();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     private void geraProfessores(int qtd){
         this.servicoProfessor = ServicoProfessor.getInstance();
@@ -84,7 +103,8 @@ public class DadosTeste {
             try {
                 servicoTurma.incluir(new Turma((Disciplina) servicoDisciplina.getLista().get(i%3),
                                                 (Professor) servicoProfessor.getLista().get(i%3),
-                                                "Sala-"+i,"SQ12",i +"/2025"));
+                                                (Sala) servicoSala.getLista().get(i%3),
+                                        "SQ12",i +"/2025"));
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
@@ -99,6 +119,7 @@ public class DadosTeste {
 
     public void geraTudo() {
         this.geraCursos(10);
+        this.geraSalas(10);
         this.geraDisciplinas(20);
         this.geraProfessores(50);
         this.geraTurmas(40);

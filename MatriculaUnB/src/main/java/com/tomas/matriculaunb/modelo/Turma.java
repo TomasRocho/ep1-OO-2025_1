@@ -7,7 +7,7 @@ import java.util.UUID;
 public class Turma extends ClasseBase{
     private Disciplina disciplina;
     private Professor professor;
-    private String sala;
+    private Sala sala;
     private String horario;
     private boolean avaliacaoMediaAritmetica;
     private String semestreAno;
@@ -39,11 +39,11 @@ public class Turma extends ClasseBase{
         this.professor = professor;
     }
 
-    public String getSala() {
+    public Sala getSala() {
         return sala;
     }
 
-    public void setSala(String sala) {
+    public void setSala(Sala sala) {
         this.sala = sala;
     }
 
@@ -88,7 +88,7 @@ public class Turma extends ClasseBase{
     }
 
     public Turma(){super();}
-    public Turma(Disciplina disciplina, Professor professor, String sala,
+    public Turma(Disciplina disciplina, Professor professor, Sala sala,
                  String horario,String semestreAno){
         this.setId(UUID.randomUUID());
         this.setDisciplina(disciplina);
@@ -113,7 +113,7 @@ public class Turma extends ClasseBase{
 
     public String toString(){
         return super.toString()+ ";" + disciplina.getId()+";"+professor.getId()+ ";"
-                + sala + ";" + horario + ";" + avaliacaoMediaAritmetica +";" +
+                + sala.getId() + ";" + horario + ";" + avaliacaoMediaAritmetica +";" +
                 semestreAno+ ";" + presencial +";" + ativa;
     }
 
@@ -126,7 +126,7 @@ public class Turma extends ClasseBase{
         if (this.getProfessor()==null){
             throw new Exception("Turma inválida - professor não preenchido");
         }
-        if (this.getSala()==null || this.getSala().isBlank()){
+        if (this.getSala()==null ){
             throw new Exception("Turma inválida - sala não preenchida");
         }
         if (this.getHorario()==null || this.getHorario().isBlank()){

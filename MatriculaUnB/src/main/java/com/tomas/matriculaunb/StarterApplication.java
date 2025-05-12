@@ -68,6 +68,13 @@ public class StarterApplication extends Application {
             System.out.println("Erro ao carregar o arquivo de turma");
         }
 
+        ServicoSala servicoSala=ServicoSala.getInstance();
+        try {
+            servicoSala.carregarArquivo();
+        } catch (Exception e) {
+            System.out.println("Erro ao carregar o arquivo de sala");
+        }
+
         servicoCurso.exibirLista();
         servicoProfessor.exibirLista();
         servicoTurma.exibirLista();
@@ -75,6 +82,7 @@ public class StarterApplication extends Application {
         servicoAlunoMatriculado.exibirLista();
         servicoAluno.exibirLista();
         servicoDisciplina.exibirLista();
+        servicoSala.exibirLista();
 
         DadosTeste dadosTeste=new DadosTeste();
         dadosTeste.geraTudo();
