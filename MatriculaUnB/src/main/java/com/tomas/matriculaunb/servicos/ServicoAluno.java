@@ -2,7 +2,9 @@ package com.tomas.matriculaunb.servicos;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.Aluno;
+import com.tomas.matriculaunb.modelo.AlunoMatriculado;
 import com.tomas.matriculaunb.modelo.ClasseBase;
+import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
 
 import java.util.List;
 import java.util.UUID;
@@ -98,6 +100,16 @@ public class ServicoAluno extends ClasseServicoBase{
         return this.getLista().stream()
                 .anyMatch( obj->((Aluno)obj).getMatricula().equals(aluno.getMatricula())
                         && !obj.getId().equals(aluno.getId()));
+    }
+
+    public void trancarSemestre(Aluno aluno, String semestreAno){
+        ServicoAlunoMatriculado servicoAlunoMatriculado = ServicoAlunoMatriculado.getInstance();
+        List<AlunoMatriculado> listaMatriculasSemestre = servicoAlunoMatriculado.getListaMatriculasPorAluno(aluno.getId(),semestreAno);
+        for (AlunoMatriculado matricula:listaMatriculasSemestre){
+            if (matricula.getStatus().equals(StatusAlunoMatriculado.EmCurso)){
+                matricula.setTrancado(true);
+            }
+        }
     }
 
     public boolean existeCurso(UUID idCurso){

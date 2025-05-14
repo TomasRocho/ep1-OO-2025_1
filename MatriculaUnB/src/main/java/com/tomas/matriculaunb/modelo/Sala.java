@@ -29,9 +29,15 @@ public class Sala extends ClasseBase{
         this.setLocal(local);
         this.setCampus(campus);
     }
-    public String toString(){
-        return super.toString()+ ";" + this.getLocal() + ";" + this.getCampus();
+
+    @Override
+    public String toString() {
+        return "Sala{" + super.toString()+
+                "local='" + local + '\'' +
+                ", campus=" + campus +
+                '}';
     }
+
     @Override
     public void validar()throws Exception{
         super.validar();

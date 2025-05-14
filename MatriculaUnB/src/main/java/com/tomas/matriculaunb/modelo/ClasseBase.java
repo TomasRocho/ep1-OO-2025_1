@@ -14,11 +14,11 @@ public abstract class ClasseBase implements Cloneable {
         this.id = id;
     }
 
-
-
     @Override
     public String toString() {
-        return (id!=null?id.toString():null);
+        return "ClasseBase{" +
+                "id=" + id +
+                '}';
     }
 
     @Override
@@ -47,7 +47,7 @@ public abstract class ClasseBase implements Cloneable {
     public ClasseBase(){}
 
     public void exibirDados(){
-        System.out.println(this);
+        System.out.println(this.toString());
     }
 
     @Override

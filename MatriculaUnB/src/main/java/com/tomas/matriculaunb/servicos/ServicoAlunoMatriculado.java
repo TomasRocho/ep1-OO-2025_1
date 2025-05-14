@@ -1,10 +1,10 @@
 package com.tomas.matriculaunb.servicos;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.tomas.matriculaunb.modelo.AlunoMatriculado;
-import com.tomas.matriculaunb.modelo.ClasseBase;
+import com.tomas.matriculaunb.modelo.*;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 
@@ -35,6 +35,21 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
             throw new Exception("Impossível Incluir Aluno matriculado - aluno e turma já cadastrados");
         }
 
+        if (this.getLista().size() >= ((AlunoMatriculado) alunoMatriculado).getTurma().getQtdMaxAlunos()){
+            throw new Exception("Impossível Incluir Aluno matriculado - vagas esgotadas");
+        }
+
+        //preenche a listaMatriculas do aluno informado
+        ((AlunoMatriculado) alunoMatriculado).getAluno().setListaMatriculas(this.getListaMatriculasPorAluno(((AlunoMatriculado) alunoMatriculado).getAluno().getId(),null));
+
+        if (((AlunoMatriculado) alunoMatriculado).getAluno().disciplinaConcluida(((AlunoMatriculado) alunoMatriculado).getTurma().getDisciplina())){
+            throw new Exception("Impossível Incluir Aluno matriculado - aluno já concluiu esta disciplina");
+        }
+        if (!this.possuiPreRequisitos(((AlunoMatriculado) alunoMatriculado).getAluno(),((AlunoMatriculado) alunoMatriculado).getTurma().getDisciplina())){
+            throw new Exception("Impossível Incluir Aluno matriculado - aluno não possui pré-requisitos");
+        }
+
+
         return true;
     }
 
@@ -50,6 +65,16 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
         return true;
     }
 
+    public boolean possuiPreRequisitos(Aluno aluno, Disciplina disciplina){
+        ServicoPreRequisito servicoPreRequisito = ServicoPreRequisito.getInstance();
+        List<Disciplina> listaPreRequisitos=servicoPreRequisito.getPreRequisitosDisciplina(disciplina.getId());
+        for (Disciplina preRequisito:listaPreRequisitos){
+            if (!aluno.disciplinaConcluida(preRequisito)){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public boolean matriculaDuplicada(AlunoMatriculado alunoMatriculado, boolean alteracao) {
         if (this.getLista() == null) {
@@ -85,13 +110,26 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                         ((AlunoMatriculado) obj).getTurma().getId().equals(idTurma));
     }
 
-    public List<AlunoMatriculado> getListaMatriculasPorAluno(UUID idAluno){
+    public List<AlunoMatriculado> getListaMatriculasPorAluno(UUID idAluno, String semestreAno){
         List<AlunoMatriculado> listaFinal = new ArrayList<>();
-        for (ClasseBase alunoMatriculado:this.getLista()){
-            if (((AlunoMatriculado)alunoMatriculado).getAluno().getId().equals(idAluno)){
-                listaFinal.add((AlunoMatriculado) alunoMatriculado);
+        if (semestreAno==null){
+            for (ClasseBase alunoMatriculado:this.getLista()){
+                if (((AlunoMatriculado)alunoMatriculado).getAluno().getId().equals(idAluno)){
+                    listaFinal.add((AlunoMatriculado) alunoMatriculado);
+                }
             }
         }
+        else{
+            for (ClasseBase alunoMatriculado:this.getLista()){
+                if (((AlunoMatriculado)alunoMatriculado).getAluno().getId().equals(idAluno)
+                    && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(semestreAno)){
+                    listaFinal.add((AlunoMatriculado) alunoMatriculado);
+                }
+            }
+        }
+
+        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
+                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
         return listaFinal;
     }
     public List<AlunoMatriculado> getListaMatriculasPorTurma(UUID idTurma){
@@ -101,8 +139,37 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                 listaFinal.add((AlunoMatriculado) alunoMatriculado);
             }
         }
+        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
+                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
         return listaFinal;
     }
+
+    public List<AlunoMatriculado> getListaMatriculasPorDisciplina(UUID idDisciplina, String semestreAno){
+        List<AlunoMatriculado> listaFinal = new ArrayList<>();
+        for (ClasseBase alunoMatriculado:this.getLista()){
+            if (((AlunoMatriculado)alunoMatriculado).getTurma().getDisciplina().getId().equals(idDisciplina)
+                && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(semestreAno)){
+                listaFinal.add((AlunoMatriculado) alunoMatriculado);
+            }
+        }
+        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
+                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
+        return listaFinal;
+    }
+
+    public List<AlunoMatriculado> getListaMatriculasPorProfessor(UUID idProfessor, String semestreAno){
+        List<AlunoMatriculado> listaFinal = new ArrayList<>();
+        for (ClasseBase alunoMatriculado:this.getLista()){
+            if (((AlunoMatriculado)alunoMatriculado).getTurma().getProfessor().getId().equals(idProfessor)
+                    && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(semestreAno)){
+                listaFinal.add((AlunoMatriculado) alunoMatriculado);
+            }
+        }
+        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
+                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
+        return listaFinal;
+    }
+
     public void salvarArquivo() throws Exception{
         this.salvarListaParaArquivo(nomeArquivo);
     }

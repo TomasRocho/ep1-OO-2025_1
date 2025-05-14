@@ -24,8 +24,12 @@ public abstract class Pessoa extends ClasseBase{
         this.nome = nome;
     }
 
-    public String toString(){
-        return super.toString() + ";" + matricula + ";" + nome;
+    @Override
+    public String toString() {
+        return "Pessoa{" + super.toString() +
+                "matricula='" + matricula + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 
     public Pessoa(){super();}

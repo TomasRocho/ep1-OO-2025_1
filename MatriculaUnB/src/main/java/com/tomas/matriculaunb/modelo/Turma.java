@@ -1,6 +1,8 @@
 package com.tomas.matriculaunb.modelo;
 
 
+import com.tomas.matriculaunb.util.Util;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -12,16 +14,16 @@ public class Turma extends ClasseBase{
     private boolean avaliacaoMediaAritmetica;
     private String semestreAno;
     private boolean presencial;
-    private boolean ativa;
-    private List<AlunoMatriculado> listaAlunosMatriculados;
+    private int qtdMaxAlunos;
 
-    public List<AlunoMatriculado> getListaAlunosMatriculados() {
-        return listaAlunosMatriculados;
+    public int getQtdMaxAlunos() {
+        return qtdMaxAlunos;
     }
 
-    public void setListaAlunosMatriculados(List<AlunoMatriculado> listaAlunosMatriculados) {
-        this.listaAlunosMatriculados = listaAlunosMatriculados;
+    public void setQtdMaxAlunos(int qtdMaxAlunos) {
+        this.qtdMaxAlunos = qtdMaxAlunos;
     }
+
 
     public Disciplina getDisciplina() {
         return disciplina;
@@ -79,17 +81,15 @@ public class Turma extends ClasseBase{
         this.presencial = presencial;
     }
 
-    public boolean isAtiva() {
-        return ativa;
+
+    public String formataSemestreAnoParaOrdenacao(){
+        return this.getSemestreAno().substring(3)+this.getSemestreAno().substring(0,0);
     }
 
-    public void setAtiva(boolean ativa) {
-        this.ativa = ativa;
-    }
 
     public Turma(){super();}
     public Turma(Disciplina disciplina, Professor professor, Sala sala,
-                 String horario,String semestreAno){
+                 String horario,String semestreAno, int qtdMaxAlunos){
         this.setId(UUID.randomUUID());
         this.setDisciplina(disciplina);
         this.setProfessor(professor);
@@ -98,36 +98,44 @@ public class Turma extends ClasseBase{
         this.setSemestreAno(semestreAno);
         this.setPresencial(true);
         this.setAvaliacaoMediaAritmetica(true);
-        this.setAtiva(true);
+        this.setQtdMaxAlunos(qtdMaxAlunos);
+
 
     }
 
-    public void emitirBoletins(){
-        for (AlunoMatriculado matricula:this.getListaAlunosMatriculados()){
-            System.out.println("----------");
-            System.out.println(matricula.getAluno().getMatricula()+" - "+ matricula.getAluno().getNome());
-            System.out.println(matricula.exibirResultado());
-            System.out.println("----------");
-        }
-    }
 
-    public String toString(){
-        return super.toString()+ ";" + disciplina.getId()+";"+professor.getId()+ ";"
-                + sala.getId() + ";" + horario + ";" + avaliacaoMediaAritmetica +";" +
-                semestreAno+ ";" + presencial +";" + ativa;
+
+    @Override
+    public String toString() {
+        return "Turma{" + super.toString() +
+                "disciplina=" + disciplina +
+                ", professor=" + professor +
+                ", sala=" + sala +
+                ", horario='" + horario + '\'' +
+                ", avaliacaoMediaAritmetica=" + avaliacaoMediaAritmetica +
+                ", semestreAno='" + semestreAno + '\'' +
+                ", presencial=" + presencial +
+                ", qtdMaxAlunos=" + qtdMaxAlunos +
+                '}';
     }
 
     @Override
     public void validar()throws Exception{
         super.validar();
+        if (this.getQtdMaxAlunos() < 0){
+            throw new Exception("Turma inválida - número máximo de alunos inválido");
+        }
         if (this.getDisciplina()==null){
             throw new Exception("Turma inválida - disciplina não preenchida");
         }
         if (this.getProfessor()==null){
             throw new Exception("Turma inválida - professor não preenchido");
         }
-        if (this.getSala()==null ){
+        if (this.isPresencial() && this.getSala()==null ){
             throw new Exception("Turma inválida - sala não preenchida");
+        }
+        if (!this.isPresencial() && this.getSala()!=null ){
+            throw new Exception("Turma inválida - turma remota não tem sala");
         }
         if (this.getHorario()==null || this.getHorario().isBlank()){
             throw new Exception("Turma inválida - horário não preenchido");
@@ -135,6 +143,14 @@ public class Turma extends ClasseBase{
         if (this.getSemestreAno()==null || this.getSemestreAno().isBlank()){
             throw new Exception("Turma inválida - semestre não preenchido");
         }
+        if (!Util.semestreValido(this.getSemestreAno())){
+            throw new Exception("Turma inválida - semestre invalido, deve estar no formato 1/aaaa ou 2/aaaa");
+        }
     }
-
+    public boolean turmaAtiva(){
+        if (this.getSemestreAno().equals(Util.getSemestreAtual())){
+            return true;
+        }
+        return false;
+    }
 }

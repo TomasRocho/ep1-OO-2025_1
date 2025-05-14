@@ -38,8 +38,12 @@ public class PreRequisito extends ClasseBase{
 
     @Override
     public String toString() {
-        return super.toString()+ ";"+ idDisciplina.toString() + ";" + idDisciplinaPreRequisito.toString();
+        return "PreRequisito{" + super.toString()+
+                "idDisciplina=" + idDisciplina +
+                ", idDisciplinaPreRequisito=" + idDisciplinaPreRequisito +
+                '}';
     }
+
     @Override
     public void validar()throws Exception{
         super.validar();

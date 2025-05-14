@@ -15,7 +15,9 @@ public class Curso extends ClasseBase  {
 
     @Override
     public String toString() {
-        return super.toString()+ ";"+ titulo;
+        return "Curso{" + super.toString()+
+                "titulo='" + titulo + '\'' +
+                '}';
     }
 
     public Curso() {

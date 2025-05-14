@@ -25,21 +25,28 @@ public class AlunoMatriculado extends ClasseBase{
         if (this.getAluno()==null){
             throw new Exception("AlunoMatriculado inválido - aluno não preenchido");
         }
-        if (this.getNotaP1()==null){
+        if (this.getNotaP1()==null || this.getNotaP1() < 0){
             throw new Exception("AlunoMatriculado inválido - nota 1 inválida");
         }
-        if (this.getNotaP2()==null){
+        if (this.getNotaP2()==null || this.getNotaP2() < 0){
             throw new Exception("AlunoMatriculado inválido - nota 2 inválida");
         }
-        if (this.getNotaP3()==null){
+        if (this.getNotaP3()==null || this.getNotaP3() < 0){
             throw new Exception("AlunoMatriculado inválido - nota 3 inválida");
         }
-        if (this.getNotaS()==null){
+        if (this.getNotaS()==null || this.getNotaS() < 0){
             throw new Exception("AlunoMatriculado inválido - nota seminário inválida");
         }
-        if (this.getNotaL()==null){
+        if (this.getNotaL()==null || this.getNotaL() < 0){
             throw new Exception("AlunoMatriculado inválido - nota lista de exercícios inválida");
         }
+        if (this.getFaltas() < 0){
+            throw new Exception("AlunoMatriculado inválido - numero de faltas inválido");
+        }
+        if (aluno.isEspecial() && (this.getNotaP1() != null || this.getNotaP2() != null || this.getNotaP3() != null || this.getNotaS() != null || this.getNotaL() != null)){
+            throw new Exception("AlunoMatriculado inválido - aluno especial não recebe notas");
+        }
+
     }
 
     public Turma getTurma() {
@@ -139,11 +146,22 @@ public class AlunoMatriculado extends ClasseBase{
         }
         return (notaP1 + notaP2 * 2 +notaP3 * 3 +notaS+notaL)/8;
     }
-    public String toString(){
-        return super.toString()+ ";" + turma.getId()+";"+aluno.getId()+ ";"
-                + notaP1 + ";" + notaP2 + ";" + notaP3 +";" +
-                notaL+ ";" + notaS +";" + faltas + ";" + trancado;
+
+    @Override
+    public String toString() {
+        return "AlunoMatriculado{" + super.toString() +
+                "turma=" + turma +
+                ", aluno=" + aluno +
+                ", notaP1=" + notaP1 +
+                ", notaP2=" + notaP2 +
+                ", notaP3=" + notaP3 +
+                ", notaL=" + notaL +
+                ", notaS=" + notaS +
+                ", faltas=" + faltas +
+                ", trancado=" + trancado +
+                '}';
     }
+
     public float calcularPercentualFaltas(){
         int numeroDeAulas = this.getTurma().getDisciplina().getCargaHoraria() /2;
         if (numeroDeAulas == 0){
@@ -155,7 +173,7 @@ public class AlunoMatriculado extends ClasseBase{
         if (this.isTrancado()){
             return StatusAlunoMatriculado.Trancado;
         }
-        if (this.getTurma().isAtiva()){
+        if (this.getTurma().turmaAtiva()){
             return StatusAlunoMatriculado.EmCurso;
         }
         if (this.getAluno().isEspecial()){

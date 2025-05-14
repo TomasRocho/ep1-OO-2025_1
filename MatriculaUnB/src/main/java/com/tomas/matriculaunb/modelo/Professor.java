@@ -1,11 +1,15 @@
 package com.tomas.matriculaunb.modelo;
 
+import java.util.List;
+
 public class Professor extends Pessoa {
+
 
     public Professor(){super();}
     public Professor(String matricula,String nome){
         super(matricula,nome);
     }
+
 
     @Override
     public void validar()throws Exception{
@@ -19,4 +23,9 @@ public class Professor extends Pessoa {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Professor{" + super.toString() +
+                '}';
+    }
 }

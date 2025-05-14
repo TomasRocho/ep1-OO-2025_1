@@ -104,7 +104,7 @@ public class DadosTeste {
                 servicoTurma.incluir(new Turma((Disciplina) servicoDisciplina.getLista().get(i%3),
                                                 (Professor) servicoProfessor.getLista().get(i%3),
                                                 (Sala) servicoSala.getLista().get(i%3),
-                                        "SQ12",i +"/2025"));
+                                        "SQ"+i,(i%2+1)+"/2025",100));
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
@@ -122,7 +122,7 @@ public class DadosTeste {
         this.geraSalas(10);
         this.geraDisciplinas(20);
         this.geraProfessores(50);
-        this.geraTurmas(40);
+        this.geraTurmas(1);
         this.geraAlunos(100);
     }
 

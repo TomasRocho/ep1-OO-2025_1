@@ -42,16 +42,26 @@ public class Aluno extends Pessoa{
         this.setCurso(curso);
         this.setEspecial(especial);
     }
-    public String toString() {
-        return super.toString() + ";"  + curso.getId() + ";" + especial;
-    }
-    public void emitirBoletim(){
-        for (AlunoMatriculado matricula:this.getListaMatriculas()){
-            System.out.println("----------");
-            System.out.println(matricula.exibirResultado());
-            System.out.println("----------");
+
+    public boolean disciplinaConcluida(Disciplina disciplina){
+        for (AlunoMatriculado matriculado: this.getListaMatriculas()){
+            if (matriculado.getStatus().equals(StatusAlunoMatriculado.Aprovado) && matriculado.getTurma().getDisciplina().equals(disciplina)){
+                return true;
+            }
         }
+        return false;
     }
+
+    @Override
+    public String toString() {
+        return "Aluno{" + super.toString()+
+                "curso=" + curso +
+                ", especial=" + especial +
+                ", listaMatriculas=" + listaMatriculas +
+                '}';
+    }
+
+
 
     public List<Disciplina> retornarDisciplinasConcluidas(){
         List<Disciplina> listaFinal = new ArrayList<>();
@@ -65,7 +75,7 @@ public class Aluno extends Pessoa{
     public List<Turma> retornarTurmasAtuais(){
         List<Turma> listaFinal = new ArrayList<>();
         for (AlunoMatriculado matricula:this.getListaMatriculas()){
-            if (matricula.getTurma().isAtiva()){
+            if (matricula.getTurma().turmaAtiva()){
                 listaFinal.add(matricula.getTurma());
             }
         }

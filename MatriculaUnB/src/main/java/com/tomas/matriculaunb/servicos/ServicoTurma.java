@@ -84,6 +84,7 @@ public class ServicoTurma extends ClasseServicoBase{
         return null;
     }
 
+    //verifica duplicacao de disciplina,horario e semestre
     public boolean disciplinaDuplicada(Turma turma, boolean alteracao){
         if (this.getLista()==null){
             return false;
@@ -101,6 +102,7 @@ public class ServicoTurma extends ClasseServicoBase{
                         && !obj.getId().equals(turma.getId())));
     }
 
+    //verifica duplicacao de professor, horario e semestre
     public boolean professorDuplicado(Turma turma, boolean alteracao){
         if (this.getLista()==null){
             return false;
@@ -118,6 +120,7 @@ public class ServicoTurma extends ClasseServicoBase{
                         && !obj.getId().equals(turma.getId())));
     }
 
+    //verifica duplicacao de sala, horario e semestre
     public boolean salaDuplicada(Turma turma, boolean alteracao){
         if (this.getLista()==null){
             return false;

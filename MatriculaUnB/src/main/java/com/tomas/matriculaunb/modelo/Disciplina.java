@@ -39,6 +39,7 @@ public class Disciplina extends ClasseBase{
         return cargaHoraria;
     }
 
+
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
@@ -50,8 +51,15 @@ public class Disciplina extends ClasseBase{
         this.setCodigo(codigo);
         this.setCargaHoraria(cargaHoraria);
     }
-    public String toString(){
-        return super.toString()+ ";" + titulo+";"+codigo+ ";" + cargaHoraria;
+
+    @Override
+    public String toString() {
+        return "Disciplina{" + super.toString()+
+                "titulo='" + titulo + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", cargaHoraria=" + cargaHoraria +
+                ", listaPreRequisitos=" + listaPreRequisitos +
+                '}';
     }
 
     public boolean incluirPreRequisito(Disciplina disciplina){
