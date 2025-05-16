@@ -63,7 +63,7 @@ public abstract class ClasseServicoBase {
         if (this.podeAlterar(objAlterado)){
             ClasseBase objOriginal;
             try {
-                objOriginal = retornar(objAlterado.getId());
+                objOriginal = buscarObjeto(objAlterado.getId());
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -73,7 +73,7 @@ public abstract class ClasseServicoBase {
 
     }
 
-    public ClasseBase retornar(UUID id) throws Exception{
+    public ClasseBase buscarObjeto(UUID id) throws Exception{
         /*
         for (Curso curso:lista){
             if (curso.getId() == id){

@@ -1,6 +1,6 @@
 package com.tomas.matriculaunb.modelo.enumerations;
 
-public enum StatusAlunoMatriculado {
+public enum EnumStatusAlunoMatriculado {
     Trancado,
     EmCurso,
     AlunoEspecial,

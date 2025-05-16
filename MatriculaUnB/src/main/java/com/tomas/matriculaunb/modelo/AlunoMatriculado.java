@@ -1,7 +1,7 @@
 package com.tomas.matriculaunb.modelo;
 
 
-import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
+import com.tomas.matriculaunb.modelo.enumerations.EnumStatusAlunoMatriculado;
 
 import java.util.UUID;
 
@@ -169,25 +169,25 @@ public class AlunoMatriculado extends ClasseBase{
         }
         return (float) this.getFaltas() / numeroDeAulas * 100;
     }
-    public StatusAlunoMatriculado getStatus(){
+    public EnumStatusAlunoMatriculado retornarStatus(){
         if (this.isTrancado()){
-            return StatusAlunoMatriculado.Trancado;
+            return EnumStatusAlunoMatriculado.Trancado;
         }
         if (this.getTurma().turmaAtiva()){
-            return StatusAlunoMatriculado.EmCurso;
+            return EnumStatusAlunoMatriculado.EmCurso;
         }
         if (this.getAluno().isEspecial()){
-            return StatusAlunoMatriculado.AlunoEspecial;
+            return EnumStatusAlunoMatriculado.AlunoEspecial;
         }
         float nota = this.calcularMediaFinal();
         float pctFaltas = this.calcularPercentualFaltas();
         if (pctFaltas > 25){
-            return StatusAlunoMatriculado.ReprovadoPorFalta;
+            return EnumStatusAlunoMatriculado.ReprovadoPorFalta;
         }
         else if (nota < 5){
-            return StatusAlunoMatriculado.ReprovadoPorNota;
+            return EnumStatusAlunoMatriculado.ReprovadoPorNota;
         }
-        return StatusAlunoMatriculado.Aprovado;
+        return EnumStatusAlunoMatriculado.Aprovado;
     }
     public String exibirResultado(){
         String resultado = "";
@@ -200,7 +200,7 @@ public class AlunoMatriculado extends ClasseBase{
                 +", Nota do seminário: "+ this.getNotaS()+"\n";
         resultado += "Percentual de faltas: "+ calcularPercentualFaltas()+"\n";
         resultado += "Nota final: " + calcularMediaFinal()+"\n";
-        resultado += "Resultado final: "+ this.getStatus();
+        resultado += "Resultado final: "+ this.retornarStatus();
         return resultado;
     }
 

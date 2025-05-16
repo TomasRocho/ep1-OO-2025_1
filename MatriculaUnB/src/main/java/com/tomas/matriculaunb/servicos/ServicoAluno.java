@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.Aluno;
 import com.tomas.matriculaunb.modelo.AlunoMatriculado;
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
+import com.tomas.matriculaunb.modelo.enumerations.EnumStatusAlunoMatriculado;
 
 import java.util.List;
 import java.util.UUID;
@@ -106,7 +106,7 @@ public class ServicoAluno extends ClasseServicoBase{
         ServicoAlunoMatriculado servicoAlunoMatriculado = ServicoAlunoMatriculado.getInstance();
         List<AlunoMatriculado> listaMatriculasSemestre = servicoAlunoMatriculado.getListaMatriculasPorAluno(aluno.getId(),semestreAno);
         for (AlunoMatriculado matricula:listaMatriculasSemestre){
-            if (matricula.getStatus().equals(StatusAlunoMatriculado.EmCurso)){
+            if (matricula.retornarStatus().equals(EnumStatusAlunoMatriculado.EmCurso)){
                 matricula.setTrancado(true);
             }
         }

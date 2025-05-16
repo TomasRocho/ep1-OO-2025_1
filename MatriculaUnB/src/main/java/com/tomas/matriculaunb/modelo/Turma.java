@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.UUID;
 
 public class Turma extends ClasseBase{
+    private String codigo;
     private Disciplina disciplina;
     private Professor professor;
     private Sala sala;
@@ -15,6 +16,14 @@ public class Turma extends ClasseBase{
     private String semestreAno;
     private boolean presencial;
     private int qtdMaxAlunos;
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
 
     public int getQtdMaxAlunos() {
         return qtdMaxAlunos;
@@ -88,9 +97,10 @@ public class Turma extends ClasseBase{
 
 
     public Turma(){super();}
-    public Turma(Disciplina disciplina, Professor professor, Sala sala,
+    public Turma(String codigo,Disciplina disciplina, Professor professor, Sala sala,
                  String horario,String semestreAno, int qtdMaxAlunos){
         this.setId(UUID.randomUUID());
+        this.setCodigo(codigo);
         this.setDisciplina(disciplina);
         this.setProfessor(professor);
         this.setSala(sala);
@@ -108,6 +118,7 @@ public class Turma extends ClasseBase{
     @Override
     public String toString() {
         return "Turma{" + super.toString() +
+                "codigo=" + codigo +
                 "disciplina=" + disciplina +
                 ", professor=" + professor +
                 ", sala=" + sala +
@@ -122,6 +133,9 @@ public class Turma extends ClasseBase{
     @Override
     public void validar()throws Exception{
         super.validar();
+        if (this.getCodigo()==null || this.getCodigo().isBlank()){
+            throw new Exception("Turma inválida - código não preenchido");
+        }
         if (this.getQtdMaxAlunos() < 0){
             throw new Exception("Turma inválida - número máximo de alunos inválido");
         }

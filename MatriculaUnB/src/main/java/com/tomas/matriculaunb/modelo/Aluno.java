@@ -1,6 +1,6 @@
 package com.tomas.matriculaunb.modelo;
 
-import com.tomas.matriculaunb.modelo.enumerations.StatusAlunoMatriculado;
+import com.tomas.matriculaunb.modelo.enumerations.EnumStatusAlunoMatriculado;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Aluno extends Pessoa{
     private boolean especial;
     private List<AlunoMatriculado> listaMatriculas;
 
-    public List<AlunoMatriculado> getListaMatriculas() {
+    public List<AlunoMatriculado> retornarListaMatriculas() {
         return listaMatriculas;
     }
 
@@ -44,8 +44,8 @@ public class Aluno extends Pessoa{
     }
 
     public boolean disciplinaConcluida(Disciplina disciplina){
-        for (AlunoMatriculado matriculado: this.getListaMatriculas()){
-            if (matriculado.getStatus().equals(StatusAlunoMatriculado.Aprovado) && matriculado.getTurma().getDisciplina().equals(disciplina)){
+        for (AlunoMatriculado matriculado: this.retornarListaMatriculas()){
+            if (matriculado.retornarStatus().equals(EnumStatusAlunoMatriculado.Aprovado) && matriculado.getTurma().getDisciplina().equals(disciplina)){
                 return true;
             }
         }
@@ -57,7 +57,6 @@ public class Aluno extends Pessoa{
         return "Aluno{" + super.toString()+
                 "curso=" + curso +
                 ", especial=" + especial +
-                ", listaMatriculas=" + listaMatriculas +
                 '}';
     }
 
@@ -65,8 +64,8 @@ public class Aluno extends Pessoa{
 
     public List<Disciplina> retornarDisciplinasConcluidas(){
         List<Disciplina> listaFinal = new ArrayList<>();
-        for (AlunoMatriculado obj:this.getListaMatriculas()){
-            if (obj.getStatus() == StatusAlunoMatriculado.Aprovado){
+        for (AlunoMatriculado obj:this.retornarListaMatriculas()){
+            if (obj.retornarStatus() == EnumStatusAlunoMatriculado.Aprovado){
                 listaFinal.add(obj.getTurma().getDisciplina());
             }
         }
@@ -74,7 +73,7 @@ public class Aluno extends Pessoa{
     }
     public List<Turma> retornarTurmasAtuais(){
         List<Turma> listaFinal = new ArrayList<>();
-        for (AlunoMatriculado matricula:this.getListaMatriculas()){
+        for (AlunoMatriculado matricula:this.retornarListaMatriculas()){
             if (matricula.getTurma().turmaAtiva()){
                 listaFinal.add(matricula.getTurma());
             }

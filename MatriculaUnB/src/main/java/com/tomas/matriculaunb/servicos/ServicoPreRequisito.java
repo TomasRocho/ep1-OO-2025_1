@@ -72,7 +72,7 @@ public class ServicoPreRequisito extends ClasseServicoBase{
             if (((PreRequisito)preRequisito).getIdDisciplina().equals(idDisciplina)){
                 Disciplina disciplinaPreRequisito;
                 try {
-                    disciplinaPreRequisito = (Disciplina) servicoDisciplina.retornar(((PreRequisito) preRequisito).getIdDisciplinaPreRequisito());
+                    disciplinaPreRequisito = (Disciplina) servicoDisciplina.buscarObjeto(((PreRequisito) preRequisito).getIdDisciplinaPreRequisito());
                     listaFinal.add(disciplinaPreRequisito);
                 } catch (Exception e) {
                     throw new RuntimeException(e);

@@ -1,18 +1,18 @@
 package com.tomas.matriculaunb.modelo;
 
-import com.tomas.matriculaunb.modelo.enumerations.Campus;
+import com.tomas.matriculaunb.modelo.enumerations.EnumCampus;
 
 import java.util.UUID;
 
 public class Sala extends ClasseBase{
     private String local;
-    private Campus campus;
+    private EnumCampus campus;
 
-    public Campus getCampus() {
+    public EnumCampus getCampus() {
         return campus;
     }
 
-    public void setCampus(Campus campus) {
+    public void setCampus(EnumCampus campus) {
         this.campus = campus;
     }
 
@@ -24,7 +24,7 @@ public class Sala extends ClasseBase{
         this.local = local;
     }
     public Sala(){}
-    public Sala(String local,Campus campus){
+    public Sala(String local, EnumCampus campus){
         this.setId(UUID.randomUUID());
         this.setLocal(local);
         this.setCampus(campus);

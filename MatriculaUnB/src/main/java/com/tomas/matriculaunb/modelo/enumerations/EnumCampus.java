@@ -1,6 +1,6 @@
 package com.tomas.matriculaunb.modelo.enumerations;
 
-public enum Campus {
+public enum EnumCampus {
     Gama,
     Asa_Norte,
     Ceilandia
