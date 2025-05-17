@@ -10,11 +10,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StarterApplication extends Application {
+
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        //FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("telaPrincipal.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1100, 600);
+        stage.setTitle("Sistema UNB");
         stage.setScene(scene);
         stage.show();
     }
@@ -75,17 +78,17 @@ public class StarterApplication extends Application {
             System.out.println("Erro ao carregar o arquivo de sala");
         }
 
-        DadosTeste dadosTeste=new DadosTeste();
-        dadosTeste.geraTudo();
-
-        servicoCurso.exibirLista();
-        servicoProfessor.exibirLista();
-        servicoTurma.exibirLista();
-        servicoPreRequisito.exibirLista();
-        servicoAlunoMatriculado.exibirLista();
-        servicoAluno.exibirLista();
-        servicoDisciplina.exibirLista();
-        servicoSala.exibirLista();
+        //DadosTeste dadosTeste=new DadosTeste();
+        //dadosTeste.geraTudo();
+//
+//        servicoCurso.exibirLista();
+//        servicoProfessor.exibirLista();
+//        servicoTurma.exibirLista();
+//        servicoPreRequisito.exibirLista();
+//        servicoAlunoMatriculado.exibirLista();
+//        servicoAluno.exibirLista();
+//        servicoDisciplina.exibirLista();
+//        servicoSala.exibirLista();
 
 
 

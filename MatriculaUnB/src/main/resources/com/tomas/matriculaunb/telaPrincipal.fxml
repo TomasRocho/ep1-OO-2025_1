@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:controller="com.tomas.matriculaunb.controllersJavaFX.TelaPrincipalController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="866.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" prefHeight="159.0" prefWidth="218.0" style="-fx-background-color: LIGHTGRAY;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="PROJETO OO">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutY="159.0" prefHeight="410.0" prefWidth="216.0" style="-fx-background-color: GRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="158.0">
+            <children>
+                <Button fx:id="btnAluno"  onAction="#onBtnAlunoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Aluno" />
+                <Button fx:id="btnCurso"  onAction="#onBtnCursoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Curso" />
+                <Button fx:id="btnDisciplina"  onAction="#onBtnDisciplinaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Disciplina" />
+                <Button fx:id="btnProfessor"  onAction="#onBtnProfessorClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Professor" />
+                <Button fx:id="btnSala"  onAction="#onBtnSalaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sala" />
+                <Button fx:id="btnTurma"  onAction="#onBtnTurmaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Turma" />
+                <Button fx:id="btnAvaliacao"  onAction="#onBtnAvaliacaoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Avaliação" />
+                <Button fx:id="btnPresenca"  onAction="#onBtnPresencaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Presença" />
+                <Button fx:id="btnRelatorios"  onAction="#onBtnRelatoriosClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Relatórios" />
+                <Button fx:id="btnSair"  onAction="#onBtnSairClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sair" />
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="216.0" prefHeight="159.0" prefWidth="650.0" style="-fx-background-color: GRAY;" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lblNomeModo" text="NOME DO MODO">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <Label fx:id="lblNomeTela" text="NOME DA TELA">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <AnchorPane fx:id="telaCarregada" layoutX="216.0" prefHeight="417.0" prefWidth="650.0" style="-fx-background-color: LIGHTGRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="158.0">
+            <children>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

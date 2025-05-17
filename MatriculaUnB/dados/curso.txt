@@ -20,12 +20,6 @@
   "id" : "622227e8-77b9-4e26-a619-5d7c3037b94a",
   "titulo" : "Curso-7"
 }, {
-  "id" : "0aa2a605-ea97-4c86-9310-b1f9eef1ca19",
-  "titulo" : "Curso-8"
-}, {
-  "id" : "0cb64ec9-a9af-42ac-a704-e20ee3eb1d08",
+  "id" : "620964b7-1555-48ce-8c32-f9ef5df5b92d",
   "titulo" : "Curso-9"
-}, {
-  "id" : "1ad61051-2051-434c-bf15-d1caa43cbf6e",
-  "titulo" : "Curso-10"
 } ]

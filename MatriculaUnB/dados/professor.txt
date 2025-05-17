@@ -11,10 +11,6 @@
   "matricula" : "3",
   "nome" : "Professor-3"
 }, {
-  "id" : "fb47e996-eb6e-4be7-be74-c17b4295cf2f",
-  "matricula" : "4",
-  "nome" : "Professor-4"
-}, {
   "id" : "948d8e16-faa5-4e06-b6d9-c773af5482a0",
   "matricula" : "5",
   "nome" : "Professor-5"
@@ -98,10 +94,6 @@
   "id" : "8eec74ec-3c9a-4db5-98af-623ed8d20e8e",
   "matricula" : "25",
   "nome" : "Professor-25"
-}, {
-  "id" : "1ea616c7-07a4-44ad-8c3c-47655128d799",
-  "matricula" : "26",
-  "nome" : "Professor-26"
 }, {
   "id" : "22210150-8ea8-40b2-9569-20bbeb567643",
   "matricula" : "27",

@@ -1,5 +1,7 @@
 package com.tomas.matriculaunb.util;
 
+import javafx.scene.control.Alert;
+
 import java.time.LocalDate;
 
 public class Util {
@@ -26,5 +28,13 @@ public class Util {
         }
 
         return true;
+    }
+
+    public static Alert getAlert(Alert.AlertType alertType, String titulo, String header, String texto){
+        Alert alert = new Alert(alertType);
+        alert.setTitle(titulo);
+        alert.setHeaderText(header);
+        alert.setContentText(texto);
+        return alert;
     }
 }
