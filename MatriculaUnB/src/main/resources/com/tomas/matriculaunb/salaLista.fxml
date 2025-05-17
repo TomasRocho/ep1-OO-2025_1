@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:controller="com.tomas.matriculaunb.controllersJavaFX.SalaListaController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: LIGHTGRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutY="7.0" prefHeight="58.0" prefWidth="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Pesquisar:">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="txtProcura" onKeyTyped="#onTxtProcuraChange">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button fx:id="btnNovo" onAction="#onBtnNovoClick" mnemonicParsing="false" text="Novo">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnAltera" onAction="#onBtnAlteraClick" mnemonicParsing="false" text="Alterar">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnExcluir" onAction="#onBtnExcluirClick" mnemonicParsing="false" text="Excluir">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <TableView fx:id="tabela" layoutX="74.0" layoutY="67.2" prefHeight="350.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+        </TableView>
+    </children>
+</AnchorPane>

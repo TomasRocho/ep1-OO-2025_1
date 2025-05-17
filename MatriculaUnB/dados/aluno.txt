@@ -251,15 +251,6 @@
   },
   "especial" : false
 }, {
-  "id" : "7d73ddd5-4f89-4a16-b114-44e6efd4aa34",
-  "matricula" : "29",
-  "nome" : "Aluno-29",
-  "curso" : {
-    "id" : "71ca2218-3157-4679-b773-2346ccd3fbf2",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
   "id" : "918939bc-3bf4-4c1d-9f3f-ff53e344013b",
   "matricula" : "30",
   "nome" : "Aluno-30",

@@ -27,10 +27,6 @@
   "local" : "Sala-7",
   "campus" : "Gama"
 }, {
-  "id" : "f3b95d9b-7708-48bd-99ac-2bf1cb525b62",
-  "local" : "Sala-8",
-  "campus" : "Gama"
-}, {
   "id" : "f1b521b2-65fd-4fe7-bcc6-a3fb14fbad25",
   "local" : "Sala-9",
   "campus" : "Gama"

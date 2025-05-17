@@ -33,8 +33,8 @@ public class CursoListaController {
 
         carregaListasTableView();
 
-        TableColumn<Curso, String> tituloColumn = new TableColumn<>("titulo");
-        tituloColumn.setPrefWidth(300);
+        TableColumn<Curso, String> tituloColumn = new TableColumn<>("Título");
+        tituloColumn.setPrefWidth(400);
         tituloColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getTitulo()));
         tabela.getColumns().addAll( tituloColumn);
         tabela.setItems(listaFiltrada);

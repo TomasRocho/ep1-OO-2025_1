@@ -30,11 +30,11 @@ public class ProfessorListaController {
 
         carregaListasTableView();
 
-        TableColumn<Professor, String> matriculaColumn = new TableColumn<>("matricula");
-        matriculaColumn.setPrefWidth(300);
+        TableColumn<Professor, String> matriculaColumn = new TableColumn<>("Matrícula");
+        matriculaColumn.setPrefWidth(80);
         matriculaColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getMatricula()));
-        TableColumn<Professor, String> nomeColumn = new TableColumn<>("nome");
-        nomeColumn.setPrefWidth(300);
+        TableColumn<Professor, String> nomeColumn = new TableColumn<>("Nome");
+        nomeColumn.setPrefWidth(500);
         nomeColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNome()));
         tabela.getColumns().addAll( matriculaColumn,nomeColumn);
         tabela.setItems(listaFiltrada);

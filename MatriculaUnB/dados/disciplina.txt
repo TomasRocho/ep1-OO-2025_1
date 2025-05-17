@@ -71,12 +71,6 @@
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "13ceb6d9-30b0-4c98-a7e5-ad291864daa1",
-  "titulo" : "Disciplina-13",
-  "codigo" : "13",
-  "cargaHoraria" : 60,
-  "listaPreRequisitos" : null
-}, {
   "id" : "7d1c24ac-f507-4bd2-a80e-7f2e0d77e83a",
   "titulo" : "Disciplina-14",
   "codigo" : "14",
