@@ -3,6 +3,7 @@ package com.tomas.matriculaunb.controllersJavaFX;
 import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Professor;
+import com.tomas.matriculaunb.modelo.Turma;
 import com.tomas.matriculaunb.servicos.ServicoCurso;
 import com.tomas.matriculaunb.servicos.ServicoProfessor;
 import com.tomas.matriculaunb.util.Util;
@@ -16,6 +17,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -28,6 +30,7 @@ public class CursoListaController {
     private FilteredList<Curso> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    public TextField teste;
 
     public void initialize(){
 
@@ -97,5 +100,6 @@ public class CursoListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+
     }
 }

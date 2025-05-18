@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="500.0">
+    <header>
+        <AnchorPane minWidth="0" minHeight="0" prefHeight="340" prefWidth="500">
+            <children>
+                <Label layoutX="31" layoutY="26" text="Procurar:"/>
+                <TextField fx:id="txtProcura" onKeyTyped="#onTxtProcuraChange" layoutX="91" layoutY="22"/>
+                <TableView fx:id="tabela" layoutX="31" layoutY="56" prefHeight="300" prefWidth="450">
+                    <columns>
+
+                    </columns>
+
+                </TableView>
+            </children>
+
+        </AnchorPane>
+
+    </header>
+    <buttonTypes>
+        <ButtonType fx:constant="OK"/>
+        <ButtonType fx:constant="CANCEL"/>
+    </buttonTypes>
+
+</DialogPane>

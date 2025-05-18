@@ -16,8 +16,8 @@ public class StarterApplication extends Application {
     public void start(Stage stage) throws IOException {
         //FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("hello-view.fxml"));
         FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("telaPrincipal.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1100, 600);
-        stage.setTitle("Sistema UNB");
+        Scene scene = new Scene(fxmlLoader.load(), 1200, 600);
+        stage.setTitle("Sistema UnB");
         stage.setScene(scene);
         stage.show();
     }

@@ -1979,51 +1979,6 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "42796b2d-fa0d-4f6b-93d6-419808974541",
-  "turma" : {
-    "id" : "0f38ab83-bedf-4743-9242-51fac5d18880",
-    "codigo" : "T2",
-    "disciplina" : {
-      "id" : "9154878e-2c14-48fb-acb0-657ab647d36a",
-      "titulo" : "Disciplina-3",
-      "codigo" : "3",
-      "cargaHoraria" : 60,
-      "listaPreRequisitos" : null
-    },
-    "professor" : {
-      "id" : "8b3b8657-256c-4926-844c-6da0685057eb",
-      "matricula" : "3",
-      "nome" : "Professor-3"
-    },
-    "sala" : {
-      "id" : "dc4ec127-71a6-4d89-b98c-b5f136278565",
-      "local" : "Sala-3",
-      "campus" : "Gama"
-    },
-    "horario" : "SQ2",
-    "avaliacaoMediaAritmetica" : true,
-    "semestreAno" : "1/2025",
-    "presencial" : true,
-    "qtdMaxAlunos" : 100
-  },
-  "aluno" : {
-    "id" : "a910415b-1175-400b-9d36-8cbe357f2778",
-    "matricula" : "1",
-    "nome" : "Aluno-1",
-    "curso" : {
-      "id" : "766c6240-d2ad-47ce-8860-21de96e81fd7",
-      "titulo" : "Curso-2"
-    },
-    "especial" : false
-  },
-  "notaP1" : 0.0,
-  "notaP2" : 0.0,
-  "notaP3" : 0.0,
-  "notaL" : 0.0,
-  "notaS" : 0.0,
-  "faltas" : 0,
-  "trancado" : false
-}, {
   "id" : "06179acb-2ca5-4327-acc3-adb5166395a6",
   "turma" : {
     "id" : "89791b86-72fe-440d-b731-dbb09b4217ba",

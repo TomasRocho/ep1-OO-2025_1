@@ -91,6 +91,11 @@ public class TelaPrincipalController {
         });
     }
 
-    public void onBtnAvaliacaoPresencaClick(ActionEvent actionEvent) {
+    public void onBtnAvaliacaoPresencaClick(ActionEvent actionEvent) throws IOException {
+        lblNomeTela.setText("Avaliação/Presença");
+        AnchorPane anchorPane;
+        FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("avaliacaoFrequenciaLista.fxml"));
+        anchorPane=fxmlLoader.load();
+        telaCarregada.getChildren().setAll(anchorPane);
     }
 }

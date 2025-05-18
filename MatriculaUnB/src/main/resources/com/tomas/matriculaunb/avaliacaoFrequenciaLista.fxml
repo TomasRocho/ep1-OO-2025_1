@@ -4,20 +4,21 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<AnchorPane fx:controller="com.tomas.matriculaunb.controllersJavaFX.AlunoListaController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: LIGHTGRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="com.tomas.matriculaunb.controllersJavaFX.AvaliacaoFrequenciaListaController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: LIGHTGRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <HBox alignment="CENTER_LEFT" layoutY="7.0" prefHeight="58.0" prefWidth="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <Label text="Pesquisar:">
+                <Button fx:id="btnSelecionaTurma" onAction="#onBtnSelecionaTurma"  mnemonicParsing="false" text="Turma">
                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="10.0" left="10.0" right="1.0" top="10.0" />
                     </HBox.margin>
-                </Label>
-                <TextField fx:id="txtProcura" onKeyTyped="#onTxtProcuraChange">
+                </Button>
+                <TextField fx:id="txtProcura" editable="false" prefWidth="250">
                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="10.0" left="1.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </TextField>
+
                 <Button fx:id="btnNovo" onAction="#onBtnNovoClick" mnemonicParsing="false" text="Novo">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
