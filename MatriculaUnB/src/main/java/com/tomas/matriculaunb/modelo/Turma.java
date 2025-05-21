@@ -98,7 +98,7 @@ public class Turma extends ClasseBase{
 
     public Turma(){super();}
     public Turma(String codigo,Disciplina disciplina, Professor professor, Sala sala,
-                 String horario,String semestreAno, int qtdMaxAlunos){
+                 String horario,String semestreAno, int qtdMaxAlunos, boolean presencial, boolean mediaAritmetica){
         this.setId(UUID.randomUUID());
         this.setCodigo(codigo);
         this.setDisciplina(disciplina);
@@ -106,8 +106,8 @@ public class Turma extends ClasseBase{
         this.setSala(sala);
         this.setHorario(horario);
         this.setSemestreAno(semestreAno);
-        this.setPresencial(true);
-        this.setAvaliacaoMediaAritmetica(true);
+        this.setPresencial(presencial);
+        this.setAvaliacaoMediaAritmetica(mediaAritmetica);
         this.setQtdMaxAlunos(qtdMaxAlunos);
 
 

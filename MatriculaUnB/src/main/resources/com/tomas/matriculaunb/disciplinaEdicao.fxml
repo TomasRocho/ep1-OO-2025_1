@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="432.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <header>
+    </header>
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="480.0">
+            <children>
+                <GridPane layoutX="14.0" layoutY="14.0" prefHeight="316.0" prefWidth="432.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="250" minWidth="10.0" prefWidth="180" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="380.0" minWidth="10.0" prefWidth="351.20001220703125" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="40" minHeight="10.0" prefHeight="20" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40" minHeight="10.0" prefHeight="20" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40" minHeight="10.0" prefHeight="20" vgrow="SOMETIMES" />
+
+                    </rowConstraints>
+                    <children>
+                        <Label  text="Título" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="txtTitulo" GridPane.rowIndex="0" GridPane.columnIndex="1"  maxWidth="100">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <Label  text="Código" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="txtCodigo"  GridPane.rowIndex="1" GridPane.columnIndex="1">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <Label  text="Carga Horária" GridPane.rowIndex="2" GridPane.columnIndex="0">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="txtCargaHoraria"  GridPane.rowIndex="2" GridPane.columnIndex="1">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+
+
+                    </children>
+                </GridPane>
+            </children></AnchorPane>
+
+    </content>
+    <buttonTypes>
+        <ButtonType   fx:constant="OK" />
+        <ButtonType  fx:constant="CANCEL" />
+    </buttonTypes>
+</DialogPane>

@@ -43,13 +43,4 @@ public class Curso extends ClasseBase  {
     }
 
 
-    /* exemplo de um construtor com mesmo numero de parametros mas tipos diferentes
-    public Curso(UUID id,int titulo) {
-        super(id);
-        this.titulo = String.valueOf(titulo);
-    }
-
-     */
-
-
 }

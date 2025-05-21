@@ -1,9 +1,6 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
-import com.tomas.matriculaunb.modelo.Disciplina;
-import com.tomas.matriculaunb.modelo.Turma;
+import com.tomas.matriculaunb.modelo.*;
 import com.tomas.matriculaunb.servicos.ServicoDisciplina;
 import com.tomas.matriculaunb.servicos.ServicoTurma;
 import com.tomas.matriculaunb.util.Util;
@@ -27,6 +24,16 @@ public class TurmaListaController {
     private FilteredList<Turma> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    public Button btnAltera;
+    private Turma turmaEditada;
+
+    public Turma getTurmaEditada() {
+        return turmaEditada;
+    }
+
+    public void setTurmaEditada(Turma turmaEditada) {
+        this.turmaEditada = turmaEditada;
+    }
 
     public void initialize(){
 
@@ -63,14 +70,14 @@ public class TurmaListaController {
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
             TableRow<Curso> row = new TableRow<>();
-            /*
+
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     btnAltera.fire();
                 }
             });
 
-             */
+
             return row ;
         });
     }
@@ -93,6 +100,26 @@ public class TurmaListaController {
     }
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
+        Turma turma = (Turma) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (turma != null){
+            TurmaEdicaoController controllerEdicao=new TurmaEdicaoController();
+            controllerEdicao.setTurma(turma);
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getTurma()!=null){
+                this.setTurmaEditada(controllerEdicao.getTurma());
+                try {
+                    servicoTurma.alterar(this.getTurmaEditada());
+                    servicoTurma.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    tabela.refresh();
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Turma","Turma Salva","Turma Salva com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Turma","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
@@ -122,5 +149,24 @@ public class TurmaListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+
+        TurmaEdicaoController controllerEdicao=new TurmaEdicaoController();
+        controllerEdicao.setTurma(null);
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getTurma()!=null){
+            this.setTurmaEditada(controllerEdicao.getTurma());
+            try {
+                servicoTurma.incluir(this.getTurmaEditada());
+                servicoTurma.salvarArquivo();
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Turma","Turma Salva","Turma Salva com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Turma","Erro ao Salvar",e.getMessage()).showAndWait();
+            }
+        }
+
     }
 }

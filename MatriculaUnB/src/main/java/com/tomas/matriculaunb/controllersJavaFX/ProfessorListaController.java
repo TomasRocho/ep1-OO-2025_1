@@ -25,6 +25,16 @@ public class ProfessorListaController {
     private FilteredList<Professor> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    private Professor professorEditado;
+    public Button btnAltera;
+
+    public Professor getProfessorEditado() {
+        return professorEditado;
+    }
+
+    public void setProfessorEditado(Professor professorEditado) {
+        this.professorEditado = professorEditado;
+    }
 
     public void initialize(){
 
@@ -40,14 +50,14 @@ public class ProfessorListaController {
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
             TableRow<Professor> row = new TableRow<>();
-            /*
+
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     btnAltera.fire();
                 }
             });
 
-             */
+
             return row ;
         });
     }
@@ -68,8 +78,7 @@ public class ProfessorListaController {
         });
     }
 
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
-    }
+
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         Professor professor = (Professor) this.tabela.getSelectionModel().selectedItemProperty().get();
@@ -98,5 +107,47 @@ public class ProfessorListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+        ProfessorEdicaoController controllerEdicao=new ProfessorEdicaoController();
+        controllerEdicao.setProfessor(null);
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getProfessor()!=null){
+            this.setProfessorEditado(controllerEdicao.getProfessor());
+            try {
+                servicoProfessor.incluir(this.getProfessorEditado());
+                servicoProfessor.salvarArquivo();
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Professor","Professor Salvo","Professor Salvo com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Professor","Erro ao Salvar",e.getMessage()).showAndWait();
+            }
+        }
+    }
+    public void onBtnAlteraClick(ActionEvent actionEvent) {
+        Professor professor = (Professor) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (professor != null){
+            ProfessorEdicaoController controllerEdicao=new ProfessorEdicaoController();
+            try {
+                controllerEdicao.setProfessor((Professor) professor.clone());
+            } catch (CloneNotSupportedException e) {
+                throw new RuntimeException(e);
+            }
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getProfessor()!=null){
+                this.setProfessorEditado(controllerEdicao.getProfessor());
+                try {
+                    servicoProfessor.alterar(this.getProfessorEditado());
+                    servicoProfessor.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    tabela.refresh();
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Professor","Professor Salvo","Professor Salvo com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Professor","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
     }
 }

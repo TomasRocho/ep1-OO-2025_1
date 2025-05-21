@@ -26,6 +26,16 @@ public class SalaListaController {
     private FilteredList<Sala> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    public Button btnAltera;
+    private Sala salaEditada;
+
+    public Sala getSalaEditada() {
+        return salaEditada;
+    }
+
+    public void setSalaEditada(Sala salaEditada) {
+        this.salaEditada = salaEditada;
+    }
 
     public void initialize(){
 
@@ -40,15 +50,15 @@ public class SalaListaController {
         tabela.getColumns().addAll( localColumn,campusColumn);
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
-            TableRow<Curso> row = new TableRow<>();
-            /*
+            TableRow<Sala> row = new TableRow<>();
+
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     btnAltera.fire();
                 }
             });
 
-             */
+
             return row ;
         });
     }
@@ -70,6 +80,27 @@ public class SalaListaController {
     }
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
+        Sala sala = (Sala) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (sala != null){
+            SalaEdicaoController controllerEdicao=new SalaEdicaoController();
+            controllerEdicao.setSala(sala);
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getSala()!=null){
+                this.setSalaEditada(controllerEdicao.getSala());
+                try {
+                    servicoSala.alterar(this.getSalaEditada());
+                    servicoSala.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    tabela.refresh();
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Sala","Sala Salva","Sala Salva com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Sala","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
+
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
@@ -99,5 +130,21 @@ public class SalaListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+        SalaEdicaoController controllerEdicao=new SalaEdicaoController();
+        controllerEdicao.setSala(null);
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getSala()!=null){
+            this.setSalaEditada(controllerEdicao.getSala());
+            try {
+                servicoSala.incluir(this.getSalaEditada());
+                servicoSala.salvarArquivo();
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Sala","Sala Salva","Sala Salva com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Sala","Erro ao Salvar",e.getMessage()).showAndWait();
+            }
+        }
     }
 }

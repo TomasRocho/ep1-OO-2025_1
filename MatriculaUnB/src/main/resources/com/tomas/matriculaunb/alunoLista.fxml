@@ -33,11 +33,25 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </Button>
-                <MenuButton text="Outras Opções...">
+                <MenuButton text="Turmas">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
                     <items>
-                        <MenuItem text="opção 1"/>
-                        <MenuItem text="opção 2"/>
-                        <MenuItem text="opção 3"/>
+                        <MenuItem fx:id="mnuMatricular" text="Matricular" onAction="#mnuMatricularClick"/>
+                        <MenuItem fx:id="mnuTurmasAtuais"  text="Turmas Atuais" onAction="#mnuTurmasAtuaisClick"/>
+                        <MenuItem fx:id="mnuTurmasConcluidas"  text="Turmas Concluídas" onAction="#mnuTurmasConcluidasClick"/>
+                        <MenuItem fx:id="mnuTrancarTurma" text="Trancar Turma" onAction="#mnuTrancarTurmaClick"/>
+                        <MenuItem fx:id="mnuTrancarSemestre" text="Trancar Semestre Atual" onAction="#mnuTrancarSemestreClick"/>
+                    </items>
+                </MenuButton>
+                <MenuButton text="Boletim">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                    <items>
+                        <MenuItem fx:id="mnuBoletimCompleto"  text="Completo" onAction="#mnuBoletimCompletoClick"/>
+                        <MenuItem fx:id="mnuBoletimResumido" text="Resumido" onAction="#mnuBoletimResumidoClick"/>
                     </items>
                 </MenuButton>
 

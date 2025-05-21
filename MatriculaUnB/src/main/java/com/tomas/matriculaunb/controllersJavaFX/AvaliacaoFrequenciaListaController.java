@@ -150,4 +150,13 @@ public class AvaliacaoFrequenciaListaController {
             throw new RuntimeException(e);
         }
     }
+
+    public void onBtnNotasClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuIncluirFalta(ActionEvent actionEvent) {
+    }
+
+    public void mnuExcluirFalta(ActionEvent actionEvent) {
+    }
 }

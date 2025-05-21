@@ -1,9 +1,6 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
-import com.tomas.matriculaunb.modelo.Professor;
-import com.tomas.matriculaunb.modelo.Turma;
+import com.tomas.matriculaunb.modelo.*;
 import com.tomas.matriculaunb.servicos.ServicoCurso;
 import com.tomas.matriculaunb.servicos.ServicoProfessor;
 import com.tomas.matriculaunb.util.Util;
@@ -30,7 +27,16 @@ public class CursoListaController {
     private FilteredList<Curso> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
-    public TextField teste;
+    private Curso cursoEditado;
+    public Button btnAltera;
+
+    public Curso getCursoEditado() {
+        return cursoEditado;
+    }
+
+    public void setCursoEditado(Curso cursoEditado) {
+        this.cursoEditado = cursoEditado;
+    }
 
     public void initialize(){
 
@@ -43,14 +49,14 @@ public class CursoListaController {
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
             TableRow<Curso> row = new TableRow<>();
-            /*
+
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     btnAltera.fire();
                 }
             });
 
-             */
+
             return row ;
         });
     }
@@ -71,6 +77,30 @@ public class CursoListaController {
     }
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
+        Curso curso = (Curso) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (curso != null){
+            CursoEdicaoController controllerEdicao=new CursoEdicaoController();
+            try {
+                controllerEdicao.setCurso((Curso) curso.clone());
+            } catch (CloneNotSupportedException e) {
+                throw new RuntimeException(e);
+            }
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getCurso()!=null){
+                this.setCursoEditado(controllerEdicao.getCurso());
+                try {
+                    servicoCurso.alterar(this.getCursoEditado());
+                    servicoCurso.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    tabela.refresh();
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Curso","Curso Salvo","Curso Salvo com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Curso","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
@@ -100,6 +130,24 @@ public class CursoListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+
+            CursoEdicaoController controllerEdicao=new CursoEdicaoController();
+            controllerEdicao.setCurso(null);
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getCurso()!=null){
+                this.setCursoEditado(controllerEdicao.getCurso());
+                try {
+                    servicoCurso.incluir(this.getCursoEditado());
+                    servicoCurso.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Curso","Curso Salvo","Curso Salvo com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Curso","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+
 
     }
 }

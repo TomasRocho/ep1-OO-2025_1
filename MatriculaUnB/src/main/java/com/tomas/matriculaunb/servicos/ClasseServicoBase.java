@@ -14,6 +14,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.IntStream;
 
 public abstract class ClasseServicoBase {
     private List<ClasseBase> lista;
@@ -61,27 +62,21 @@ public abstract class ClasseServicoBase {
 
     public void alterar(ClasseBase objAlterado) throws Exception{
         if (this.podeAlterar(objAlterado)){
-            ClasseBase objOriginal;
-            try {
-                objOriginal = buscarObjeto(objAlterado.getId());
-            } catch (Exception e) {
-                throw new RuntimeException(e);
+
+            int index = IntStream.range(0, this.getLista().size())
+                    .filter(i -> this.getLista().get(i).getId().equals(objAlterado.getId()))
+                    .findFirst()
+                    .orElse(-1);
+            if (index!=-1){
+                this.getLista().set(index,objAlterado);
             }
-            excluir(objOriginal);
-            incluir(objAlterado);
+
         }
 
     }
 
     public ClasseBase buscarObjeto(UUID id) throws Exception{
-        /*
-        for (Curso curso:lista){
-            if (curso.getId() == id){
-                return curso;
-            }
-        }
-        return null;
-        */
+
         if (lista==null){
             return null;
         }

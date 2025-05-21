@@ -17,13 +17,14 @@
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Label>
-                <ImageView fx:id="imageView"
-                           fitHeight="100.0"
-                           fitWidth="100.0"
-                           layoutX="100.0"
-                           layoutY="100.0"
-                           pickOnBounds="true"
-                           preserveRatio="true"/>
+                <Label text="Controle de Matrículas">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
             </children>
         </VBox>
         <VBox layoutY="159.0" prefHeight="410.0" prefWidth="216.0" style="-fx-background-color: GRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="158.0">
@@ -36,6 +37,8 @@
                 <Button fx:id="btnTurma"  onAction="#onBtnTurmaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Turma" />
                 <Button fx:id="btnAvaliacaoPresenca"  onAction="#onBtnAvaliacaoPresencaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Avaliação/Presença" />
                 <Button fx:id="btnRelatorios"  onAction="#onBtnRelatoriosClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Relatórios" />
+                <Button fx:id="btnConfiguracao"  onAction="#onBtnConfiguracaoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Configuração" />
+                <Button fx:id="btnSobre"  onAction="#onBtnSobreClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sobre" />
                 <Button fx:id="btnSair"  onAction="#onBtnSairClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sair" />
             </children>
         </VBox>
@@ -45,7 +48,7 @@
                     <font>
                         <Font size="14.0" />
                     </font></Label>
-                <Label fx:id="lblNomeTela" text="NOME DA TELA">
+                <Label fx:id="lblNomeTela" text="Selecione um dos botões ao lado">
                     <font>
                         <Font name="System Bold Italic" size="12.0" />
                     </font>

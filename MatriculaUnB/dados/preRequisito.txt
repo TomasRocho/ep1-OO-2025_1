@@ -1,41 +1,41 @@
 [ {
-  "id" : "50d431d6-a062-4a90-8429-40b07c56b852",
-  "idDisciplina" : "ed043fce-0843-439a-b872-caf74885f826",
-  "idDisciplinaPreRequisito" : "c4e4f8d7-1e6e-4246-8489-c0aefb0df51b"
+  "id" : "167a7475-ff68-41c6-9be2-9b37b7d2126a",
+  "idDisciplina" : "e69e18f1-932f-42a1-945e-146d0735f03f",
+  "idDisciplinaPreRequisito" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1"
 }, {
-  "id" : "6c6e761d-0ff2-428c-a0c6-344ab0126dbe",
-  "idDisciplina" : "ed043fce-0843-439a-b872-caf74885f826",
-  "idDisciplinaPreRequisito" : "29aad3e3-578a-48eb-84a5-7ed76bbb242e"
+  "id" : "304cb58d-f5ba-4ed2-861a-72be4f3f9f7f",
+  "idDisciplina" : "e69e18f1-932f-42a1-945e-146d0735f03f",
+  "idDisciplinaPreRequisito" : "39293dee-5a59-445c-aead-017a28b056b0"
 }, {
-  "id" : "8358c2f7-39aa-46d7-9e50-ec1a17367372",
-  "idDisciplina" : "c4e4f8d7-1e6e-4246-8489-c0aefb0df51b",
-  "idDisciplinaPreRequisito" : "29aad3e3-578a-48eb-84a5-7ed76bbb242e"
+  "id" : "d82e25c9-5394-4b53-b5b9-4b616f9dff49",
+  "idDisciplina" : "63f17e3c-4563-42ca-b16c-65df0f2f2297",
+  "idDisciplinaPreRequisito" : "39293dee-5a59-445c-aead-017a28b056b0"
 }, {
-  "id" : "0c3efdc9-f167-44b2-abfc-9a12b5a7eb49",
-  "idDisciplina" : "c4e4f8d7-1e6e-4246-8489-c0aefb0df51b",
-  "idDisciplinaPreRequisito" : "3377c48a-8b4c-4acf-a7f9-a678c0dc8759"
+  "id" : "3028aad5-84fb-4614-a38f-63831cd5c949",
+  "idDisciplina" : "63f17e3c-4563-42ca-b16c-65df0f2f2297",
+  "idDisciplinaPreRequisito" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee"
 }, {
-  "id" : "e5bb5162-b514-427d-a306-bd3bf5c2d283",
-  "idDisciplina" : "29aad3e3-578a-48eb-84a5-7ed76bbb242e",
-  "idDisciplinaPreRequisito" : "3377c48a-8b4c-4acf-a7f9-a678c0dc8759"
+  "id" : "09b0c6ad-792d-49d1-9b05-7563b6e63a47",
+  "idDisciplina" : "834036b4-01b5-46e5-b4ca-83f676c33600",
+  "idDisciplinaPreRequisito" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee"
 }, {
-  "id" : "68ce7cc4-c843-4bb7-9295-bcb4d486865b",
-  "idDisciplina" : "29aad3e3-578a-48eb-84a5-7ed76bbb242e",
-  "idDisciplinaPreRequisito" : "9c3be5ee-365d-4eb6-86fa-12c03863d265"
+  "id" : "38bd1546-1342-4568-abaa-c65f680b2e26",
+  "idDisciplina" : "834036b4-01b5-46e5-b4ca-83f676c33600",
+  "idDisciplinaPreRequisito" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2"
 }, {
-  "id" : "784bf01e-4ca8-48f8-9722-b39f385ba22d",
-  "idDisciplina" : "3377c48a-8b4c-4acf-a7f9-a678c0dc8759",
-  "idDisciplinaPreRequisito" : "9c3be5ee-365d-4eb6-86fa-12c03863d265"
+  "id" : "d25b22d4-d757-4084-9f5b-09e48ee210f4",
+  "idDisciplina" : "53e01b1d-dd1b-4c2c-a931-12b6fdf9708e",
+  "idDisciplinaPreRequisito" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2"
 }, {
-  "id" : "6ead08c4-58a6-4ecd-9ee3-31507f8ff467",
-  "idDisciplina" : "3377c48a-8b4c-4acf-a7f9-a678c0dc8759",
-  "idDisciplinaPreRequisito" : "c45084fc-0b5f-479f-89df-16e5998a167d"
+  "id" : "0408e154-8020-4ae3-a511-e4907ec56e9b",
+  "idDisciplina" : "53e01b1d-dd1b-4c2c-a931-12b6fdf9708e",
+  "idDisciplinaPreRequisito" : "e7d78b2b-b294-442e-a585-f3b2ab872735"
 }, {
-  "id" : "e16a50d2-244b-4954-bacf-6c3afcf90e6d",
-  "idDisciplina" : "9c3be5ee-365d-4eb6-86fa-12c03863d265",
-  "idDisciplinaPreRequisito" : "c45084fc-0b5f-479f-89df-16e5998a167d"
+  "id" : "c0ec1db2-7954-45b8-83ac-db2995f833dc",
+  "idDisciplina" : "1f770c28-8277-4567-a3fc-7ae486fbbc13",
+  "idDisciplinaPreRequisito" : "e7d78b2b-b294-442e-a585-f3b2ab872735"
 }, {
-  "id" : "8d5540da-f7ec-454a-8410-41f893e9c5a7",
-  "idDisciplina" : "9c3be5ee-365d-4eb6-86fa-12c03863d265",
-  "idDisciplinaPreRequisito" : "13ceb6d9-30b0-4c98-a7e5-ad291864daa1"
+  "id" : "787ef6d2-ddcc-4ba8-a64d-fdf32fc69f02",
+  "idDisciplina" : "1f770c28-8277-4567-a3fc-7ae486fbbc13",
+  "idDisciplinaPreRequisito" : "cadff910-6abd-43c3-add5-84b8d2fca9bb"
 } ]

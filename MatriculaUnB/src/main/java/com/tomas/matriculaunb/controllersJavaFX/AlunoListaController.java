@@ -15,6 +15,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -26,6 +27,16 @@ public class AlunoListaController {
     private FilteredList<Aluno> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    private Aluno alunoEditado;
+    public Button btnAltera;
+
+    public Aluno getAlunoEditado() {
+        return alunoEditado;
+    }
+
+    public void setAlunoEditado(Aluno alunoEditado) {
+        this.alunoEditado = alunoEditado;
+    }
 
     public void initialize(){
 
@@ -46,15 +57,12 @@ public class AlunoListaController {
         tabela.getColumns().addAll( matriculaColumn,nomeColumn,cursoColumn,especialColumn);
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
-            TableRow<Curso> row = new TableRow<>();
-            /*
+            TableRow<Aluno> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     btnAltera.fire();
                 }
             });
-
-             */
             return row ;
         });
     }
@@ -76,6 +84,31 @@ public class AlunoListaController {
     }
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
+        Aluno aluno = (Aluno) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (aluno != null){
+            AlunoEdicaoController controllerEdicao=new AlunoEdicaoController();
+            try {
+                controllerEdicao.setAluno((Aluno) aluno.clone());
+            } catch (CloneNotSupportedException e) {
+                throw new RuntimeException(e);
+            }
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getAluno()!=null){
+                this.setAlunoEditado(controllerEdicao.getAluno());
+                try {
+                    servicoAluno.alterar(this.getAlunoEditado());
+                    servicoAluno.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    tabela.refresh();
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Aluno","Aluno Salvo","Aluno Salvo com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Aluno","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
+
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
@@ -105,5 +138,42 @@ public class AlunoListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+            AlunoEdicaoController controllerEdicao=new AlunoEdicaoController();
+            controllerEdicao.setAluno(null);
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getAluno()!=null){
+                this.setAlunoEditado(controllerEdicao.getAluno());
+                try {
+                    servicoAluno.incluir(this.getAlunoEditado());
+                    servicoAluno.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Aluno","Aluno Salvo","Aluno Salvo com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Aluno","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
+
+    public void mnuMatricularClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuTurmasAtuaisClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuTurmasConcluidasClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuTrancarTurmaClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuTrancarSemestreClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuBoletimCompletoClick(ActionEvent actionEvent) {
+    }
+
+    public void mnuBoletimResumidoClick(ActionEvent actionEvent) {
     }
 }

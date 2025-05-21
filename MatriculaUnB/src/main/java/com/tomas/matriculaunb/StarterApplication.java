@@ -78,8 +78,8 @@ public class StarterApplication extends Application {
             System.out.println("Erro ao carregar o arquivo de sala");
         }
 
-        //DadosTeste dadosTeste=new DadosTeste();
-        //dadosTeste.geraTudo();
+        DadosTeste dadosTeste=new DadosTeste();
+        dadosTeste.geraTudo();
 //
 //        servicoCurso.exibirLista();
 //        servicoProfessor.exibirLista();

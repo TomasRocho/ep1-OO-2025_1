@@ -23,9 +23,12 @@ public class TelaPrincipalController {
     public ImageView imageView;
 
     public void initialize(){
+        /*
         File file = new File("src/Images/7309681.jpg");
         Image image = new Image(file.toURI().toString());
         imageView.setImage(image);
+        
+         */
     }
 
 
@@ -78,7 +81,12 @@ public class TelaPrincipalController {
     }
 
 
-    public void onBtnRelatoriosClick(ActionEvent actionEvent) {
+    public void onBtnRelatoriosClick(ActionEvent actionEvent) throws IOException {
+        lblNomeTela.setText("Relatórios");
+        AnchorPane anchorPane;
+        FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("relatorios.fxml"));
+        anchorPane=fxmlLoader.load();
+        telaCarregada.getChildren().setAll(anchorPane);
     }
 
     public void onBtnSairClick(ActionEvent actionEvent) {
@@ -95,6 +103,22 @@ public class TelaPrincipalController {
         lblNomeTela.setText("Avaliação/Presença");
         AnchorPane anchorPane;
         FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("avaliacaoFrequenciaLista.fxml"));
+        anchorPane=fxmlLoader.load();
+        telaCarregada.getChildren().setAll(anchorPane);
+    }
+
+    public void onBtnConfiguracaoClick(ActionEvent actionEvent) throws IOException {
+        lblNomeTela.setText("Configuração");
+        AnchorPane anchorPane;
+        FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("configuracao.fxml"));
+        anchorPane=fxmlLoader.load();
+        telaCarregada.getChildren().setAll(anchorPane);
+    }
+
+    public void onBtnSobreClick(ActionEvent actionEvent) throws IOException {
+        lblNomeTela.setText("Sobre...");
+        AnchorPane anchorPane;
+        FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("sobre.fxml"));
         anchorPane=fxmlLoader.load();
         telaCarregada.getChildren().setAll(anchorPane);
     }

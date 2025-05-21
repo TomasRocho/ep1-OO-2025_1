@@ -35,7 +35,7 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
             throw new Exception("Impossível Incluir Aluno matriculado - aluno e turma já cadastrados");
         }
 
-        if (this.getLista().size() >= ((AlunoMatriculado) alunoMatriculado).getTurma().getQtdMaxAlunos()){
+        if (!this.possuiVagasDisponiveis(((AlunoMatriculado) alunoMatriculado).getTurma())){
             throw new Exception("Impossível Incluir Aluno matriculado - vagas esgotadas");
         }
 
@@ -91,6 +91,17 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                         ((AlunoMatriculado) obj).getAluno().equals(alunoMatriculado.getAluno())
                                 && ((AlunoMatriculado) obj).getTurma().equals(alunoMatriculado.getTurma())
                                 && !obj.getId().equals(alunoMatriculado.getId()));
+    }
+
+    private boolean possuiVagasDisponiveis(Turma turma){
+        long vagasUtilizadas = this.getLista().stream()
+                .filter(obj ->
+                        ((AlunoMatriculado) obj).getTurma().getId().equals(turma.getId()))
+                .count();
+        if (turma.getQtdMaxAlunos()<=vagasUtilizadas){
+            return false;
+        }
+        return true;
     }
 
     public boolean existeAluno(UUID idAluno){

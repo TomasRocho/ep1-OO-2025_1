@@ -27,6 +27,16 @@ public class DisciplinaListaController {
     private FilteredList<Disciplina> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    private Disciplina disciplinaEditada;
+    public Button btnAltera;
+
+    public Disciplina getDisciplinaEditada() {
+        return disciplinaEditada;
+    }
+
+    public void setDisciplinaEditada(Disciplina disciplinaEditada) {
+        this.disciplinaEditada = disciplinaEditada;
+    }
 
     public void initialize(){
 
@@ -45,14 +55,14 @@ public class DisciplinaListaController {
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
             TableRow<Curso> row = new TableRow<>();
-            /*
+
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     btnAltera.fire();
                 }
             });
 
-             */
+
             return row ;
         });
     }
@@ -74,6 +84,30 @@ public class DisciplinaListaController {
     }
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
+        Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (disciplina != null){
+            DisciplinaEdicaoController controllerEdicao=new DisciplinaEdicaoController();
+            try {
+                controllerEdicao.setDisciplina((Disciplina) disciplina.clone());
+            } catch (CloneNotSupportedException e) {
+                throw new RuntimeException(e);
+            }
+            controllerEdicao.carregarModal();
+
+            if (controllerEdicao.getDisciplina()!=null){
+                this.setDisciplinaEditada(controllerEdicao.getDisciplina());
+                try {
+                    servicoDisciplina.alterar(this.getDisciplinaEditada());
+                    servicoDisciplina.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    tabela.refresh();
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Disciplina","Disciplina Salva","Disciplina Salva com Sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Disciplina","Erro ao Salvar",e.getMessage()).showAndWait();
+                }
+            }
+        }
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
@@ -103,5 +137,24 @@ public class DisciplinaListaController {
 
 
     public void onBtnNovoClick(ActionEvent actionEvent) {
+        DisciplinaEdicaoController controllerEdicao=new DisciplinaEdicaoController();
+        controllerEdicao.setDisciplina(null);
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getDisciplina()!=null){
+            this.setDisciplinaEditada(controllerEdicao.getDisciplina());
+            try {
+                servicoDisciplina.incluir(this.getDisciplinaEditada());
+                servicoDisciplina.salvarArquivo();
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Disciplina","Disciplina Salva","Disciplina Salva com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Disciplina","Erro ao Salvar",e.getMessage()).showAndWait();
+            }
+        }
+    }
+
+    public void onBtnPreRequisitosClick(ActionEvent actionEvent) {
     }
 }
