@@ -14,6 +14,7 @@ import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,6 +44,7 @@ public class TurmaSelecaoController {
             listaSelecaoTurma.add((Turma) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaSelecaoTurma);
+        this.listaTabela.sort(Comparator.comparing(turma -> turma.getDisciplina().getTitulo()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
         TableColumn<Turma, String> codigoColumn = new TableColumn<>("Código");
         codigoColumn.setPrefWidth(60);
@@ -89,7 +91,7 @@ public class TurmaSelecaoController {
             }
         });
     }
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(turma -> {
             return turma.getCodigo().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || turma.getDisciplina().getTitulo().toUpperCase().contains(txtProcura.getText().toUpperCase());

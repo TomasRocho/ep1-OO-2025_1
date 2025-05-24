@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -87,10 +88,11 @@ public class TurmaListaController {
             listaTurmas.add((Turma) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaTurmas);
+        this.listaTabela.sort(Comparator.comparing(turma -> turma.getDisciplina().getTitulo()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
     }
 
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(turma -> {
             return turma.getCodigo().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || turma.getDisciplina().getTitulo().toUpperCase().contains(txtProcura.getText().toUpperCase())
@@ -98,7 +100,7 @@ public class TurmaListaController {
         });
     }
 
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
+    public void btnAlteraClick(ActionEvent actionEvent) {
         Turma turma = (Turma) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (turma == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -124,7 +126,7 @@ public class TurmaListaController {
 
     }
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         Turma turma = (Turma) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (turma == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -149,7 +151,7 @@ public class TurmaListaController {
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
+    public void btnNovoClick(ActionEvent actionEvent) {
 
         TurmaEdicaoController controllerEdicao=new TurmaEdicaoController();
         controllerEdicao.setTurma(null);

@@ -40,7 +40,7 @@
                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>
          </Button>
-         <Button mnemonicParsing="false" onAction="#sair" fx:id="btnSair" prefHeight="25.0" prefWidth="160.0" text="Sair">
+         <Button  mnemonicParsing="false" onAction="#btnSairClick" fx:id="btnSair" prefHeight="25.0" prefWidth="160.0" text="Sair">
             <VBox.margin>
                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>

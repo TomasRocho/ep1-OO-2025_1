@@ -14,6 +14,7 @@ import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -94,6 +95,7 @@ public class AvaliacaoFrequenciaListaController {
             listaAlunoMatriculado.add((AlunoMatriculado) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaAlunoMatriculado);
+        this.listaTabela.sort(Comparator.comparing(alunoMatriculado -> alunoMatriculado.getAluno().getNome()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
         this.listaFiltrada.setPredicate(alunoMatriculado -> {
             return alunoMatriculado.getTurma().equals(turmaSelecionada);
@@ -101,7 +103,7 @@ public class AvaliacaoFrequenciaListaController {
     }
 
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (alunoMatriculado == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -129,7 +131,7 @@ public class AvaliacaoFrequenciaListaController {
 
 
 
-    public void onBtnSelecionaTurma(ActionEvent actionEvent) {
+    public void btnSelecionaTurmaClick(ActionEvent actionEvent) {
         TurmaSelecaoController controllerSelecao=new TurmaSelecaoController();
         try {
             controllerSelecao.carregarModal();
@@ -147,7 +149,7 @@ public class AvaliacaoFrequenciaListaController {
         }
     }
 
-    public void onBtnNotasClick(ActionEvent actionEvent) {
+    public void btnNotasClick(ActionEvent actionEvent) {
         AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (alunoMatriculado == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -177,7 +179,7 @@ public class AvaliacaoFrequenciaListaController {
 
     }
 
-    public void mnuIncluirFalta(ActionEvent actionEvent) {
+    public void mnuIncluirFaltaClick(ActionEvent actionEvent) {
         AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (alunoMatriculado == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -196,7 +198,7 @@ public class AvaliacaoFrequenciaListaController {
 
     }
 
-    public void mnuExcluirFalta(ActionEvent actionEvent) {
+    public void mnuExcluirFaltaClick(ActionEvent actionEvent) {
         AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (alunoMatriculado == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();

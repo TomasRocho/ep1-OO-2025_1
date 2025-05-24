@@ -15,7 +15,7 @@
         <AnchorPane minWidth="0" minHeight="0" prefHeight="340" prefWidth="500">
             <children>
                 <Label layoutX="31" layoutY="26" text="Procurar:"/>
-                <TextField fx:id="txtProcura" onKeyTyped="#onTxtProcuraChange" layoutX="91" layoutY="22"/>
+                <TextField fx:id="txtProcura" onKeyTyped="#txtProcuraChange" layoutX="91" layoutY="22"/>
                 <TableView fx:id="tabela" layoutX="31" layoutY="56" prefHeight="300" prefWidth="450">
                     <columns>
 

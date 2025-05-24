@@ -29,17 +29,17 @@
         </VBox>
         <VBox layoutY="159.0" prefHeight="410.0" prefWidth="216.0" style="-fx-background-color: GRAY;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="158.0">
             <children>
-                <Button fx:id="btnAluno"  onAction="#onBtnAlunoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Aluno" />
-                <Button fx:id="btnCurso"  onAction="#onBtnCursoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Curso" />
-                <Button fx:id="btnDisciplina"  onAction="#onBtnDisciplinaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Disciplina" />
-                <Button fx:id="btnProfessor"  onAction="#onBtnProfessorClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Professor" />
-                <Button fx:id="btnSala"  onAction="#onBtnSalaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sala" />
-                <Button fx:id="btnTurma"  onAction="#onBtnTurmaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Turma" />
-                <Button fx:id="btnAvaliacaoPresenca"  onAction="#onBtnAvaliacaoPresencaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Avaliação/Frequência" />
-                <Button fx:id="btnRelatorios"  onAction="#onBtnRelatoriosClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Relatórios" />
-                <Button fx:id="btnConfiguracao"  onAction="#onBtnConfiguracaoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Configuração" />
-                <Button fx:id="btnSobre"  onAction="#onBtnSobreClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sobre" />
-                <Button fx:id="btnSair"  onAction="#onBtnSairClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sair" />
+                <Button fx:id="btnAluno"  onAction="#btnAlunoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Aluno" />
+                <Button fx:id="btnCurso"  onAction="#btnCursoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Curso" />
+                <Button fx:id="btnDisciplina"  onAction="#btnDisciplinaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Disciplina" />
+                <Button fx:id="btnProfessor"  onAction="#btnProfessorClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Professor" />
+                <Button fx:id="btnSala"  onAction="#btnSalaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sala" />
+                <Button fx:id="btnTurma"  onAction="#btnTurmaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Turma" />
+                <Button fx:id="btnAvaliacaoPresenca"  onAction="#btnAvaliacaoPresencaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Avaliação/Frequência" />
+                <Button fx:id="btnRelatorios"  onAction="#btnRelatoriosClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Relatórios" />
+                <Button fx:id="btnConfiguracao"  onAction="#btnConfiguracaoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Configuração" />
+                <Button fx:id="btnSobre"  onAction="#btnSobreClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sobre" />
+                <Button fx:id="btnSair"  onAction="#btnSairClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Trocar o Modo ou Sair" />
             </children>
         </VBox>
         <VBox alignment="CENTER" layoutX="216.0" prefHeight="159.0" prefWidth="650.0" style="-fx-background-color: GRAY;" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

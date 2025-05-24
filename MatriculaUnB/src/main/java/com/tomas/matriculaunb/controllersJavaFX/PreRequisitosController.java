@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,6 +43,7 @@ public class PreRequisitosController {
 
         List<Disciplina> listaPreRequisitos = servicoPreRequisito.getPreRequisitosDisciplina(this.getDisciplinaSelecionada().getId());
         this.listaTabela = FXCollections.observableArrayList(listaPreRequisitos);
+        this.listaTabela.sort(Comparator.comparing(disciplina -> disciplina.getTitulo()));
         TableColumn<Disciplina, String> codigoColumn = new TableColumn<>("Código");
         codigoColumn.setPrefWidth(100);
         codigoColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getCodigo()));
@@ -61,7 +63,7 @@ public class PreRequisitosController {
         dialog.setTitle("Pré-Requisitos");
         dialog.showAndWait();
     }
-    public void incluir() {
+    public void btnIncluirClick() {
         DisciplinaSelecaoController controllerSelecao=new DisciplinaSelecaoController();
         try {
             controllerSelecao.carregarModal();
@@ -73,6 +75,7 @@ public class PreRequisitosController {
                     servicoPreRequisito.salvarArquivo();
                     List<Disciplina> listaPreRequisitos = servicoPreRequisito.getPreRequisitosDisciplina(this.getDisciplinaSelecionada().getId());
                     listaTabela = FXCollections.observableArrayList(listaPreRequisitos);
+                    listaTabela.sort(Comparator.comparing(disciplina -> disciplina.getTitulo()));
                     tabela.setItems(listaTabela);
                 } catch (Exception e) {
                     Util.getAlert(Alert.AlertType.ERROR,"Inclusão de Pré-requisito","Erro ao incluir",e.getMessage()).showAndWait();
@@ -83,8 +86,7 @@ public class PreRequisitosController {
         }
 
     }
-    public void excluir() {
-        System.out.println("to aqui");
+    public void btnExcluirClick() {
         Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (disciplina == null){
             Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Pré-Requisito","Impossível Excluir","Selecione um pré-requisito para excluir").showAndWait();
@@ -99,6 +101,7 @@ public class PreRequisitosController {
                     servicoPreRequisito.salvarArquivo();
                     List<Disciplina> listaPreRequisitos = servicoPreRequisito.getPreRequisitosDisciplina(this.getDisciplinaSelecionada().getId());
                     listaTabela = FXCollections.observableArrayList(listaPreRequisitos);
+                    listaTabela.sort(Comparator.comparing(disciplinaLista -> disciplinaLista.getTitulo()));
                     tabela.setItems(listaTabela);
                 } catch (Exception e) {
                     Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Pré-requisito","Erro ao excluir",e.getMessage()).showAndWait();

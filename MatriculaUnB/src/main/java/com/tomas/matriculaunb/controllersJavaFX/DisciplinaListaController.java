@@ -16,6 +16,7 @@ import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -72,17 +73,18 @@ public class DisciplinaListaController {
             listaDisciplina.add((Disciplina) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaDisciplina);
+        this.listaTabela.sort(Comparator.comparing(disciplina -> disciplina.getTitulo()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
     }
 
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(disciplina -> {
             return disciplina.getCodigo().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || disciplina.getTitulo().toUpperCase().contains(txtProcura.getText().toUpperCase());
         });
     }
 
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
+    public void btnAlteraClick(ActionEvent actionEvent) {
         Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (disciplina == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -113,7 +115,7 @@ public class DisciplinaListaController {
 
     }
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (disciplina == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -139,7 +141,7 @@ public class DisciplinaListaController {
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
+    public void btnNovoClick(ActionEvent actionEvent) {
         DisciplinaEdicaoController controllerEdicao=new DisciplinaEdicaoController();
         controllerEdicao.setDisciplina(null);
         controllerEdicao.carregarModal();
@@ -158,7 +160,7 @@ public class DisciplinaListaController {
         }
     }
 
-    public void onBtnPreRequisitosClick(ActionEvent actionEvent) {
+    public void btnPreRequisitosClick(ActionEvent actionEvent) {
         Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (disciplina == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();

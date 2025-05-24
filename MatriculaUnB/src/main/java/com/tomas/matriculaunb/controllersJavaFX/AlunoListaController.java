@@ -14,6 +14,7 @@ import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -80,17 +81,18 @@ public class AlunoListaController {
             listaAlunos.add((Aluno) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaAlunos);
+        this.listaTabela.sort(Comparator.comparing(Aluno::getNome));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
     }
 
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(aluno -> {
             return aluno.getNome().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || aluno.getMatricula().toUpperCase().contains(txtProcura.getText().toUpperCase());
         });
     }
 
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
+    public void btnAlteraClick(ActionEvent actionEvent) {
         Aluno aluno = (Aluno) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (aluno == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteraçao/Exclusão de Registro","Impossível Alterar/Exclui","Selecione um aluno para alterar/excluir").showAndWait();
@@ -121,7 +123,7 @@ public class AlunoListaController {
 
     }
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         Aluno aluno = (Aluno) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (aluno == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteraçao/Exclusão de Registro","Impossível Alterar/Exclui","Selecione um aluno para alterar/excluir").showAndWait();
@@ -148,7 +150,7 @@ public class AlunoListaController {
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
+    public void btnNovoClick(ActionEvent actionEvent) {
             AlunoEdicaoController controllerEdicao=new AlunoEdicaoController();
             controllerEdicao.setAluno(null);
             controllerEdicao.carregarModal();

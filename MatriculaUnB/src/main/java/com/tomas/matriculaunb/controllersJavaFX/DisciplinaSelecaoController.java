@@ -15,6 +15,7 @@ import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,6 +43,7 @@ public class DisciplinaSelecaoController {
             listaSelecaoDisciplina.add((Disciplina) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaSelecaoDisciplina);
+        this.listaTabela.sort(Comparator.comparing(disciplina -> disciplina.getTitulo()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
         TableColumn<Disciplina, String> codigoColumn = new TableColumn<>("Código");
         codigoColumn.setPrefWidth(100);
@@ -82,7 +84,7 @@ public class DisciplinaSelecaoController {
             }
         });
     }
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(disciplina -> {
             return disciplina.getCodigo().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || disciplina.getTitulo().toUpperCase().contains(txtProcura.getText().toUpperCase());

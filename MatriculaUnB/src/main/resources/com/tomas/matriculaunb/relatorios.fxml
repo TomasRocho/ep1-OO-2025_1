@@ -13,22 +13,22 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button text="Avaliação por Disciplina" prefWidth="200">
+                <Button fx:id="btnAvaliacaoDisciplina" onAction="#btnAvaliacaoDisciplinaClick" text="Avaliação por Disciplina" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button text="Avaliação por Professor" prefWidth="200">
+                <Button fx:id="btnAvaliacaoProfessor" onAction="#btnAvaliacaoProfessorClick" text="Avaliação por Professor" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button text="Boletim Completo" prefWidth="200">
+                <Button fx:id="btnBoletimCompleto" onAction="#btnBoletimCompletoClick" text="Boletim Completo" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button text="Boletim Resumido" prefWidth="200">
+                <Button fx:id="btnBoletimResumido" onAction="#btnBoletimResumidoClick" text="Boletim Resumido" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>

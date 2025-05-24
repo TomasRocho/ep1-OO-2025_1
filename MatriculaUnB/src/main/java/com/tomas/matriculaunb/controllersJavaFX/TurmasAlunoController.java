@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.List;
 
 public class TurmasAlunoController {
@@ -75,7 +76,7 @@ public class TurmasAlunoController {
         ServicoAlunoMatriculado servicoAlunoMatriculado = ServicoAlunoMatriculado.getInstance();
         List<ClasseBase> listaTurma = servicoAlunoMatriculado.getAlunosMatriculadosPorAluno(this.getAlunoSelecionado(),this.isTurmasAtuais(),this.isTurmaConcluidas());
         this.listaTabela = FXCollections.observableArrayList(listaTurma);
-
+        this.listaTabela.sort(Comparator.comparing(alunoMatriculado -> ((AlunoMatriculado) alunoMatriculado).getTurma().getDisciplina().getTitulo()));
         TableColumn<AlunoMatriculado, String> codigoColumn = new TableColumn<>("Código");
         codigoColumn.setPrefWidth(60);
         codigoColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getTurma().getCodigo()));
@@ -105,7 +106,7 @@ public class TurmasAlunoController {
 
     }
 
-    public void trancar(){
+    public void btnTrancarClick(){
         AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (alunoMatriculado == null){
             Util.getAlert(Alert.AlertType.WARNING,"Trancamento de Disciplina","Impossível Trancar a Disciplina","Selecione uma turma para trancamento").showAndWait();

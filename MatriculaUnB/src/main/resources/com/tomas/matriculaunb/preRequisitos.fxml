@@ -10,8 +10,8 @@
     <header>
         <AnchorPane minWidth="0" minHeight="0" prefHeight="340" prefWidth="500">
             <children>
-                <Button fx:id="btnIncluir" layoutX="31" layoutY="10"  onAction="#incluir" text="Incluir Pré-Requisito"/>
-                <Button fx:id="btnExcluir" layoutX="31" layoutY="40" onAction="#excluir" text="Excluir Pré-Requisito"/>
+                <Button fx:id="btnIncluir" layoutX="31" layoutY="10"  onAction="#btnIncluirClick" text="Incluir Pré-Requisito"/>
+                <Button fx:id="btnExcluir" layoutX="31" layoutY="40" onAction="#btnExcluirClick" text="Excluir Pré-Requisito"/>
                 <TableView fx:id="tabela" layoutX="31" layoutY="70" prefHeight="250" prefWidth="450">
                     <columns>
 

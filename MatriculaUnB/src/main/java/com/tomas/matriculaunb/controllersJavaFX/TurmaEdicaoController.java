@@ -144,7 +144,7 @@ public class TurmaEdicaoController {
     }
 
 
-    public void onSelecaoDisciplina(ActionEvent actionEvent) {
+    public void btnSelecaoDisciplinaClick(ActionEvent actionEvent) {
         DisciplinaSelecaoController controllerSelecao=new DisciplinaSelecaoController();
         try {
             controllerSelecao.carregarModal();
@@ -160,7 +160,7 @@ public class TurmaEdicaoController {
         }
     }
 
-    public void onSelecaoProfessor(ActionEvent actionEvent) {
+    public void btnSelecaoProfessorClick(ActionEvent actionEvent) {
         ProfessorSelecaoController controllerSelecao=new ProfessorSelecaoController();
         try {
             controllerSelecao.carregarModal();
@@ -176,7 +176,7 @@ public class TurmaEdicaoController {
         }
     }
 
-    public void onSelecaoSala(ActionEvent actionEvent) {
+    public void btnSelecaoSalaClick(ActionEvent actionEvent) {
         SalaSelecaoController controllerSelecao=new SalaSelecaoController();
         try {
             controllerSelecao.carregarModal();

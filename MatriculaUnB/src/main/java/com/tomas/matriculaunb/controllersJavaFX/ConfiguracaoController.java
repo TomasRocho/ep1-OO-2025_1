@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public class ConfiguracaoController {
 
-    public void btnGerarDados(ActionEvent actionEvent) {
+    public void btnGerarDadosClick(ActionEvent actionEvent) {
 
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Geração de dados para teste", "Dados teste","Deseja criar dados para teste?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
@@ -26,7 +26,7 @@ public class ConfiguracaoController {
             }
         });
     }
-    public void btnApagarDados(ActionEvent actionEvent) {
+    public void btnApagarDadosClick(ActionEvent actionEvent) {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Apagar dados", "Apagar dados","Deseja apagar todos os dados?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{

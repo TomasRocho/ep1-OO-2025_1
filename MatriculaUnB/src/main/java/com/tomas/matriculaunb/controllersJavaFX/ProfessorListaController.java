@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -66,10 +67,11 @@ public class ProfessorListaController {
             listaProfessores.add((Professor) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaProfessores);
+        this.listaTabela.sort(Comparator.comparing(professor -> professor.getNome()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
     }
 
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(professor -> {
             return professor.getNome().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || professor.getMatricula().toUpperCase().contains(txtProcura.getText().toUpperCase());
@@ -78,7 +80,7 @@ public class ProfessorListaController {
 
 
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         Professor professor = (Professor) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (professor == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -104,7 +106,7 @@ public class ProfessorListaController {
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
+    public void btnNovoClick(ActionEvent actionEvent) {
         ProfessorEdicaoController controllerEdicao=new ProfessorEdicaoController();
         controllerEdicao.setProfessor(null);
         controllerEdicao.carregarModal();
@@ -122,7 +124,7 @@ public class ProfessorListaController {
             }
         }
     }
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
+    public void btnAlteraClick(ActionEvent actionEvent) {
         Professor professor = (Professor) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (professor == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();

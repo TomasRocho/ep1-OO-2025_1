@@ -15,7 +15,7 @@
     <header>
         <AnchorPane minWidth="0" minHeight="0" prefHeight="360" prefWidth="760">
             <children>
-                <Button fx:id="btnTrancar" layoutX="31" layoutY="10"  onAction="#trancar" text="Trancar">
+                <Button fx:id="btnTrancar" layoutX="31" layoutY="10"  onAction="#btnTrancarClick" text="Trancar">
 
                 </Button>
                 <TableView fx:id="tabela" layoutX="31" layoutY="40" prefHeight="300" prefWidth="740">

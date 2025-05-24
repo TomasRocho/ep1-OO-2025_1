@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -66,17 +67,18 @@ public class SalaListaController {
             listaSalas.add((Sala) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaSalas);
+        this.listaTabela.sort(Comparator.comparing(sala -> sala.getLocal()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
     }
 
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(sala -> {
             return sala.getLocal().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || sala.getCampus().toString().toUpperCase().contains(txtProcura.getText().toUpperCase());
         });
     }
 
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
+    public void btnAlteraClick(ActionEvent actionEvent) {
         Sala sala = (Sala) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (sala == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -103,7 +105,7 @@ public class SalaListaController {
 
     }
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         Sala sala = (Sala) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (sala == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -128,7 +130,7 @@ public class SalaListaController {
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
+    public void btnNovoClick(ActionEvent actionEvent) {
         SalaEdicaoController controllerEdicao=new SalaEdicaoController();
         controllerEdicao.setSala(null);
         controllerEdicao.carregarModal();

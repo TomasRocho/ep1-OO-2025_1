@@ -14,6 +14,7 @@ import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,6 +44,7 @@ public class ProfessorSelecaoController {
             listaSelecaoProfessores.add((Professor) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaSelecaoProfessores);
+        this.listaTabela.sort(Comparator.comparing(professor -> professor.getNome()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
         TableColumn<Professor, String> matriculaColumn = new TableColumn<>("Matrícula");
         matriculaColumn.setPrefWidth(100);
@@ -83,7 +85,7 @@ public class ProfessorSelecaoController {
             }
         });
     }
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(professor -> {
             return professor.getNome().toUpperCase().contains(txtProcura.getText().toUpperCase())
                     || professor.getMatricula().toUpperCase().contains(txtProcura.getText().toUpperCase());

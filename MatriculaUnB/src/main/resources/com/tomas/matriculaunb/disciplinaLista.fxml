@@ -13,27 +13,27 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </Label>
-                <TextField fx:id="txtProcura" onKeyTyped="#onTxtProcuraChange">
+                <TextField fx:id="txtProcura" onKeyTyped="#txtProcuraChange">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </TextField>
-                <Button fx:id="btnNovo" onAction="#onBtnNovoClick" mnemonicParsing="false" text="Novo">
+                <Button fx:id="btnNovo" onAction="#btnNovoClick" mnemonicParsing="false" text="Novo">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </Button>
-                <Button fx:id="btnAltera" onAction="#onBtnAlteraClick" mnemonicParsing="false" text="Alterar">
+                <Button fx:id="btnAltera" onAction="#btnAlteraClick" mnemonicParsing="false" text="Alterar">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </Button>
-                <Button fx:id="btnExcluir" onAction="#onBtnExcluirClick" mnemonicParsing="false" text="Excluir">
+                <Button fx:id="btnExcluir" onAction="#btnExcluirClick" mnemonicParsing="false" text="Excluir">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
                 </Button>
-                <Button fx:id="btnPreRequisitos" onAction="#onBtnPreRequisitosClick" mnemonicParsing="false" text="Pré-requisitos">
+                <Button fx:id="btnPreRequisitos" onAction="#btnPreRequisitosClick" mnemonicParsing="false" text="Pré-requisitos">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>

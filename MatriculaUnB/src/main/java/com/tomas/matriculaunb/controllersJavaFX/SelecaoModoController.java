@@ -43,7 +43,7 @@ public class SelecaoModoController {
         this.modoAluno = modoAluno;
     }
 
-    public void sair(ActionEvent actionEvent) {
+    public void btnSairClick(ActionEvent actionEvent) {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Sair do Sistema", "Encerrar?","Deseja fechar o sistema?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
@@ -56,14 +56,20 @@ public class SelecaoModoController {
 
     public void btnAlunoClick(ActionEvent actionEvent) {
         this.modoAluno=true;
+        this.modoAvaliacao=false;
+        this.modoDisciplina=false;
         ((Stage) btnAluno.getScene().getWindow()).close();
     }
     public void btnDisciplinaClick(ActionEvent actionEvent) {
+        this.modoAluno=false;
+        this.modoAvaliacao=false;
         this.modoDisciplina=true;
         ((Stage) btnDisciplina.getScene().getWindow()).close();
     }
     public void btnAvaliacaoClick(ActionEvent actionEvent) {
+        this.modoAluno=false;
         this.modoAvaliacao=true;
+        this.modoDisciplina=false;
         ((Stage) btnAvaliacao.getScene().getWindow()).close();
     }
 }

@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -62,16 +63,17 @@ public class CursoListaController {
             listaCursos.add((Curso) obj);
         }
         this.listaTabela = FXCollections.observableArrayList(listaCursos);
+        this.listaTabela.sort(Comparator.comparing(curso -> curso.getTitulo()));
         this.listaFiltrada = new FilteredList<>(this.listaTabela);
     }
 
-    public void onTxtProcuraChange(KeyEvent keyEvent) {
+    public void txtProcuraChange(KeyEvent keyEvent) {
         this.listaFiltrada.setPredicate(curso -> {
             return curso.getTitulo().toUpperCase().contains(txtProcura.getText().toUpperCase());
         });
     }
 
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
+    public void btnAlteraClick(ActionEvent actionEvent) {
         Curso curso = (Curso) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (curso == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -102,7 +104,7 @@ public class CursoListaController {
 
     }
 
-    public void onBtnExcluirClick(ActionEvent actionEvent) {
+    public void btnExcluirClick(ActionEvent actionEvent) {
         Curso curso = (Curso) this.tabela.getSelectionModel().selectedItemProperty().get();
         if (curso == null){
             Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
@@ -127,7 +129,7 @@ public class CursoListaController {
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
+    public void btnNovoClick(ActionEvent actionEvent) {
 
             CursoEdicaoController controllerEdicao=new CursoEdicaoController();
             controllerEdicao.setCurso(null);
