@@ -1,6 +1,7 @@
 module com.tomas.matriculaunb {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
     requires com.fasterxml.jackson.databind;
 
 

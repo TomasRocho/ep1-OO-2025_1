@@ -280,8 +280,24 @@ public class AlunoListaController {
     }
 
     public void mnuBoletimCompletoClick(ActionEvent actionEvent) {
+        Aluno aluno = (Aluno) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (aluno == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Emissão de Boletim","Impossível Emitir o Boletim","Selecione um aluno para emitir o boletim").showAndWait();
+            return;
+        }
+        String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(aluno,null,null,null,"Boletim Completo",true,null);
+        TelaBrowserController telaBrowserController = new TelaBrowserController();
+        telaBrowserController.carregarModal(strRelatorio);
     }
 
     public void mnuBoletimResumidoClick(ActionEvent actionEvent) {
+        Aluno aluno = (Aluno) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (aluno == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Emissão de Boletim","Impossível Emitir o Boletim","Selecione um aluno para emitir o boletim").showAndWait();
+            return;
+        }
+        String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(aluno,null,null,null,"Boletim Resumido",true,null);
+        TelaBrowserController telaBrowserController = new TelaBrowserController();
+        telaBrowserController.carregarModal(strRelatorio);
     }
 }

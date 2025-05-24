@@ -4,9 +4,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.*;
 import com.tomas.matriculaunb.util.Util;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ServicoAlunoMatriculado extends ClasseServicoBase{
 
@@ -247,4 +246,131 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
     public void carregarArquivo() throws Exception{
         this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<AlunoMatriculado>>() {});
     }
+
+    public String gerarHtmlMatriculas(Aluno aluno, Disciplina disciplina, Professor professor, Turma turma, String tituloRelatorio, boolean completo, String semestre) {
+
+
+        List<ClasseBase> matriculas=null;
+
+        if (aluno!=null){
+                matriculas = this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getAluno().equals(aluno))
+                .toList();
+        }
+        if (disciplina!=null){
+            matriculas = this.getLista().stream()
+                    .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().getDisciplina().equals(disciplina)
+                        && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(semestre))
+                    .toList();
+        }
+        if (professor!=null){
+            matriculas = this.getLista().stream()
+                    .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().getProfessor().equals(professor)
+                            && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(semestre))
+                    .toList();
+        }
+        if (turma!=null){
+            matriculas = this.getLista().stream()
+                    .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().equals(turma)
+                            && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(semestre))
+                    .toList();
+        }
+
+        // Agrupar matriculas por semestre
+        Map<String, List<ClasseBase>> matriculasPorSemestre = matriculas.stream()
+                .collect(Collectors.groupingBy(mat->((AlunoMatriculado)mat).getTurma().formataSemestreAnoParaOrdenacao()));
+
+        // Ordenar os semestres
+        Map<String, List<ClasseBase>> semestresOrdenados = new TreeMap<>(matriculasPorSemestre);
+
+        for (List<ClasseBase> lista : semestresOrdenados.values()) {
+            lista.sort(Comparator.comparing((ClasseBase mat)->((AlunoMatriculado)mat).getTurma().formataSemestreAnoParaOrdenacao()));
+        }
+
+        // Gerar o conteúdo HTML
+        StringBuilder html = new StringBuilder();
+        html.append("<!DOCTYPE html>\n");
+        html.append("<html lang=\"pt-BR\">\n");
+        html.append("<head>\n");
+        html.append("    <meta charset=\"UTF-8\">\n");
+        html.append("    <title>Turmas por Semestre</title>\n");
+        html.append("    <style>\n");
+        html.append("        body { font-family: Arial, sans-serif; margin: 20px; }\n");
+        html.append("        h2 { color: #2c3e50; }\n");
+        html.append("        table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }\n");
+        html.append("        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
+        html.append("        th { background-color: #f4f4f4; }\n");
+        html.append("    </style>\n");
+        html.append("</head>\n");
+        html.append("<body>\n");
+        html.append("    <h1>" + tituloRelatorio + "</h1>\n");
+        if (aluno!=null){
+            html.append("    <h1>" + aluno.getNome() + " (" + aluno.getMatricula() + ")" + "</h1>\n");
+        }
+        if (turma!=null){
+            html.append("    <h1>(" + turma.getCodigo() + ") - " +  turma.getDisciplina().getTitulo() + " - " + turma.getProfessor().getNome() + " - " + turma.getSemestreAno() + "</h1>\n");
+        }
+        if (professor!=null){
+            html.append("    <h1>" + professor.getNome() + "</h1>\n");
+        }
+        if (disciplina!=null){
+            html.append("    <h1>" + disciplina.getTitulo() + "</h1>\n");
+        }
+
+
+        for (Map.Entry<String, List<ClasseBase>> entry : semestresOrdenados.entrySet()) {
+            String semestreAtual = ((AlunoMatriculado) semestresOrdenados.get(entry.getKey()).getFirst()).getTurma().getSemestreAno();
+            List<ClasseBase> lista = entry.getValue();
+            html.append("    <h2>").append(semestreAtual).append("</h2>\n");
+            html.append("    <table>\n");
+            html.append("        <tr>\n");
+            html.append("            <th>Disciplina</th>\n");
+            if (completo) {
+                html.append("            <th>Turma</th>\n");
+                html.append("            <th>Professor</th>\n");
+                html.append("            <th>Sala</th>\n");
+                if (aluno==null){
+                    html.append("            <th>Aluno</th>\n");
+                }
+                html.append("            <th>Nota 1</th>\n");
+                html.append("            <th>Nota 2</th>\n");
+                html.append("            <th>Nota 3</th>\n");
+                html.append("            <th>Nota Seminário</th>\n");
+                html.append("            <th>Nota Exercícios</th>\n");
+            }
+            html.append("            <th>Média Final</th>\n");
+            html.append("            <th>Faltas</th>\n");
+            html.append("            <th>% Faltas</th>\n");
+            html.append("            <th>Status</th>\n");
+            html.append("        </tr>\n");
+
+            for (ClasseBase m : lista) {
+                html.append("        <tr>\n");
+                html.append("            <td>").append(((AlunoMatriculado)m).getTurma().getDisciplina().getTitulo()).append("</td>\n");
+                if (completo) {
+                    html.append("            <td>").append(((AlunoMatriculado) m).getTurma().getCodigo()).append("</td>\n");
+                    html.append("            <td>").append(((AlunoMatriculado) m).getTurma().getProfessor().getNome()).append("</td>\n");
+                    html.append("            <td>").append(((AlunoMatriculado) m).getTurma().getSala().getLocal()).append("</td>\n");
+                    if (aluno==null){
+                        html.append("            <td>").append(((AlunoMatriculado) m).getAluno().getNome() + " (" + ((AlunoMatriculado) m).getAluno().getMatricula() +")" ).append("</td>\n");
+                    }
+                    html.append("            <td>").append(((AlunoMatriculado) m).getNotaP1()).append("</td>\n");
+                    html.append("            <td>").append(((AlunoMatriculado) m).getNotaP2()).append("</td>\n");
+                    html.append("            <td>").append(((AlunoMatriculado) m).getNotaP3()).append("</td>\n");
+                    html.append("            <td>").append(((AlunoMatriculado) m).getNotaS()).append("</td>\n");
+                    html.append("            <td>").append(((AlunoMatriculado) m).getNotaL()).append("</td>\n");
+                }
+                html.append("            <td>").append(((AlunoMatriculado)m).calcularMediaFinal()).append("</td>\n");
+                html.append("            <td>").append(((AlunoMatriculado)m).getFaltas()).append("</td>\n");
+                html.append("            <td>").append(((AlunoMatriculado)m).calcularPercentualFaltas()).append("</td>\n");
+                html.append("            <td>").append(((AlunoMatriculado)m).retornarStatus()).append("</td>\n");
+                html.append("        </tr>\n");
+            }
+            html.append("    </table>\n");
+        }
+        html.append("</body>\n");
+        html.append("</html>");
+        return html.toString();
+    }
+
 }

@@ -91,7 +91,7 @@ public class Turma extends ClasseBase{
 
 
     public String formataSemestreAnoParaOrdenacao(){
-        return this.getSemestreAno().substring(3)+this.getSemestreAno().substring(0,0);
+        return this.getSemestreAno().substring(2,6)+this.getSemestreAno().charAt(0);
     }
 
 
