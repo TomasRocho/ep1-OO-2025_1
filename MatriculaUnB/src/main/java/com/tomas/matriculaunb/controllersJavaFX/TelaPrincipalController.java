@@ -8,11 +8,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Optional;
 
@@ -20,7 +17,6 @@ public class TelaPrincipalController {
 
     public AnchorPane telaCarregada;
     public Label lblNomeTela;
-    public ImageView imageView;
 
     public void initialize(){
         /*
@@ -100,7 +96,7 @@ public class TelaPrincipalController {
     }
 
     public void onBtnAvaliacaoPresencaClick(ActionEvent actionEvent) throws IOException {
-        lblNomeTela.setText("Avaliação/Presença");
+        lblNomeTela.setText("Avaliação/Frequência");
         AnchorPane anchorPane;
         FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("avaliacaoFrequenciaLista.fxml"));
         anchorPane=fxmlLoader.load();

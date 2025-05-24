@@ -9,7 +9,7 @@ public class Util {
         LocalDate dataAtual = LocalDate.now();
         int mes = dataAtual.getMonthValue();
         int ano = dataAtual.getYear();
-        String semestreAno = "";
+        String semestreAno;
         if (mes <= 6){
             semestreAno = "1/"+ano;
         }

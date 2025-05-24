@@ -4,20 +4,21 @@ import com.tomas.matriculaunb.modelo.*;
 import com.tomas.matriculaunb.modelo.enumerations.EnumCampus;
 import com.tomas.matriculaunb.servicos.*;
 
+import java.util.ArrayList;
+
 public class DadosTeste {
 
-    private ServicoCurso servicoCurso;
-    private ServicoProfessor servicoProfessor;
-    private ServicoDisciplina servicoDisciplina;
-    private ServicoAluno servicoAluno;
-    private ServicoTurma servicoTurma;
-    private ServicoSala servicoSala;
-    private ServicoPreRequisito servicoPreRequisito;
-    private ServicoAlunoMatriculado servicoAlunoMatriculado;
+    private ServicoCurso servicoCurso = ServicoCurso.getInstance();
+    private ServicoProfessor servicoProfessor= ServicoProfessor.getInstance();
+    private ServicoDisciplina servicoDisciplina= ServicoDisciplina.getInstance();
+    private ServicoAluno servicoAluno= ServicoAluno.getInstance();
+    private ServicoTurma servicoTurma= ServicoTurma.getInstance();
+    private ServicoSala servicoSala= ServicoSala.getInstance();
+    private ServicoPreRequisito servicoPreRequisito= ServicoPreRequisito.getInstance();
+    private ServicoAlunoMatriculado servicoAlunoMatriculado= ServicoAlunoMatriculado.getInstance();
 
 
     private void geraCursos(int qtd){
-        this.servicoCurso = ServicoCurso.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoCurso.incluir(new Curso("Curso-"+i));
@@ -33,7 +34,6 @@ public class DadosTeste {
     }
 
     private void geraSalas(int qtd){
-        this.servicoSala = ServicoSala.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoSala.incluir(new Sala("Sala-"+i, EnumCampus.Gama));
@@ -50,7 +50,6 @@ public class DadosTeste {
 
 
     private void geraProfessores(int qtd){
-        this.servicoProfessor = ServicoProfessor.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoProfessor.incluir(new Professor(String.valueOf(i),"Professor-"+i));
@@ -66,7 +65,6 @@ public class DadosTeste {
     }
 
     private void geraDisciplinas(int qtd){
-        this.servicoDisciplina = ServicoDisciplina.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoDisciplina.incluir(new Disciplina("Disciplina-"+i,String.valueOf(i),60));
@@ -81,7 +79,6 @@ public class DadosTeste {
         }
     }
     private void geraPreRequisitos(int qtd){
-        this.servicoPreRequisito = ServicoPreRequisito.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoPreRequisito.incluir(new PreRequisito(servicoDisciplina.getLista().get(i).getId(),servicoDisciplina.getLista().get(i+6).getId()));
@@ -98,7 +95,6 @@ public class DadosTeste {
     }
 
     private void geraAlunos(int qtd){
-        this.servicoAluno=ServicoAluno.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoAluno.incluir(new Aluno("Aluno-"+i,String.valueOf(i),(Curso) this.servicoCurso.getLista().get(i%3),false));
@@ -116,7 +112,6 @@ public class DadosTeste {
     }
 
     private void geraTurmas(int qtd){
-        this.servicoTurma=ServicoTurma.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoTurma.incluir(new Turma("T"+i ,(Disciplina) servicoDisciplina.getLista().get((i%10)+5),
@@ -144,7 +139,6 @@ public class DadosTeste {
         }
     }
     private void geraAlunosMatriculados(int qtd){
-        this.servicoAlunoMatriculado=ServicoAlunoMatriculado.getInstance();
         for(int i=1;i<=qtd;i++){
             try {
                 servicoAlunoMatriculado.incluir(new AlunoMatriculado((Turma) servicoTurma.getLista().get(i%10),
@@ -171,6 +165,25 @@ public class DadosTeste {
         this.geraAlunos(100);
         this.geraPreRequisitos(5);
         this.geraAlunosMatriculados(100);
+    }
+
+    public void apagaTudo() throws Exception {
+        servicoCurso.setLista(new ArrayList<>());
+        servicoCurso.salvarArquivo();
+        servicoSala.setLista(new ArrayList<>());
+        servicoSala.salvarArquivo();
+        servicoDisciplina.setLista(new ArrayList<>());
+        servicoDisciplina.salvarArquivo();
+        servicoProfessor.setLista(new ArrayList<>());
+        servicoProfessor.salvarArquivo();
+        servicoTurma.setLista(new ArrayList<>());
+        servicoTurma.salvarArquivo();
+        servicoAluno.setLista(new ArrayList<>());
+        servicoAluno.salvarArquivo();
+        servicoPreRequisito.setLista(new ArrayList<>());
+        servicoPreRequisito.salvarArquivo();
+        servicoAlunoMatriculado.setLista(new ArrayList<>());
+        servicoAlunoMatriculado.salvarArquivo();
     }
 
 

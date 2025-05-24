@@ -1,22 +1,22 @@
 [ {
-  "id" : "56193104-1d8d-46e7-87e7-5e3b2cf89789",
+  "id" : "82dd7d22-5936-4e8d-9781-c7caccc92490",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -27,11 +27,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "57874993-0dee-4f36-8af6-19214f76243f",
+    "id" : "129915d5-5d7d-4a9d-92e8-faee7306f41b",
     "matricula" : "2",
     "nome" : "Aluno-2",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -44,24 +44,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "8906ecde-2e3b-4f2a-a9e6-7dac813c9644",
+  "id" : "42d7db0e-b7c0-4ea8-ae68-13d3c5ea5472",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -72,11 +72,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "99f42fee-b03e-4f1c-842d-df4ec3b5a96f",
+    "id" : "76feed8b-7d23-4647-9a1b-6b4aea9fd355",
     "matricula" : "3",
     "nome" : "Aluno-3",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -89,24 +89,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "38996e27-3089-4372-b105-9487a7c58947",
+  "id" : "dc20b5c5-1dca-4808-80a1-9f3554a455e5",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -117,12 +117,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "5332e4b0-abcf-48bc-8d94-4ce8b7334e38",
+    "id" : "40ac3c26-2ed7-4a24-9460-8e027ef57f10",
     "matricula" : "4",
     "nome" : "Aluno-4",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -134,24 +134,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "c9950c21-5876-4568-8072-26a64568842f",
+  "id" : "e3c0332b-b026-4658-a11c-ac2a62ba8af7",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -162,11 +162,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "5103c7cd-f9d0-4210-bc6d-e6071709c9af",
+    "id" : "43aa55cf-4d31-4e28-a8f4-492f21165b8e",
     "matricula" : "5",
     "nome" : "Aluno-5",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -179,24 +179,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "4d8c9c95-1d41-468f-bd33-e73b94aab10b",
+  "id" : "dd49acfe-4167-4fda-b442-fe8f71a70bd3",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -207,11 +207,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "ef0ac550-5201-42ae-ae70-f2177b782863",
+    "id" : "f2b5058d-8dfc-4e8a-962b-ba54372e0602",
     "matricula" : "6",
     "nome" : "Aluno-6",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -224,24 +224,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "6eecde19-655f-4643-93e7-08367486ed90",
+  "id" : "c4764a5e-c2e2-46c7-9b12-8677d18368bd",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -252,12 +252,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "16524d18-8af7-4a33-9375-6a20067e28d4",
+    "id" : "0add1b8b-35d6-4d7f-adbf-b36d1f78a1cf",
     "matricula" : "7",
     "nome" : "Aluno-7",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -269,24 +269,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "0e2a2d19-3f66-466d-ab8e-ff56d8c56345",
+  "id" : "454b179d-d796-427e-8967-895ed84532cd",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -297,11 +297,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "9f3f5e1d-c709-4ef7-942a-634bdc111fc5",
+    "id" : "efc45592-cebd-4801-b294-a5846236494b",
     "matricula" : "8",
     "nome" : "Aluno-8",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -314,24 +314,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "07ff2fd5-1af5-4026-8ae0-45c70e6d15b3",
+  "id" : "d7b0fdb9-6862-4647-b1ad-64238ee7f5ba",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -342,11 +342,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "fc815a94-95ae-48f9-8419-19e6c6e8f56f",
+    "id" : "fee6e28c-13f4-41d5-8207-5db6722d17c2",
     "matricula" : "9",
     "nome" : "Aluno-9",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -359,24 +359,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "92f96ba0-1b6e-425f-90c7-342316b99485",
+  "id" : "7aed3b53-4627-45cf-a6f1-a942cad76f9e",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -387,12 +387,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "fb537063-5bc6-4412-91ba-79b307dc6e1e",
+    "id" : "eb1570d4-5fe5-4c64-bf47-fa6a3f1089a9",
     "matricula" : "10",
     "nome" : "Aluno-10",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -404,24 +404,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "dc6f4213-8fd5-4cda-92ea-4473e5652eea",
+  "id" : "2ae0d912-9414-417e-a52a-c46de661f720",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -432,11 +432,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "ccc0e3fe-2ae2-442f-993c-59ffc887c8f3",
+    "id" : "e6f55b89-2854-427a-b76e-9345d377a39a",
     "matricula" : "11",
     "nome" : "Aluno-11",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -449,24 +449,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "dfff53c1-5712-41fe-b14b-d6b15d84c213",
+  "id" : "5e7963c5-e62d-4fd4-afee-71ee64d60afe",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -477,11 +477,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "84a2a48b-12ac-4a0e-8535-16fa7b7b06a1",
+    "id" : "567b89ff-7cb4-40f0-a19e-3f17b1c1e6a6",
     "matricula" : "12",
     "nome" : "Aluno-12",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -494,24 +494,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "51badb87-858e-4a8d-95de-dd8a5cb621c4",
+  "id" : "d5aa1002-64f6-4f2d-8705-7690a352c785",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -522,12 +522,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "db44b3c9-a238-416d-95bb-d199cbc04022",
+    "id" : "ee73b584-0767-47b1-8a7b-77a9eebb015c",
     "matricula" : "13",
     "nome" : "Aluno-13",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -539,24 +539,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "52c2a2f4-63b9-465a-9536-e0f95623d4e0",
+  "id" : "984c8e50-49f1-4ab9-8055-844281c03432",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -567,11 +567,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "8b7b239e-f3ec-4b34-a03a-849f7b79a2ec",
+    "id" : "3227c16a-9e0c-4cb0-a895-114626cb1dbd",
     "matricula" : "14",
     "nome" : "Aluno-14",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -584,24 +584,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "f1634d19-6e78-4ab6-94f7-3d7155d64b1b",
+  "id" : "5fd50fbe-faba-4e42-a0b0-f3f46b7258b2",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -612,11 +612,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "b57320f8-1da2-48d4-92a0-beb835f2c3ab",
+    "id" : "cbc430d4-7992-4a2c-8eeb-1d4d57a50c92",
     "matricula" : "15",
     "nome" : "Aluno-15",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -629,24 +629,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "df64421a-cc41-4386-b86e-17fdb93118f3",
+  "id" : "50e0b75f-278c-4f79-b023-5564a618bb3b",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -657,12 +657,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "f1331257-6e2a-4071-b67a-268558f02a9b",
+    "id" : "ba080c10-7c48-476b-b1d5-775ecdc43db5",
     "matricula" : "16",
     "nome" : "Aluno-16",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -674,24 +674,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "239d1dda-14e2-440e-a17a-3a9e74091c6c",
+  "id" : "20b84f86-d342-47be-a9c1-5b822311015a",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -702,11 +702,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "60412d80-308f-49ab-b451-392b45ac51d1",
+    "id" : "e60662fd-dd66-41fb-82dc-b5e6948bdaa7",
     "matricula" : "17",
     "nome" : "Aluno-17",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -719,24 +719,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "76e18538-0e82-4bbe-a63b-e55e2aea32d9",
+  "id" : "67b410a2-124b-4587-b0e0-a888967cca9a",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -747,11 +747,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "313e685c-9df0-4386-a059-bf31cba57839",
+    "id" : "4d6fa203-6259-4470-940e-8775a3a6feef",
     "matricula" : "18",
     "nome" : "Aluno-18",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -764,24 +764,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "b16032ca-207f-473e-8272-a4aa2e228763",
+  "id" : "7d0d5be4-10c3-454a-8a7e-6e4eb5279792",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -792,12 +792,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "4332eec5-27f0-47fc-b05d-82e270c7f152",
+    "id" : "c146229f-1090-4405-ad23-ed9e639a739c",
     "matricula" : "19",
     "nome" : "Aluno-19",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -809,24 +809,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "aa970ad6-c99b-4894-956c-afe3e28e13d9",
+  "id" : "d9b3b738-35c3-404e-81e1-21a4c8099d72",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -837,11 +837,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "3cf3238b-1db6-4616-b8c3-d25ab26799c0",
+    "id" : "92d94b96-d16d-451a-8368-90d2a3dfec63",
     "matricula" : "20",
     "nome" : "Aluno-20",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -854,24 +854,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "72e17a24-4f70-4730-b7d7-4b526bfe3cd5",
+  "id" : "6464c596-27bb-46f3-a130-8e22c22c3330",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -882,11 +882,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "2fdc0781-179c-4d04-9229-683021ea3b28",
+    "id" : "861a2706-a8d9-4850-b9bb-c355f3fc799c",
     "matricula" : "21",
     "nome" : "Aluno-21",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -899,24 +899,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "4d64ef07-1618-4876-961f-efa08f085e44",
+  "id" : "625bdd75-f5ae-4bb3-ab12-9602285fed6f",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -927,12 +927,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "f45564e1-d00c-4812-af95-b91a7915fdca",
+    "id" : "150ff5fc-45ea-4e65-83e3-845ec05ad064",
     "matricula" : "22",
     "nome" : "Aluno-22",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -944,24 +944,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "270fd59e-d0a9-4b26-acb3-27a5cec3b34b",
+  "id" : "4f5f5fda-7369-48ea-95a4-06c0c2d9101d",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -972,11 +972,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "3a101fbc-2c04-414e-837e-4b2296bddfe7",
+    "id" : "d8140e33-9fb8-4c40-81ac-4e24e1acf3b4",
     "matricula" : "23",
     "nome" : "Aluno-23",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -989,24 +989,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "84b4dc27-5dfd-421a-84c3-e00f36a3a8c2",
+  "id" : "86ea97aa-275e-4d11-aac8-216534f19e38",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -1017,11 +1017,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "0273824f-8ab2-47cc-b9a0-d14e9ccbe821",
+    "id" : "8dbe95d2-15c0-4555-97bb-3fb40f6438cd",
     "matricula" : "24",
     "nome" : "Aluno-24",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1034,24 +1034,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "1de24fb4-2899-498e-b995-14f4cc1f4cad",
+  "id" : "d380fa01-e988-44d4-ac63-b5bea1e8eee9",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -1062,12 +1062,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "40b51e4e-8dc5-4f7f-aaad-8fbc6837aef4",
+    "id" : "f100b37c-3c9e-4aa7-b8d6-687e1411c5a1",
     "matricula" : "25",
     "nome" : "Aluno-25",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1079,24 +1079,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "5f0d7509-eb10-4d50-a9d9-24ae8f28d431",
+  "id" : "e6790695-d27f-4f48-81af-017458bfeb72",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -1107,11 +1107,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "b9daee12-af37-4312-b95b-0a16c7ef0fc5",
+    "id" : "dece6f45-71e1-4a74-8bef-e55a1978e53f",
     "matricula" : "26",
     "nome" : "Aluno-26",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1124,24 +1124,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "bdca4f67-e824-4fde-aba3-fd5fb8107518",
+  "id" : "9feec6cf-00d1-4a0c-b513-a07d0b0640df",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -1152,11 +1152,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "d5cfe8b4-7153-4dd2-9f4e-d5752bac401c",
+    "id" : "e4e03ea9-d921-4a48-9173-12ed05c12648",
     "matricula" : "27",
     "nome" : "Aluno-27",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1169,24 +1169,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "3040b6ee-578d-4ec5-87f0-306026207737",
+  "id" : "764bbb0f-3956-459a-89a7-764f3f0a3f4e",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -1197,12 +1197,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "59f9aeaa-bb87-4c0c-8aeb-4bb83a754eff",
+    "id" : "bb4d011e-2413-4444-9fe3-b237ff66d173",
     "matricula" : "28",
     "nome" : "Aluno-28",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1214,24 +1214,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "593e4639-159b-4ab6-b6ba-4109c2f5d19f",
+  "id" : "3b8c20cb-cc2c-4438-854c-ff19f2f27780",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -1242,11 +1242,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "7b770deb-eb85-45ed-9102-46461c4e37b8",
+    "id" : "92b599e3-fb86-4608-847c-93bfd96902f9",
     "matricula" : "29",
     "nome" : "Aluno-29",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1259,24 +1259,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "df632c87-9c31-4f19-979b-783d7c58ecdb",
+  "id" : "e80eb813-4b94-47fd-bb9f-dc54efff3cce",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -1287,11 +1287,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "423dfaeb-679b-48de-9a55-9a7c3c4ae453",
+    "id" : "d2371d44-0cfb-4023-9d35-0ba02b5329d1",
     "matricula" : "30",
     "nome" : "Aluno-30",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1304,24 +1304,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "c017b200-3f8f-4a36-b1ba-4eba9103eeea",
+  "id" : "5917f6a5-1c3e-4b7c-8f3c-f51612b5970d",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -1332,12 +1332,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "a9176180-a376-4453-b671-a7f831adf1b6",
+    "id" : "f893fe63-03d9-4fd5-80ae-8d565fd2ee80",
     "matricula" : "31",
     "nome" : "Aluno-31",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1349,24 +1349,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "fbe7b294-0dbd-429b-a251-d6575f158150",
+  "id" : "8582df31-8740-4a38-b542-f4de65c0c70e",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -1377,11 +1377,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "cec18363-0a75-4e36-9d71-7664d7415b07",
+    "id" : "1886da79-2b76-459e-bd91-2b6dd40b2399",
     "matricula" : "32",
     "nome" : "Aluno-32",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1394,24 +1394,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "98d9a1b5-f58e-4858-858c-93f131778f90",
+  "id" : "b26a1f88-8da0-417c-890c-2a877d99fc47",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -1422,11 +1422,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "378902dc-2075-4910-af7f-fbfcdf0108e1",
+    "id" : "f3aaf6b6-76b6-45ca-8e6a-8270d038b8d4",
     "matricula" : "33",
     "nome" : "Aluno-33",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1439,24 +1439,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "43216643-f909-4de3-9699-debd30ab7421",
+  "id" : "2dca5c89-7c41-4601-ab48-5aaddc81fb2e",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -1467,12 +1467,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "cb0733dc-ad14-4f78-87c3-22faf9ed3a4f",
+    "id" : "ba04587d-2a93-413d-83bb-135e39d2000a",
     "matricula" : "34",
     "nome" : "Aluno-34",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1484,24 +1484,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "17b500b8-d4f4-48f4-a825-26dacf709d2b",
+  "id" : "0bf534b8-e8e1-4df9-90df-35518808d86c",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -1512,11 +1512,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "5a58ea5b-7dc1-413f-ad00-a3f02811a65a",
+    "id" : "a56e2d75-a8d3-49ae-b28e-0e6d36e7b672",
     "matricula" : "35",
     "nome" : "Aluno-35",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1529,24 +1529,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "b9198f94-4b8d-4369-9eaf-9721898b08b5",
+  "id" : "c38e59f7-8cd7-4b20-8cc5-591b075b9a69",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -1557,11 +1557,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "2a8fd25e-24b0-4673-965a-582f327c7185",
+    "id" : "92d8bee0-4661-4381-bca3-30fc90d3da38",
     "matricula" : "36",
     "nome" : "Aluno-36",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1574,24 +1574,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "d1dcaada-2c9d-41a8-a74d-9fec92ee7b36",
+  "id" : "894eb401-0ef9-47f3-bc65-7fe7021cfa0c",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -1602,12 +1602,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "5c7284f3-ac32-4469-b9ba-c441c59d0126",
+    "id" : "556f5eff-41f9-4f7d-99d0-726df77ec757",
     "matricula" : "37",
     "nome" : "Aluno-37",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1619,24 +1619,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "5a731054-a693-4542-9a80-080a3f5404bb",
+  "id" : "b7f56df0-754b-4c57-8f63-d88d6063a964",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -1647,11 +1647,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "58b64433-4588-4d33-9e80-1ecd14a697ad",
+    "id" : "01fd6e19-2a25-40e3-8a9c-3a115ac6563f",
     "matricula" : "38",
     "nome" : "Aluno-38",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1664,24 +1664,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "594c6ae8-ef01-4536-86ef-6775a0327994",
+  "id" : "6877a3f1-9c4b-4df9-8e9d-3bb8038617f7",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -1692,11 +1692,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "88ad0edf-95f0-4d39-bf59-b97d3849de0d",
+    "id" : "9756e438-31c8-4605-a5bf-3c68083804ba",
     "matricula" : "39",
     "nome" : "Aluno-39",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1709,24 +1709,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "e9b4a19c-bc6a-4eaa-9d56-ed05babb8a97",
+  "id" : "489507d0-13ea-47f6-bc20-92101e01ef0c",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -1737,12 +1737,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "acc91b7f-1cd2-4920-980b-95339266d4ec",
+    "id" : "106149f1-de5a-453f-8a73-9df5b6b843f8",
     "matricula" : "40",
     "nome" : "Aluno-40",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1754,24 +1754,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "827e774f-6d49-4ada-8286-74681f469454",
+  "id" : "81d6c43f-4caa-45d6-92b4-f757f4cfcc35",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -1782,11 +1782,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "5edc03d6-cf0f-496d-9ed6-ae965035e6fc",
+    "id" : "0d960041-58f8-4270-be87-c9f85b09ed02",
     "matricula" : "41",
     "nome" : "Aluno-41",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1799,24 +1799,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "6534fa84-a510-472e-8ae9-5498853e28a7",
+  "id" : "4cc8f3b5-46f3-4243-84a0-7765cd3aeb21",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -1827,11 +1827,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "79ee1d5e-8f13-4e0a-b152-bdb81f126d57",
+    "id" : "f8b2cc83-5e53-4134-92cb-67368e25ddce",
     "matricula" : "42",
     "nome" : "Aluno-42",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1844,24 +1844,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "6eee9320-43ef-4734-b1d8-9c5fb8ff9ed6",
+  "id" : "2ccbbdcf-9814-4992-9545-7eeb5054f483",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -1872,12 +1872,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "fce479e7-9f8b-4dd9-92f8-77d00fc457c5",
+    "id" : "a0e0d5d7-43be-4ccc-acbc-35364c2b4422",
     "matricula" : "43",
     "nome" : "Aluno-43",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -1889,24 +1889,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "221dc8f8-f606-4677-a754-e668c6cbd32f",
+  "id" : "f1b8ab36-9131-4d46-bf21-119f4ba78d96",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -1917,11 +1917,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "5586547f-3ac4-4cfa-b282-1a13462fbd7d",
+    "id" : "1fcd7cd4-d9a5-434e-97b6-fbab4edcd583",
     "matricula" : "44",
     "nome" : "Aluno-44",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -1934,24 +1934,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "0a7744b9-dfea-4fd7-8ce0-ee0e8ae8b135",
+  "id" : "4ce95452-1304-40e5-8875-24ecc516ba90",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -1962,11 +1962,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "61700910-0376-4110-99ec-fa22dd7ab0b6",
+    "id" : "7979c13d-444d-437a-a7ee-d83108b4aae4",
     "matricula" : "45",
     "nome" : "Aluno-45",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -1979,24 +1979,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "f5f8a4f6-0fdb-4736-a2c7-6bd4b9ec3299",
+  "id" : "ce6d10b0-0683-48aa-84e8-cdab24b06b93",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -2007,12 +2007,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "cff36c8b-71dd-47e1-8a84-2884418f26fd",
+    "id" : "f1559833-4dd8-4922-97c8-81abf5605e3d",
     "matricula" : "1",
     "nome" : "Aluno-1",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2024,24 +2024,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "7015c1d1-457d-4bf8-bac8-8fdd7ecbceaa",
+  "id" : "73c1f3c1-08c1-4ccc-8d05-66ac844e8899",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -2052,11 +2052,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "57874993-0dee-4f36-8af6-19214f76243f",
+    "id" : "129915d5-5d7d-4a9d-92e8-faee7306f41b",
     "matricula" : "2",
     "nome" : "Aluno-2",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2067,26 +2067,26 @@
   "notaL" : 0.0,
   "notaS" : 0.0,
   "faltas" : 0,
-  "trancado" : false
+  "trancado" : true
 }, {
-  "id" : "4d4f9a71-d760-4741-8440-38766f4b45de",
+  "id" : "dbc2e53f-4e0d-4705-ba40-85b1fea919e6",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -2097,11 +2097,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "99f42fee-b03e-4f1c-842d-df4ec3b5a96f",
+    "id" : "76feed8b-7d23-4647-9a1b-6b4aea9fd355",
     "matricula" : "3",
     "nome" : "Aluno-3",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2114,24 +2114,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "c2b01953-8ed9-4718-a424-ba9af64dbc52",
+  "id" : "73911c05-1e0f-4243-bdd9-889789450b1f",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -2142,12 +2142,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "5332e4b0-abcf-48bc-8d94-4ce8b7334e38",
+    "id" : "40ac3c26-2ed7-4a24-9460-8e027ef57f10",
     "matricula" : "4",
     "nome" : "Aluno-4",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2159,24 +2159,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "2f45ed96-85cc-494f-959b-9d6ca539f4da",
+  "id" : "463c1427-0ee8-42cd-9a13-bc9936875b08",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -2187,11 +2187,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "5103c7cd-f9d0-4210-bc6d-e6071709c9af",
+    "id" : "43aa55cf-4d31-4e28-a8f4-492f21165b8e",
     "matricula" : "5",
     "nome" : "Aluno-5",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2202,26 +2202,26 @@
   "notaL" : 0.0,
   "notaS" : 0.0,
   "faltas" : 0,
-  "trancado" : false
+  "trancado" : true
 }, {
-  "id" : "23b3ddd1-5d88-4749-b647-65911b033570",
+  "id" : "732a0c0c-a279-43be-b732-f060b1c6780b",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -2232,11 +2232,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "ef0ac550-5201-42ae-ae70-f2177b782863",
+    "id" : "f2b5058d-8dfc-4e8a-962b-ba54372e0602",
     "matricula" : "6",
     "nome" : "Aluno-6",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2249,24 +2249,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "610ff356-d8b5-443c-ba54-39b5cdae2d6c",
+  "id" : "3ac97c2f-4e7a-414d-b011-b2b678b1fc7d",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -2277,12 +2277,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "16524d18-8af7-4a33-9375-6a20067e28d4",
+    "id" : "0add1b8b-35d6-4d7f-adbf-b36d1f78a1cf",
     "matricula" : "7",
     "nome" : "Aluno-7",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2294,24 +2294,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "81db096b-8a16-4748-abf2-0d3d6adc9c24",
+  "id" : "3b7de787-8054-4bb0-8610-ebf5ef0a894d",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -2322,11 +2322,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "9f3f5e1d-c709-4ef7-942a-634bdc111fc5",
+    "id" : "efc45592-cebd-4801-b294-a5846236494b",
     "matricula" : "8",
     "nome" : "Aluno-8",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2339,24 +2339,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "a52e57e3-bb93-4c65-b9d7-9e80fa61ad87",
+  "id" : "b5da75e7-6b52-419c-b6c2-6b3b0a03edc0",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -2367,11 +2367,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "fc815a94-95ae-48f9-8419-19e6c6e8f56f",
+    "id" : "fee6e28c-13f4-41d5-8207-5db6722d17c2",
     "matricula" : "9",
     "nome" : "Aluno-9",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2384,24 +2384,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "13d2d1ea-e1ec-4bd4-88bd-4fee3581620a",
+  "id" : "998c624e-7e55-4fef-b8e0-3b076f5d049d",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -2412,12 +2412,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "fb537063-5bc6-4412-91ba-79b307dc6e1e",
+    "id" : "eb1570d4-5fe5-4c64-bf47-fa6a3f1089a9",
     "matricula" : "10",
     "nome" : "Aluno-10",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2429,24 +2429,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "241f9951-6f7a-45b3-abfb-971e205942c5",
+  "id" : "d046bddb-9629-425e-8e39-d58dbc43b840",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -2457,11 +2457,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "ccc0e3fe-2ae2-442f-993c-59ffc887c8f3",
+    "id" : "e6f55b89-2854-427a-b76e-9345d377a39a",
     "matricula" : "11",
     "nome" : "Aluno-11",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2474,24 +2474,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "b73d6e4f-40e4-44ae-9032-f24e8134a50c",
+  "id" : "83a59af1-f019-409f-b15c-2efc95d5155c",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -2502,11 +2502,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "84a2a48b-12ac-4a0e-8535-16fa7b7b06a1",
+    "id" : "567b89ff-7cb4-40f0-a19e-3f17b1c1e6a6",
     "matricula" : "12",
     "nome" : "Aluno-12",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2519,24 +2519,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "6b880c2d-1980-4db7-b14c-db2bdf463977",
+  "id" : "2351089e-1fcc-4c53-a83c-8d0b78a89e96",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -2547,12 +2547,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "db44b3c9-a238-416d-95bb-d199cbc04022",
+    "id" : "ee73b584-0767-47b1-8a7b-77a9eebb015c",
     "matricula" : "13",
     "nome" : "Aluno-13",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2564,24 +2564,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "279bdcee-c5d3-4afe-af82-8d793eee9123",
+  "id" : "b003358f-d250-47af-bb3a-8c16c3aafa16",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -2592,11 +2592,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "8b7b239e-f3ec-4b34-a03a-849f7b79a2ec",
+    "id" : "3227c16a-9e0c-4cb0-a895-114626cb1dbd",
     "matricula" : "14",
     "nome" : "Aluno-14",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2609,24 +2609,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "479691fd-aae6-43b2-b1f9-7982b243842d",
+  "id" : "562d3fd0-51f5-4bec-ad3e-0ab899f214fe",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -2637,11 +2637,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "b57320f8-1da2-48d4-92a0-beb835f2c3ab",
+    "id" : "cbc430d4-7992-4a2c-8eeb-1d4d57a50c92",
     "matricula" : "15",
     "nome" : "Aluno-15",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2654,24 +2654,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "cc5f26f9-ff2f-467a-a9fd-7b0e6e548ca2",
+  "id" : "50870d6e-47a8-4ac8-8bfe-75398a9a8273",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -2682,12 +2682,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "f1331257-6e2a-4071-b67a-268558f02a9b",
+    "id" : "ba080c10-7c48-476b-b1d5-775ecdc43db5",
     "matricula" : "16",
     "nome" : "Aluno-16",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2699,24 +2699,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "dcb4d43c-d862-4b97-bd95-467da5b66181",
+  "id" : "39e548b0-f2ec-49e4-a91c-0d1643fcc959",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -2727,11 +2727,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "60412d80-308f-49ab-b451-392b45ac51d1",
+    "id" : "e60662fd-dd66-41fb-82dc-b5e6948bdaa7",
     "matricula" : "17",
     "nome" : "Aluno-17",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2744,24 +2744,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "33fe3afe-d30c-4fa0-96b0-984805b77eef",
+  "id" : "3ae9df45-0e5c-4e30-a2c1-98e5df0bc903",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -2772,11 +2772,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "313e685c-9df0-4386-a059-bf31cba57839",
+    "id" : "4d6fa203-6259-4470-940e-8775a3a6feef",
     "matricula" : "18",
     "nome" : "Aluno-18",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2789,24 +2789,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "d0e3775b-34f8-4abf-b3d6-e02ccc4df157",
+  "id" : "a01f0ef9-b1e4-4cf6-8958-831406a4cde5",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -2817,12 +2817,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "4332eec5-27f0-47fc-b05d-82e270c7f152",
+    "id" : "c146229f-1090-4405-ad23-ed9e639a739c",
     "matricula" : "19",
     "nome" : "Aluno-19",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2834,24 +2834,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "e876d151-a506-4d0a-b6cb-f53810ec41f5",
+  "id" : "8bc48cfa-6112-423d-b4bc-39e45d0616e8",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -2862,11 +2862,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "3cf3238b-1db6-4616-b8c3-d25ab26799c0",
+    "id" : "92d94b96-d16d-451a-8368-90d2a3dfec63",
     "matricula" : "20",
     "nome" : "Aluno-20",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -2879,24 +2879,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "2b2ada03-47c3-4d17-a383-d1bc1f8dcaad",
+  "id" : "2920e4d9-6133-410b-9053-1c2093cd5a92",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -2907,11 +2907,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "2fdc0781-179c-4d04-9229-683021ea3b28",
+    "id" : "861a2706-a8d9-4850-b9bb-c355f3fc799c",
     "matricula" : "21",
     "nome" : "Aluno-21",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -2924,24 +2924,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "14a1e161-059f-470a-a4dd-d2bd402c86fe",
+  "id" : "a78f8d5c-12cf-468f-95fb-26ce84363cf4",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -2952,12 +2952,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "f45564e1-d00c-4812-af95-b91a7915fdca",
+    "id" : "150ff5fc-45ea-4e65-83e3-845ec05ad064",
     "matricula" : "22",
     "nome" : "Aluno-22",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -2969,24 +2969,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "115a7c38-9052-4fa3-9958-bf78ae538752",
+  "id" : "9b00395f-7db2-458e-a040-f6f265e70ee9",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -2997,11 +2997,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "3a101fbc-2c04-414e-837e-4b2296bddfe7",
+    "id" : "d8140e33-9fb8-4c40-81ac-4e24e1acf3b4",
     "matricula" : "23",
     "nome" : "Aluno-23",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3014,24 +3014,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "19a6e8b5-b5f5-416c-9afa-61a2daf7b793",
+  "id" : "60658d54-96c4-4c06-bcac-a97107d4ea19",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -3042,11 +3042,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "0273824f-8ab2-47cc-b9a0-d14e9ccbe821",
+    "id" : "8dbe95d2-15c0-4555-97bb-3fb40f6438cd",
     "matricula" : "24",
     "nome" : "Aluno-24",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3059,24 +3059,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "2dd18130-7204-4900-8b36-dd9fa2dcc634",
+  "id" : "283a2831-2a7c-4d2d-b4bf-d7ccf71132d9",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -3087,12 +3087,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "40b51e4e-8dc5-4f7f-aaad-8fbc6837aef4",
+    "id" : "f100b37c-3c9e-4aa7-b8d6-687e1411c5a1",
     "matricula" : "25",
     "nome" : "Aluno-25",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3104,24 +3104,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "f97417ab-cb95-414c-b5ab-f15497f32f6d",
+  "id" : "fb785f4a-7494-4e9f-bca6-394a37ef6f76",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -3132,11 +3132,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "b9daee12-af37-4312-b95b-0a16c7ef0fc5",
+    "id" : "dece6f45-71e1-4a74-8bef-e55a1978e53f",
     "matricula" : "26",
     "nome" : "Aluno-26",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3149,24 +3149,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "3f2ffdb9-5189-484d-ae75-34e02a8ab67a",
+  "id" : "d5b9a519-561a-4bf6-9995-8afe58bcafcb",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -3177,11 +3177,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "d5cfe8b4-7153-4dd2-9f4e-d5752bac401c",
+    "id" : "e4e03ea9-d921-4a48-9173-12ed05c12648",
     "matricula" : "27",
     "nome" : "Aluno-27",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3194,24 +3194,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "9e895603-d0b6-4bc5-8de8-07825ffd3d14",
+  "id" : "4a5a4a80-119e-4061-b73c-9e9b533b0a98",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -3222,12 +3222,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "59f9aeaa-bb87-4c0c-8aeb-4bb83a754eff",
+    "id" : "bb4d011e-2413-4444-9fe3-b237ff66d173",
     "matricula" : "28",
     "nome" : "Aluno-28",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3239,24 +3239,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "ad1bb93e-284d-40e1-8b47-e6109a56c0cc",
+  "id" : "15ba19c9-c968-445d-939b-4a9c7fced818",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -3267,11 +3267,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "7b770deb-eb85-45ed-9102-46461c4e37b8",
+    "id" : "92b599e3-fb86-4608-847c-93bfd96902f9",
     "matricula" : "29",
     "nome" : "Aluno-29",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3284,24 +3284,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "65b7a166-cdce-4a68-9605-b89768b9e054",
+  "id" : "74d3f35e-4851-43c2-b262-afc0e8996fc3",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -3312,11 +3312,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "423dfaeb-679b-48de-9a55-9a7c3c4ae453",
+    "id" : "d2371d44-0cfb-4023-9d35-0ba02b5329d1",
     "matricula" : "30",
     "nome" : "Aluno-30",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3329,24 +3329,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "f51d1e08-76ba-4c6b-9add-b543e7488936",
+  "id" : "cb1c946c-6bc6-444f-9986-32e900a55685",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -3357,12 +3357,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "a9176180-a376-4453-b671-a7f831adf1b6",
+    "id" : "f893fe63-03d9-4fd5-80ae-8d565fd2ee80",
     "matricula" : "31",
     "nome" : "Aluno-31",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3374,24 +3374,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "de0d31a1-50f6-4cc5-8179-3cd64f03a0a2",
+  "id" : "99701c64-6c37-48fa-9ed5-21e7ee0825f7",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -3402,11 +3402,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "cec18363-0a75-4e36-9d71-7664d7415b07",
+    "id" : "1886da79-2b76-459e-bd91-2b6dd40b2399",
     "matricula" : "32",
     "nome" : "Aluno-32",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3419,24 +3419,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "22e16e17-fa8b-4a40-8bbf-fc12e8237b66",
+  "id" : "a5314052-9fc1-4a7b-a96c-a0f0641f4205",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -3447,11 +3447,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "378902dc-2075-4910-af7f-fbfcdf0108e1",
+    "id" : "f3aaf6b6-76b6-45ca-8e6a-8270d038b8d4",
     "matricula" : "33",
     "nome" : "Aluno-33",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3464,24 +3464,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "b495a105-3564-42e6-b876-6d713274f8c1",
+  "id" : "7a69a2cc-c562-479b-a2b1-e77a8beb9808",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -3492,12 +3492,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "cb0733dc-ad14-4f78-87c3-22faf9ed3a4f",
+    "id" : "ba04587d-2a93-413d-83bb-135e39d2000a",
     "matricula" : "34",
     "nome" : "Aluno-34",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3509,24 +3509,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "4df6a41c-234e-44ce-9e17-db2ed64877cb",
+  "id" : "501d2ad1-b218-4321-a617-44203aff0500",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -3537,11 +3537,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "5a58ea5b-7dc1-413f-ad00-a3f02811a65a",
+    "id" : "a56e2d75-a8d3-49ae-b28e-0e6d36e7b672",
     "matricula" : "35",
     "nome" : "Aluno-35",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3554,24 +3554,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "8053f44e-3ada-4e36-9b9c-410c0df4d471",
+  "id" : "3d30ecad-7b7b-4fc6-a346-c0a3a4786093",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -3582,11 +3582,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "2a8fd25e-24b0-4673-965a-582f327c7185",
+    "id" : "92d8bee0-4661-4381-bca3-30fc90d3da38",
     "matricula" : "36",
     "nome" : "Aluno-36",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3599,24 +3599,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "6fe684f2-0660-4130-b999-164c719e3ad0",
+  "id" : "05256b98-969a-417e-9081-619aca6b2f14",
   "turma" : {
-    "id" : "6a6badb2-7e69-462c-9279-c9c3d871d874",
+    "id" : "14e04f89-cebf-4142-802c-d768f0cdc56f",
     "codigo" : "T2",
     "disciplina" : {
-      "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+      "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
       "titulo" : "Disciplina-8",
       "codigo" : "8",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -3627,12 +3627,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "5c7284f3-ac32-4469-b9ba-c441c59d0126",
+    "id" : "556f5eff-41f9-4f7d-99d0-726df77ec757",
     "matricula" : "37",
     "nome" : "Aluno-37",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3644,24 +3644,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "06daad81-9e63-436f-9810-3e2283a8e25c",
+  "id" : "7362fd31-5508-4afe-849e-583d6c78bed3",
   "turma" : {
-    "id" : "3b1b6f43-036d-4128-86d6-c0acf9746beb",
+    "id" : "d982739c-3043-4fa2-967f-c0d13804ff7d",
     "codigo" : "T3",
     "disciplina" : {
-      "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+      "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
       "titulo" : "Disciplina-9",
       "codigo" : "9",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "c7db6f42-0b98-49fa-943a-46ed15d6d138",
+      "id" : "b355f0db-a1f5-4b92-bacb-37d90c1e4066",
       "matricula" : "1",
       "nome" : "Professor-1"
     },
     "sala" : {
-      "id" : "65b2f2ae-3bec-470b-9e2f-c7f3ec1f7ee4",
+      "id" : "0e9d6a5c-fef8-48f8-b761-4a7aa1a5b267",
       "local" : "Sala-1",
       "campus" : "Gama"
     },
@@ -3672,11 +3672,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "58b64433-4588-4d33-9e80-1ecd14a697ad",
+    "id" : "01fd6e19-2a25-40e3-8a9c-3a115ac6563f",
     "matricula" : "38",
     "nome" : "Aluno-38",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3689,24 +3689,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "2d6b7f5e-4bdc-4be7-a50e-b2464c9c1efa",
+  "id" : "7dc2956a-3436-4e9a-a0c6-0d75d211d024",
   "turma" : {
-    "id" : "740dc325-abcb-4ce8-a222-ee64c890c036",
+    "id" : "55321f24-1e10-471b-8aed-0cb9450eb525",
     "codigo" : "T4",
     "disciplina" : {
-      "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+      "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
       "titulo" : "Disciplina-10",
       "codigo" : "10",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -3717,11 +3717,11 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "88ad0edf-95f0-4d39-bf59-b97d3849de0d",
+    "id" : "9756e438-31c8-4605-a5bf-3c68083804ba",
     "matricula" : "39",
     "nome" : "Aluno-39",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3734,24 +3734,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "3040d756-29d0-4ebf-8cec-ac0063448934",
+  "id" : "8053fadb-80a8-4261-8898-bd9f6be52124",
   "turma" : {
-    "id" : "3bf41034-bfab-4971-99fc-304eb06583e8",
+    "id" : "ce9e164a-5970-437d-ab0d-a72bb7105b2c",
     "codigo" : "T5",
     "disciplina" : {
-      "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+      "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
       "titulo" : "Disciplina-11",
       "codigo" : "11",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "2e4d7bbf-2ddc-43e3-94a8-572416dff6c3",
+      "id" : "42207072-e2dd-4b76-869e-556fc7f3cf8e",
       "matricula" : "3",
       "nome" : "Professor-3"
     },
     "sala" : {
-      "id" : "53d2f8ac-970b-4e8b-8745-839aaa598101",
+      "id" : "f5bad96b-0538-4672-835f-b13315b690df",
       "local" : "Sala-3",
       "campus" : "Gama"
     },
@@ -3762,12 +3762,12 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "acc91b7f-1cd2-4920-980b-95339266d4ec",
+    "id" : "106149f1-de5a-453f-8a73-9df5b6b843f8",
     "matricula" : "40",
     "nome" : "Aluno-40",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3779,24 +3779,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "777392bc-2ed2-45a1-9541-31bc587041ea",
+  "id" : "0ef2281a-cf8b-472c-b5cb-f2c420e3a03a",
   "turma" : {
-    "id" : "53e84f19-7ea4-4023-995f-94b5693f75de",
+    "id" : "06c3b947-14a8-4597-958e-abeab7a0b339",
     "codigo" : "T15",
     "disciplina" : {
-      "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+      "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
       "titulo" : "Disciplina-12",
       "codigo" : "12",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -3807,11 +3807,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "5edc03d6-cf0f-496d-9ed6-ae965035e6fc",
+    "id" : "0d960041-58f8-4270-be87-c9f85b09ed02",
     "matricula" : "41",
     "nome" : "Aluno-41",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3824,24 +3824,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "4b0edec9-22b4-4adb-9b92-669147f4a076",
+  "id" : "4a2a1486-5e43-4f6f-8a99-68c965d41045",
   "turma" : {
-    "id" : "ff70a828-16a2-4767-b82c-7ad74e4c3244",
+    "id" : "3d8e2989-3f53-42e7-a7ff-0421795e71ce",
     "codigo" : "T25",
     "disciplina" : {
-      "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+      "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
       "titulo" : "Disciplina-13",
       "codigo" : "13",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -3852,11 +3852,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "79ee1d5e-8f13-4e0a-b152-bdb81f126d57",
+    "id" : "f8b2cc83-5e53-4134-92cb-67368e25ddce",
     "matricula" : "42",
     "nome" : "Aluno-42",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -3869,24 +3869,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "9f5667cd-5acd-45f8-ac8e-1057fdefc971",
+  "id" : "e5ca01ea-b520-4ba1-978a-3f18b0989ca4",
   "turma" : {
-    "id" : "aac165d1-fd79-4c3d-9d9f-e355b895267b",
+    "id" : "a5932437-5f2a-4e45-bd0b-29ae91395092",
     "codigo" : "T35",
     "disciplina" : {
-      "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+      "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
       "titulo" : "Disciplina-14",
       "codigo" : "14",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "8a7349f5-cf22-4635-9342-d12e1ef2253f",
+      "id" : "c5fd3c24-2fa4-40d9-9927-3179e2184f1d",
       "matricula" : "6",
       "nome" : "Professor-6"
     },
     "sala" : {
-      "id" : "63dded48-653e-4aa0-82ed-2998a368797e",
+      "id" : "c513ddbc-d1c3-4e54-a4f0-e8a15651618a",
       "local" : "Sala-6",
       "campus" : "Gama"
     },
@@ -3897,12 +3897,12 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "fce479e7-9f8b-4dd9-92f8-77d00fc457c5",
+    "id" : "a0e0d5d7-43be-4ccc-acbc-35364c2b4422",
     "matricula" : "43",
     "nome" : "Aluno-43",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },
@@ -3914,24 +3914,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "5b38d5e3-6a8f-4b2f-a240-9fd113816e37",
+  "id" : "e6715f8b-fa76-4189-89d2-136229cd4625",
   "turma" : {
-    "id" : "c99355f7-f47b-4ecd-9622-4fa5c1915e8c",
+    "id" : "b331c262-6e61-45b4-a9af-2c1c5745e98a",
     "codigo" : "T45",
     "disciplina" : {
-      "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+      "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
       "titulo" : "Disciplina-15",
       "codigo" : "15",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "1fd25c89-3baf-46e8-a454-bb3999168c45",
+      "id" : "011cb36c-4e30-4507-8cdb-a1f55f2031f9",
       "matricula" : "7",
       "nome" : "Professor-7"
     },
     "sala" : {
-      "id" : "4133f2b1-385b-48ba-af57-c1c8cead63ef",
+      "id" : "47b0d06a-14ee-47d7-80e6-a2fc2643db0c",
       "local" : "Sala-7",
       "campus" : "Gama"
     },
@@ -3942,11 +3942,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "5586547f-3ac4-4cfa-b282-1a13462fbd7d",
+    "id" : "1fcd7cd4-d9a5-434e-97b6-fbab4edcd583",
     "matricula" : "44",
     "nome" : "Aluno-44",
     "curso" : {
-      "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+      "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
       "titulo" : "Curso-3"
     },
     "especial" : false
@@ -3959,24 +3959,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "03255677-8826-49ab-ba2a-b11b0ef2bb2f",
+  "id" : "4a1599bd-0581-43ca-9ab2-d827e4a70f6c",
   "turma" : {
-    "id" : "0c74a004-4606-4e09-96c7-2f21b86d8001",
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
     "codigo" : "T55",
     "disciplina" : {
-      "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
       "titulo" : "Disciplina-16",
       "codigo" : "16",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "26d6f0b6-a473-4d1c-b2da-8c72b32b0cb7",
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
       "matricula" : "8",
       "nome" : "Professor-8"
     },
     "sala" : {
-      "id" : "a6599e82-6b5f-4b36-8b89-3411966860c5",
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
       "local" : "Sala-8",
       "campus" : "Gama"
     },
@@ -3987,11 +3987,11 @@
     "qtdMaxAlunos" : 50
   },
   "aluno" : {
-    "id" : "61700910-0376-4110-99ec-fa22dd7ab0b6",
+    "id" : "7979c13d-444d-437a-a7ee-d83108b4aae4",
     "matricula" : "45",
     "nome" : "Aluno-45",
     "curso" : {
-      "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+      "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
       "titulo" : "Curso-1"
     },
     "especial" : false
@@ -4004,24 +4004,24 @@
   "faltas" : 0,
   "trancado" : false
 }, {
-  "id" : "9c708b5f-0da2-4e3f-b797-3f3598821938",
+  "id" : "b587d6e3-9e94-4a70-acd5-4dd0f80aa3e5",
   "turma" : {
-    "id" : "76cd965a-0967-48da-b94f-19e2a9eae97e",
+    "id" : "965cfb63-21e8-4302-8dbc-042112edcf87",
     "codigo" : "T1",
     "disciplina" : {
-      "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+      "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
       "titulo" : "Disciplina-7",
       "codigo" : "7",
       "cargaHoraria" : 60,
       "listaPreRequisitos" : null
     },
     "professor" : {
-      "id" : "a5ce5dc3-22f1-4d14-acac-1e7e5a705b11",
+      "id" : "d0de1b58-3021-455e-93d7-ce74a27e3625",
       "matricula" : "2",
       "nome" : "Professor-2"
     },
     "sala" : {
-      "id" : "80be4338-4ad7-46df-8722-45398768742a",
+      "id" : "a6261b36-9cc2-4327-8893-fb02ddfe6f3a",
       "local" : "Sala-2",
       "campus" : "Gama"
     },
@@ -4032,12 +4032,57 @@
     "qtdMaxAlunos" : 100
   },
   "aluno" : {
-    "id" : "cff36c8b-71dd-47e1-8a84-2884418f26fd",
+    "id" : "f1559833-4dd8-4922-97c8-81abf5605e3d",
     "matricula" : "1",
     "nome" : "Aluno-1",
     "curso" : {
-      "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-      "titulo" : "Curso-2"
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
+    },
+    "especial" : false
+  },
+  "notaP1" : 0.0,
+  "notaP2" : 0.0,
+  "notaP3" : 0.0,
+  "notaL" : 0.0,
+  "notaS" : 0.0,
+  "faltas" : 0,
+  "trancado" : false
+}, {
+  "id" : "0af03b6f-6336-4297-b3bd-d5311d784606",
+  "turma" : {
+    "id" : "888d98e0-946e-4182-a2d6-f6ce6fdfd48c",
+    "codigo" : "T55",
+    "disciplina" : {
+      "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
+      "titulo" : "Disciplina-16",
+      "codigo" : "16",
+      "cargaHoraria" : 60,
+      "listaPreRequisitos" : null
+    },
+    "professor" : {
+      "id" : "76fa5382-78c7-41ad-8f3d-19aa5aed6232",
+      "matricula" : "8",
+      "nome" : "Professor-8"
+    },
+    "sala" : {
+      "id" : "cbe20ee5-72e5-4483-818c-1271e303ddb3",
+      "local" : "Sala-8",
+      "campus" : "Gama"
+    },
+    "horario" : "SQ5",
+    "avaliacaoMediaAritmetica" : true,
+    "semestreAno" : "1/2025",
+    "presencial" : true,
+    "qtdMaxAlunos" : 50
+  },
+  "aluno" : {
+    "id" : "f7e21185-2b67-4f49-98af-2e9049c34430",
+    "matricula" : "12345",
+    "nome" : "Luciano",
+    "curso" : {
+      "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+      "titulo" : "Direito"
     },
     "especial" : false
   },

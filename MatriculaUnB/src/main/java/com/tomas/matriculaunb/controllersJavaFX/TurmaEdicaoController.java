@@ -78,7 +78,7 @@ public class TurmaEdicaoController {
         result.ifPresent(buttonType -> {
             if (buttonType.getText().equals("OK")) {
                 System.out.println("ok...");
-                if(txtVagas.getText().equals("") || txtVagas.getText().isBlank()){
+                if(txtVagas.getText().isEmpty() || txtVagas.getText().isBlank()){
                     txtVagas.setText("0");
                 }
                 if (this.getTurma()==null){

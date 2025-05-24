@@ -1,7 +1,6 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
 import com.tomas.matriculaunb.modelo.*;
-import com.tomas.matriculaunb.servicos.ServicoDisciplina;
 import com.tomas.matriculaunb.servicos.ServicoTurma;
 import com.tomas.matriculaunb.util.Util;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -101,50 +100,52 @@ public class TurmaListaController {
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
         Turma turma = (Turma) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (turma != null){
-            TurmaEdicaoController controllerEdicao=new TurmaEdicaoController();
-            controllerEdicao.setTurma(turma);
-            controllerEdicao.carregarModal();
+        if (turma == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        TurmaEdicaoController controllerEdicao=new TurmaEdicaoController();
+        controllerEdicao.setTurma(turma);
+        controllerEdicao.carregarModal();
 
-            if (controllerEdicao.getTurma()!=null){
-                this.setTurmaEditada(controllerEdicao.getTurma());
-                try {
-                    servicoTurma.alterar(this.getTurmaEditada());
-                    servicoTurma.salvarArquivo();
-                    carregaListasTableView();
-                    tabela.setItems(this.listaFiltrada);
-                    tabela.refresh();
-                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Turma","Turma Salva","Turma Salva com Sucesso").showAndWait();
-                } catch (Exception e) {
-                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Turma","Erro ao Salvar",e.getMessage()).showAndWait();
-                }
+        if (controllerEdicao.getTurma()!=null){
+            this.setTurmaEditada(controllerEdicao.getTurma());
+            try {
+                servicoTurma.alterar(this.getTurmaEditada());
+                servicoTurma.salvarArquivo(turma);
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Turma","Turma Salva","Turma Salva com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Turma","Erro ao Salvar",e.getMessage()).showAndWait();
             }
         }
+
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         Turma turma = (Turma) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (turma != null){
+        if (turma == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Turma", "Excluir?","Deseja excluir a Turma "+turma.getCodigo() + "?");
-            Optional<ButtonType> btnAlert = alert.showAndWait();
-            btnAlert.ifPresent(btn->{
-                if (btn.getText().equals("OK")){
-                    try {
-                        servicoTurma.excluir(turma);
-                        servicoTurma.salvarArquivo();
-                        carregaListasTableView();
-                        tabela.setItems(this.listaFiltrada);
-                        Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Turma","Exclusão com Sucesso","Turma "+ turma.getCodigo() + " excluído com sucesso").showAndWait();
-                    } catch (Exception e) {
-                        Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Turma","Erro ao excluir",e.getMessage()).showAndWait();
-                    }
+        Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Turma", "Excluir?","Deseja excluir a Turma "+turma.getCodigo() + "?");
+        Optional<ButtonType> btnAlert = alert.showAndWait();
+        btnAlert.ifPresent(btn->{
+            if (btn.getText().equals("OK")){
+                try {
+                    servicoTurma.excluir(turma);
+                    servicoTurma.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Turma","Exclusão com Sucesso","Turma "+ turma.getCodigo() + " excluído com sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Turma","Erro ao excluir",e.getMessage()).showAndWait();
                 }
-            });
-        }
-        else {
-            Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Turma","Impossível Excluir","Selecione uma turma para excluir").showAndWait();
-        }
+            }
+        });
     }
 
 

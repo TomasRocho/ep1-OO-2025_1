@@ -1,9 +1,7 @@
 package com.tomas.matriculaunb.servicos;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
-import com.tomas.matriculaunb.modelo.Sala;
+import com.tomas.matriculaunb.modelo.*;
 
 import java.util.List;
 
@@ -77,5 +75,26 @@ public class ServicoSala extends ClasseServicoBase{
 
     public void carregarArquivo() throws Exception{
         this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Sala>>() {});
+    }
+
+    public void salvarArquivo(Sala salaAlterada) throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+
+        //alterar as salas da lista de turmas
+        ServicoTurma servicoTurma = ServicoTurma.getInstance();
+        List<ClasseBase> listaTurmas = servicoTurma.getTurmasPorSala(salaAlterada);
+        for(ClasseBase turma:listaTurmas){
+            ((Turma)turma).setSala(salaAlterada);
+        }
+        servicoTurma.salvarArquivo();
+
+        //alterar as salas da lista de alunosMatriculados
+        ServicoAlunoMatriculado servicoAlunoMatriculado=ServicoAlunoMatriculado.getInstance();
+        List<ClasseBase> listaAlunosMatriculados = servicoAlunoMatriculado.getAlunosMatriculadosPorSala(salaAlterada);
+        for(ClasseBase alunoMatriculado:listaAlunosMatriculados){
+            ((AlunoMatriculado)alunoMatriculado).getTurma().setSala(salaAlterada);
+        }
+        servicoAlunoMatriculado.salvarArquivo();
+
     }
 }

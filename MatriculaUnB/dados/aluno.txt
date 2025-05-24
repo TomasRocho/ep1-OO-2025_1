@@ -1,910 +1,910 @@
 [ {
-  "id" : "cff36c8b-71dd-47e1-8a84-2884418f26fd",
+  "id" : "f1559833-4dd8-4922-97c8-81abf5605e3d",
   "matricula" : "1",
   "nome" : "Aluno-1",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "57874993-0dee-4f36-8af6-19214f76243f",
+  "id" : "129915d5-5d7d-4a9d-92e8-faee7306f41b",
   "matricula" : "2",
   "nome" : "Aluno-2",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "99f42fee-b03e-4f1c-842d-df4ec3b5a96f",
+  "id" : "76feed8b-7d23-4647-9a1b-6b4aea9fd355",
   "matricula" : "3",
   "nome" : "Aluno-3",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "5332e4b0-abcf-48bc-8d94-4ce8b7334e38",
+  "id" : "40ac3c26-2ed7-4a24-9460-8e027ef57f10",
   "matricula" : "4",
   "nome" : "Aluno-4",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "5103c7cd-f9d0-4210-bc6d-e6071709c9af",
+  "id" : "43aa55cf-4d31-4e28-a8f4-492f21165b8e",
   "matricula" : "5",
   "nome" : "Aluno-5",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "ef0ac550-5201-42ae-ae70-f2177b782863",
+  "id" : "f2b5058d-8dfc-4e8a-962b-ba54372e0602",
   "matricula" : "6",
   "nome" : "Aluno-6",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "16524d18-8af7-4a33-9375-6a20067e28d4",
+  "id" : "0add1b8b-35d6-4d7f-adbf-b36d1f78a1cf",
   "matricula" : "7",
   "nome" : "Aluno-7",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "9f3f5e1d-c709-4ef7-942a-634bdc111fc5",
+  "id" : "efc45592-cebd-4801-b294-a5846236494b",
   "matricula" : "8",
   "nome" : "Aluno-8",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "fc815a94-95ae-48f9-8419-19e6c6e8f56f",
+  "id" : "fee6e28c-13f4-41d5-8207-5db6722d17c2",
   "matricula" : "9",
   "nome" : "Aluno-9",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "fb537063-5bc6-4412-91ba-79b307dc6e1e",
+  "id" : "eb1570d4-5fe5-4c64-bf47-fa6a3f1089a9",
   "matricula" : "10",
   "nome" : "Aluno-10",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "ccc0e3fe-2ae2-442f-993c-59ffc887c8f3",
+  "id" : "e6f55b89-2854-427a-b76e-9345d377a39a",
   "matricula" : "11",
   "nome" : "Aluno-11",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "84a2a48b-12ac-4a0e-8535-16fa7b7b06a1",
+  "id" : "567b89ff-7cb4-40f0-a19e-3f17b1c1e6a6",
   "matricula" : "12",
   "nome" : "Aluno-12",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "db44b3c9-a238-416d-95bb-d199cbc04022",
+  "id" : "ee73b584-0767-47b1-8a7b-77a9eebb015c",
   "matricula" : "13",
   "nome" : "Aluno-13",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "8b7b239e-f3ec-4b34-a03a-849f7b79a2ec",
+  "id" : "3227c16a-9e0c-4cb0-a895-114626cb1dbd",
   "matricula" : "14",
   "nome" : "Aluno-14",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "b57320f8-1da2-48d4-92a0-beb835f2c3ab",
+  "id" : "cbc430d4-7992-4a2c-8eeb-1d4d57a50c92",
   "matricula" : "15",
   "nome" : "Aluno-15",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "f1331257-6e2a-4071-b67a-268558f02a9b",
+  "id" : "ba080c10-7c48-476b-b1d5-775ecdc43db5",
   "matricula" : "16",
   "nome" : "Aluno-16",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "60412d80-308f-49ab-b451-392b45ac51d1",
+  "id" : "e60662fd-dd66-41fb-82dc-b5e6948bdaa7",
   "matricula" : "17",
   "nome" : "Aluno-17",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "313e685c-9df0-4386-a059-bf31cba57839",
+  "id" : "4d6fa203-6259-4470-940e-8775a3a6feef",
   "matricula" : "18",
   "nome" : "Aluno-18",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "4332eec5-27f0-47fc-b05d-82e270c7f152",
+  "id" : "c146229f-1090-4405-ad23-ed9e639a739c",
   "matricula" : "19",
   "nome" : "Aluno-19",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "3cf3238b-1db6-4616-b8c3-d25ab26799c0",
+  "id" : "92d94b96-d16d-451a-8368-90d2a3dfec63",
   "matricula" : "20",
   "nome" : "Aluno-20",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "2fdc0781-179c-4d04-9229-683021ea3b28",
+  "id" : "861a2706-a8d9-4850-b9bb-c355f3fc799c",
   "matricula" : "21",
   "nome" : "Aluno-21",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "f45564e1-d00c-4812-af95-b91a7915fdca",
+  "id" : "150ff5fc-45ea-4e65-83e3-845ec05ad064",
   "matricula" : "22",
   "nome" : "Aluno-22",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "3a101fbc-2c04-414e-837e-4b2296bddfe7",
+  "id" : "d8140e33-9fb8-4c40-81ac-4e24e1acf3b4",
   "matricula" : "23",
   "nome" : "Aluno-23",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "0273824f-8ab2-47cc-b9a0-d14e9ccbe821",
+  "id" : "8dbe95d2-15c0-4555-97bb-3fb40f6438cd",
   "matricula" : "24",
   "nome" : "Aluno-24",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "40b51e4e-8dc5-4f7f-aaad-8fbc6837aef4",
+  "id" : "f100b37c-3c9e-4aa7-b8d6-687e1411c5a1",
   "matricula" : "25",
   "nome" : "Aluno-25",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "b9daee12-af37-4312-b95b-0a16c7ef0fc5",
+  "id" : "dece6f45-71e1-4a74-8bef-e55a1978e53f",
   "matricula" : "26",
   "nome" : "Aluno-26",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "d5cfe8b4-7153-4dd2-9f4e-d5752bac401c",
+  "id" : "e4e03ea9-d921-4a48-9173-12ed05c12648",
   "matricula" : "27",
   "nome" : "Aluno-27",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "59f9aeaa-bb87-4c0c-8aeb-4bb83a754eff",
+  "id" : "bb4d011e-2413-4444-9fe3-b237ff66d173",
   "matricula" : "28",
   "nome" : "Aluno-28",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "7b770deb-eb85-45ed-9102-46461c4e37b8",
+  "id" : "92b599e3-fb86-4608-847c-93bfd96902f9",
   "matricula" : "29",
   "nome" : "Aluno-29",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "423dfaeb-679b-48de-9a55-9a7c3c4ae453",
+  "id" : "d2371d44-0cfb-4023-9d35-0ba02b5329d1",
   "matricula" : "30",
   "nome" : "Aluno-30",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "a9176180-a376-4453-b671-a7f831adf1b6",
+  "id" : "f893fe63-03d9-4fd5-80ae-8d565fd2ee80",
   "matricula" : "31",
   "nome" : "Aluno-31",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "cec18363-0a75-4e36-9d71-7664d7415b07",
+  "id" : "1886da79-2b76-459e-bd91-2b6dd40b2399",
   "matricula" : "32",
   "nome" : "Aluno-32",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "378902dc-2075-4910-af7f-fbfcdf0108e1",
+  "id" : "f3aaf6b6-76b6-45ca-8e6a-8270d038b8d4",
   "matricula" : "33",
   "nome" : "Aluno-33",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "cb0733dc-ad14-4f78-87c3-22faf9ed3a4f",
+  "id" : "ba04587d-2a93-413d-83bb-135e39d2000a",
   "matricula" : "34",
   "nome" : "Aluno-34",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "5a58ea5b-7dc1-413f-ad00-a3f02811a65a",
+  "id" : "a56e2d75-a8d3-49ae-b28e-0e6d36e7b672",
   "matricula" : "35",
   "nome" : "Aluno-35",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "2a8fd25e-24b0-4673-965a-582f327c7185",
+  "id" : "92d8bee0-4661-4381-bca3-30fc90d3da38",
   "matricula" : "36",
   "nome" : "Aluno-36",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "5c7284f3-ac32-4469-b9ba-c441c59d0126",
+  "id" : "556f5eff-41f9-4f7d-99d0-726df77ec757",
   "matricula" : "37",
   "nome" : "Aluno-37",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "58b64433-4588-4d33-9e80-1ecd14a697ad",
+  "id" : "01fd6e19-2a25-40e3-8a9c-3a115ac6563f",
   "matricula" : "38",
   "nome" : "Aluno-38",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "88ad0edf-95f0-4d39-bf59-b97d3849de0d",
+  "id" : "9756e438-31c8-4605-a5bf-3c68083804ba",
   "matricula" : "39",
   "nome" : "Aluno-39",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "acc91b7f-1cd2-4920-980b-95339266d4ec",
+  "id" : "106149f1-de5a-453f-8a73-9df5b6b843f8",
   "matricula" : "40",
   "nome" : "Aluno-40",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "5edc03d6-cf0f-496d-9ed6-ae965035e6fc",
+  "id" : "0d960041-58f8-4270-be87-c9f85b09ed02",
   "matricula" : "41",
   "nome" : "Aluno-41",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "79ee1d5e-8f13-4e0a-b152-bdb81f126d57",
+  "id" : "f8b2cc83-5e53-4134-92cb-67368e25ddce",
   "matricula" : "42",
   "nome" : "Aluno-42",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "fce479e7-9f8b-4dd9-92f8-77d00fc457c5",
+  "id" : "a0e0d5d7-43be-4ccc-acbc-35364c2b4422",
   "matricula" : "43",
   "nome" : "Aluno-43",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "5586547f-3ac4-4cfa-b282-1a13462fbd7d",
+  "id" : "1fcd7cd4-d9a5-434e-97b6-fbab4edcd583",
   "matricula" : "44",
   "nome" : "Aluno-44",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "61700910-0376-4110-99ec-fa22dd7ab0b6",
+  "id" : "7979c13d-444d-437a-a7ee-d83108b4aae4",
   "matricula" : "45",
   "nome" : "Aluno-45",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "2ea8358a-55c4-4aca-a3c9-ff86b5c5c343",
+  "id" : "1f9e5f29-8785-4e92-8d03-8da9e4d07d29",
   "matricula" : "46",
   "nome" : "Aluno-46",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "bd857618-7705-4bbf-9c7c-c4a2b6210d49",
+  "id" : "870842ac-122f-4683-8e25-5a19523bda95",
   "matricula" : "47",
   "nome" : "Aluno-47",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "a43ebd0c-cc67-4c66-bf99-76860babc721",
+  "id" : "ce14a75a-cbbd-4f9d-94c9-cdd741970dea",
   "matricula" : "48",
   "nome" : "Aluno-48",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "c78830f6-e127-4ac0-a841-b48033b038b1",
+  "id" : "92c10526-c683-453f-9b16-5ebf12cd0969",
   "matricula" : "49",
   "nome" : "Aluno-49",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "9c68045a-b33e-433d-a6b8-03d0050265a5",
+  "id" : "b9cb0b33-3f45-49ee-b86c-a8edb4d93d1e",
   "matricula" : "50",
   "nome" : "Aluno-50",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "001aa475-e17d-47e7-b158-d5da921bda3c",
+  "id" : "eace62c2-9aa5-433c-b090-95448c008e7c",
   "matricula" : "51",
   "nome" : "Aluno-51",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "62ef03cc-ea47-47d7-b219-bc1b12ebe812",
+  "id" : "11c457dd-00fb-4035-9f91-4b3167bca4dd",
   "matricula" : "52",
   "nome" : "Aluno-52",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "b70a44fc-06e8-46b5-8794-221b4343542a",
+  "id" : "0092d15d-63d9-4763-9ae3-6e02a603f83a",
   "matricula" : "53",
   "nome" : "Aluno-53",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "44f39eee-9fdf-45aa-a657-234e4a84f093",
+  "id" : "3f5b6858-d51d-4b10-8806-3e0c6c4ab7a9",
   "matricula" : "54",
   "nome" : "Aluno-54",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "eff79fdc-e809-4413-a353-c1c94b1c4fff",
+  "id" : "1e2a3860-c095-47b0-a7a1-6fb840dc1dc0",
   "matricula" : "55",
   "nome" : "Aluno-55",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "58eaccd3-6192-437a-b0d0-6e8d3284f190",
+  "id" : "9d2aa6cd-5675-4886-8ecb-f1c3bd6ec399",
   "matricula" : "56",
   "nome" : "Aluno-56",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "cff85f0a-bf9c-47c3-929e-22d1432cae4f",
+  "id" : "79174764-03d8-430a-ab26-c15cfc9e5328",
   "matricula" : "57",
   "nome" : "Aluno-57",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "1677bb71-42b8-4f18-a2ea-f24ab260cbd6",
+  "id" : "af7721b3-7d11-4310-b979-b5c412a70273",
   "matricula" : "58",
-  "nome" : "Alterado",
+  "nome" : "Aluno-58",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "d798fa7b-fe49-4f1b-926d-8043f6dbc664",
+  "id" : "209d0379-03a8-488d-98ab-b0b696390f8b",
   "matricula" : "59",
   "nome" : "Aluno-59",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "c71f3076-ff70-4b00-9ead-b297064243b5",
+  "id" : "f0723011-1866-4d42-b99f-43e70a53e677",
   "matricula" : "60",
   "nome" : "Aluno-60",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "8d6d83ee-687f-4841-804d-b9e4843749e9",
+  "id" : "a29ac37f-d579-471c-b350-8ecae22610e2",
   "matricula" : "61",
   "nome" : "Aluno-61",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "12ab0543-4a6a-4ae6-bb32-92a15171fac1",
+  "id" : "601ca45a-9cce-49f1-ad0b-e4437b708472",
   "matricula" : "62",
   "nome" : "Aluno-62",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "dc017f89-37d2-4e13-9df6-3c728ae0791b",
+  "id" : "c44f49d1-f27c-410c-add7-11bff5e4ac7b",
   "matricula" : "63",
   "nome" : "Aluno-63",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "d10d5998-82f9-458a-9e61-ea5304cf6bfd",
+  "id" : "d1b27ab9-34d5-48eb-8f35-de5a3639e1e2",
   "matricula" : "64",
   "nome" : "Aluno-64",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "6306cf87-0106-4378-a359-979bc7421158",
+  "id" : "f18ace1b-f4d6-4c90-8aef-96cc31f6688f",
   "matricula" : "65",
   "nome" : "Aluno-65",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "8792ca0e-b3d4-433d-b122-d57b3d32d771",
+  "id" : "85472c39-a47a-4e00-bd53-a6853719de27",
   "matricula" : "66",
   "nome" : "Aluno-66",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "f1189514-c509-4b20-8db9-1190cef060a5",
+  "id" : "e896b9d1-eca4-4c2f-aa5b-9871d9da5e85",
   "matricula" : "67",
   "nome" : "Aluno-67",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "1856c18d-41af-4618-adb9-ed87afa92d08",
+  "id" : "f044da5d-25bd-473d-917d-ec145ec65a4a",
   "matricula" : "68",
   "nome" : "Aluno-68",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "26e62bd6-33f4-4913-af35-ba20eea09bb0",
+  "id" : "bf9ada50-cb31-4cdd-a332-07360cab25e6",
   "matricula" : "69",
   "nome" : "Aluno-69",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "7b0450ff-eb1b-4db9-bd38-9fba06fececd",
+  "id" : "239a70bd-4b10-4213-8f6a-62cdadb3da7f",
   "matricula" : "70",
   "nome" : "Aluno-70",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "25c9a52a-666d-4271-afc2-018ab7c4a5e8",
+  "id" : "605848ad-5310-47e2-a3d4-0308963a0e35",
   "matricula" : "71",
   "nome" : "Aluno-71",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "8e1fff1e-9367-4b5c-847b-3d4b2b7d472f",
+  "id" : "a6885617-c29e-4b79-9524-0680538f17a8",
   "matricula" : "72",
   "nome" : "Aluno-72",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "d06007a4-65f1-4b70-9ff7-49d1334a7971",
+  "id" : "cb7b17c5-d8fe-46fc-9487-f5aca2c10ce0",
   "matricula" : "73",
   "nome" : "Aluno-73",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "13a1ffcf-70bf-4c57-8f2d-7b279aad76f3",
+  "id" : "f348dd86-2b30-4afc-9d3f-62e169fa58cb",
   "matricula" : "74",
   "nome" : "Aluno-74",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "a6ca2a25-073d-439d-bd3f-ce3815f8bda7",
+  "id" : "a6139311-fd37-428a-99d6-e2d71a8de660",
   "matricula" : "75",
   "nome" : "Aluno-75",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "47ce1fd1-aaf0-4547-ac8f-15504494da36",
+  "id" : "e8e164cf-b6fc-445c-9d8c-fed7e9336892",
   "matricula" : "76",
   "nome" : "Aluno-76",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "b8c3d19a-2613-4ea4-a7c3-3feb109902a3",
+  "id" : "b011385c-24e1-474a-95e6-05f781cc029c",
   "matricula" : "77",
   "nome" : "Aluno-77",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "a94e0d2c-9891-4dfe-b43e-3cc666b41064",
+  "id" : "520bec3e-96bd-44b5-9c5c-928d3a488fb3",
   "matricula" : "78",
   "nome" : "Aluno-78",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "b171930d-1da9-4b55-85ac-760344d662c1",
+  "id" : "8217c947-bc43-4cae-ae91-26ee2bf8e16b",
   "matricula" : "79",
   "nome" : "Aluno-79",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "0fa109f0-cab1-4d48-8d3e-fdb4a81ff5a0",
+  "id" : "6296d3e4-967d-469a-beb4-fb41d8f355ff",
   "matricula" : "80",
   "nome" : "Aluno-80",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
   },
   "especial" : false
 }, {
-  "id" : "aac6b38c-aeac-4129-8420-2cd871fe0f28",
+  "id" : "d80e837d-6422-46bf-b6b2-3a4dc3aa8ce5",
   "matricula" : "81",
   "nome" : "Aluno-81",
   "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
     "titulo" : "Curso-1"
   },
   "especial" : false
 }, {
-  "id" : "494381af-3949-44f6-be1c-1ea8a533b716",
+  "id" : "33183fbd-1fa9-41ef-8a3e-58644d3a2c9c",
   "matricula" : "82",
   "nome" : "Aluno-82",
   "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 }, {
-  "id" : "76c4f03f-fed8-4f94-b0b3-49a291de6f66",
-  "matricula" : "300",
-  "nome" : "Aluno-83",
-  "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
-  "id" : "4a3b1d64-2084-46fe-b775-7b9bb2fbdf5a",
-  "matricula" : "84",
-  "nome" : "Aluno-84",
-  "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
-    "titulo" : "Curso-1"
-  },
-  "especial" : false
-}, {
-  "id" : "73636dbd-7d93-4b03-9514-3bbcfb4b68d7",
-  "matricula" : "85",
-  "nome" : "Aluno-85",
-  "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
-  },
-  "especial" : false
-}, {
-  "id" : "ee793795-84f9-4e78-9ade-397ddd4c2efe",
-  "matricula" : "86",
-  "nome" : "Aluno-86",
-  "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
-  "id" : "1fdaef6e-1e22-466d-b77f-9e5ec76bfe67",
-  "matricula" : "87",
-  "nome" : "Aluno-87",
-  "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
-    "titulo" : "Curso-1"
-  },
-  "especial" : false
-}, {
-  "id" : "ee86548b-bb0c-437c-9602-861b09e9c759",
-  "matricula" : "88",
-  "nome" : "Aluno-88",
-  "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
-  },
-  "especial" : false
-}, {
-  "id" : "898071ca-4002-4455-bd3c-8fbb1224c8e0",
-  "matricula" : "89",
-  "nome" : "Aluno-89",
-  "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
-  "id" : "c443b002-cb4f-4d2a-928f-0945a5ecafc3",
-  "matricula" : "90",
-  "nome" : "Aluno-90",
-  "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
-    "titulo" : "Curso-1"
-  },
-  "especial" : false
-}, {
-  "id" : "10167a76-787c-4766-920c-f173e24fd6e1",
-  "matricula" : "91",
-  "nome" : "Aluno-91",
-  "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
-  },
-  "especial" : false
-}, {
-  "id" : "69a588d8-cd3b-43f3-978c-7ff21b86156e",
-  "matricula" : "92",
-  "nome" : "Aluno-92",
-  "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
-  "id" : "dd6ecad6-02a1-451a-bc33-9673e0cfb649",
-  "matricula" : "93",
-  "nome" : "Aluno-93",
-  "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
-    "titulo" : "Curso-1"
-  },
-  "especial" : false
-}, {
-  "id" : "512de6f2-a61f-4b50-a955-e78b47e97269",
-  "matricula" : "94",
-  "nome" : "Aluno-94",
-  "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
-  },
-  "especial" : false
-}, {
-  "id" : "4b8acda6-41f9-4fa3-8b34-2dedd3800d25",
-  "matricula" : "95",
-  "nome" : "Aluno-95",
-  "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
-  "id" : "4b07a95e-5821-48f2-8224-fd7cf63187c4",
-  "matricula" : "96",
-  "nome" : "Aluno-96",
-  "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
-    "titulo" : "Curso-1"
-  },
-  "especial" : false
-}, {
-  "id" : "b7326e85-f994-4cf7-9f62-e93d8fd2cbe2",
-  "matricula" : "97",
-  "nome" : "Aluno-97",
-  "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
-  },
-  "especial" : false
-}, {
-  "id" : "6dbee91f-98f8-4d09-a673-a391b7743fe8",
-  "matricula" : "98",
-  "nome" : "Aluno-98",
-  "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
-  "id" : "6a0d686a-3a6e-493d-8322-47b94a2a8639",
-  "matricula" : "99",
-  "nome" : "Aluno-99",
-  "curso" : {
-    "id" : "68234af9-46aa-4ae9-b03e-78801e39e9cc",
-    "titulo" : "Curso-1"
-  },
-  "especial" : false
-}, {
-  "id" : "18b57326-b654-458a-88bf-5f4dbdd7588a",
-  "matricula" : "100",
-  "nome" : "Aluno-100",
-  "curso" : {
-    "id" : "11fa8eeb-fd80-4733-ae45-c603ce90de5b",
-    "titulo" : "Curso-2"
-  },
-  "especial" : false
-}, {
-  "id" : "b28036eb-6cca-40bc-b29c-e95570e2c6f4",
+  "id" : "90611c3b-504c-4c8e-b26f-4e12ccc7dde7",
   "matricula" : "83",
   "nome" : "Aluno-83",
   "curso" : {
-    "id" : "17c542c4-391e-4852-a73a-d39873aaa549",
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
     "titulo" : "Curso-3"
+  },
+  "especial" : false
+}, {
+  "id" : "1551d4a1-4ede-4bc2-8753-4f4a0f51d06e",
+  "matricula" : "84",
+  "nome" : "Aluno-84",
+  "curso" : {
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false
+}, {
+  "id" : "9d5759fe-997d-4fa5-8f24-c0cc761a1abd",
+  "matricula" : "85",
+  "nome" : "Aluno-85",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
+  },
+  "especial" : false
+}, {
+  "id" : "c61657f2-4099-40e2-9173-f223662275a9",
+  "matricula" : "86",
+  "nome" : "Aluno-86",
+  "curso" : {
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false
+}, {
+  "id" : "66fb3c7c-8446-4696-90d3-c9999e15b4ec",
+  "matricula" : "87",
+  "nome" : "Aluno-87",
+  "curso" : {
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false
+}, {
+  "id" : "bba3f6e6-5513-4e36-a697-f21ee9686108",
+  "matricula" : "88",
+  "nome" : "Aluno-88",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
+  },
+  "especial" : false
+}, {
+  "id" : "bcc7a6c3-a507-41fb-8b2f-c942a73aa4d7",
+  "matricula" : "89",
+  "nome" : "Aluno-89",
+  "curso" : {
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false
+}, {
+  "id" : "46b0aca6-f0b0-415c-afc5-a409c8763167",
+  "matricula" : "90",
+  "nome" : "Aluno-90",
+  "curso" : {
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false
+}, {
+  "id" : "15b70997-52b8-4ab2-b2b9-61f78db5c05b",
+  "matricula" : "91",
+  "nome" : "Aluno-91",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
+  },
+  "especial" : false
+}, {
+  "id" : "55fac8c1-d4c0-4645-adf3-ba66835a29e3",
+  "matricula" : "92",
+  "nome" : "Aluno-92",
+  "curso" : {
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false
+}, {
+  "id" : "6559b69c-04bb-42ba-8b7d-c0ceeff8c6f1",
+  "matricula" : "93",
+  "nome" : "Aluno-93",
+  "curso" : {
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false
+}, {
+  "id" : "f5f8de79-7346-4ef9-9e40-c3ecad45a2ac",
+  "matricula" : "94",
+  "nome" : "Aluno-94",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
+  },
+  "especial" : false
+}, {
+  "id" : "092838f0-ee6b-4272-86d0-9e92b5e76363",
+  "matricula" : "95",
+  "nome" : "Aluno-95",
+  "curso" : {
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false
+}, {
+  "id" : "7d2a68df-249a-4bb6-9853-f745ea088833",
+  "matricula" : "96",
+  "nome" : "Aluno-96",
+  "curso" : {
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false
+}, {
+  "id" : "4fa2e176-2ff7-4959-889e-162e4543d4cf",
+  "matricula" : "97",
+  "nome" : "Aluno-97",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
+  },
+  "especial" : false
+}, {
+  "id" : "010e9203-3727-4b11-ad36-acc3612350fe",
+  "matricula" : "98",
+  "nome" : "Aluno-98",
+  "curso" : {
+    "id" : "3b6470f5-fd3c-4bbf-9c3c-dc046e4f03b9",
+    "titulo" : "Curso-3"
+  },
+  "especial" : false
+}, {
+  "id" : "3ddd4901-9346-4901-bfbf-b20cb923cd72",
+  "matricula" : "99",
+  "nome" : "Aluno-99",
+  "curso" : {
+    "id" : "3b246c2c-7d02-48d6-9cc4-b81d40338ff2",
+    "titulo" : "Curso-1"
+  },
+  "especial" : false
+}, {
+  "id" : "6e76c29d-71cd-4d98-b28e-e0a8150cc5f4",
+  "matricula" : "100",
+  "nome" : "Aluno-100",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
+  },
+  "especial" : false
+}, {
+  "id" : "f7e21185-2b67-4f49-98af-2e9049c34430",
+  "matricula" : "12345",
+  "nome" : "Luciano",
+  "curso" : {
+    "id" : "e707a1d6-db22-4926-b2df-63af9f918f64",
+    "titulo" : "Direito"
   },
   "especial" : false
 } ]

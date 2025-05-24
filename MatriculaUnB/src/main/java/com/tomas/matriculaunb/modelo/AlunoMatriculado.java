@@ -138,7 +138,7 @@ public class AlunoMatriculado extends ClasseBase{
 
     public Float calcularMediaFinal(){
         if (this.getAluno().isEspecial()|| this.isTrancado()){
-            return null;
+            return (float) 0;
         }
 
         if (this.getTurma().isAvaliacaoMediaAritmetica()){

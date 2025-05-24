@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.Aluno;
 import com.tomas.matriculaunb.modelo.AlunoMatriculado;
 import com.tomas.matriculaunb.modelo.ClasseBase;
+import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.enumerations.EnumStatusAlunoMatriculado;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.UUID;
 
 public class ServicoAluno extends ClasseServicoBase{
 
-    final String nomeArquivo="aluno.txt";
+    public final String nomeArquivo="aluno.txt";
 
     //CLASSE SINGLETON
     private static ServicoAluno instance = null;
@@ -19,9 +20,11 @@ public class ServicoAluno extends ClasseServicoBase{
     public static ServicoAluno getInstance() {
         if (instance == null) {
             instance = new ServicoAluno();
+
         }
         return instance;
     }
+
 
     @Override
     public boolean podeIncluir(ClasseBase aluno) throws Exception{
@@ -112,6 +115,13 @@ public class ServicoAluno extends ClasseServicoBase{
         }
     }
 
+    public List<ClasseBase> getAlunosPorCurso(Curso curso){
+
+        return this.getLista().stream()
+                .filter(aluno->((Aluno)aluno).getCurso().equals(curso))
+                .toList();
+    }
+
     public boolean existeCurso(UUID idCurso){
         if (this.getLista()==null){
             return false;
@@ -124,5 +134,19 @@ public class ServicoAluno extends ClasseServicoBase{
     }
     public void carregarArquivo() throws Exception{
         this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Aluno>>() {});
+    }
+
+    public void salvarArquivo(Aluno alunoAlterado) throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+
+
+        //alterar os alunos da lista de alunosMatriculados
+        ServicoAlunoMatriculado servicoAlunoMatriculado=ServicoAlunoMatriculado.getInstance();
+        List<ClasseBase> listaAlunosMatriculados = servicoAlunoMatriculado.getAlunosMatriculadosPorAluno(alunoAlterado);
+        for(ClasseBase alunoMatriculado:listaAlunosMatriculados){
+            ((AlunoMatriculado)alunoMatriculado).setAluno(alunoAlterado);
+        }
+        servicoAlunoMatriculado.salvarArquivo();
+
     }
 }

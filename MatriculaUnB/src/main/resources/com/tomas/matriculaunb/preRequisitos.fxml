@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="500.0">
+    <header>
+        <AnchorPane minWidth="0" minHeight="0" prefHeight="340" prefWidth="500">
+            <children>
+                <Button fx:id="btnIncluir" layoutX="31" layoutY="10"  onAction="#incluir" text="Incluir Pré-Requisito"/>
+                <Button fx:id="btnExcluir" layoutX="31" layoutY="40" onAction="#excluir" text="Excluir Pré-Requisito"/>
+                <TableView fx:id="tabela" layoutX="31" layoutY="70" prefHeight="250" prefWidth="450">
+                    <columns>
+
+                    </columns>
+
+                </TableView>
+            </children>
+
+        </AnchorPane>
+
+    </header>
+    <buttonTypes>
+        <ButtonType fx:constant="OK"/>
+    </buttonTypes>
+
+</DialogPane>

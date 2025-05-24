@@ -1,10 +1,8 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
-import com.tomas.matriculaunb.modelo.Aluno;
 import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Disciplina;
-import com.tomas.matriculaunb.servicos.ServicoAluno;
 import com.tomas.matriculaunb.servicos.ServicoDisciplina;
 import com.tomas.matriculaunb.util.Util;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -16,6 +14,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -85,54 +84,58 @@ public class DisciplinaListaController {
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
         Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (disciplina != null){
-            DisciplinaEdicaoController controllerEdicao=new DisciplinaEdicaoController();
-            try {
-                controllerEdicao.setDisciplina((Disciplina) disciplina.clone());
-            } catch (CloneNotSupportedException e) {
-                throw new RuntimeException(e);
-            }
-            controllerEdicao.carregarModal();
+        if (disciplina == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            if (controllerEdicao.getDisciplina()!=null){
-                this.setDisciplinaEditada(controllerEdicao.getDisciplina());
-                try {
-                    servicoDisciplina.alterar(this.getDisciplinaEditada());
-                    servicoDisciplina.salvarArquivo();
-                    carregaListasTableView();
-                    tabela.setItems(this.listaFiltrada);
-                    tabela.refresh();
-                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Disciplina","Disciplina Salva","Disciplina Salva com Sucesso").showAndWait();
-                } catch (Exception e) {
-                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Disciplina","Erro ao Salvar",e.getMessage()).showAndWait();
-                }
+        DisciplinaEdicaoController controllerEdicao=new DisciplinaEdicaoController();
+        try {
+            controllerEdicao.setDisciplina((Disciplina) disciplina.clone());
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getDisciplina()!=null){
+            this.setDisciplinaEditada(controllerEdicao.getDisciplina());
+            try {
+                servicoDisciplina.alterar(this.getDisciplinaEditada());
+                servicoDisciplina.salvarArquivo(disciplina);
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Disciplina","Disciplina Salva","Disciplina Salva com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Disciplina","Erro ao Salvar",e.getMessage()).showAndWait();
             }
         }
+
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (disciplina != null){
+        if (disciplina == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Disciplina", "Excluir?","Deseja excluir a disciplina "+disciplina.getTitulo() + "?");
-            Optional<ButtonType> btnAlert = alert.showAndWait();
-            btnAlert.ifPresent(btn->{
-                if (btn.getText().equals("OK")){
-                    try {
-                        servicoDisciplina.excluir(disciplina);
-                        servicoDisciplina.salvarArquivo();
-                        carregaListasTableView();
-                        tabela.setItems(this.listaFiltrada);
-                        Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Disciplina","Exclusão com Sucesso","Disciplina "+ disciplina.getTitulo() + " excluído com sucesso").showAndWait();
-                    } catch (Exception e) {
-                        Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Disciplina","Erro ao excluir",e.getMessage()).showAndWait();
-                    }
+        Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Disciplina", "Excluir?","Deseja excluir a disciplina "+disciplina.getTitulo() + "?");
+        Optional<ButtonType> btnAlert = alert.showAndWait();
+        btnAlert.ifPresent(btn->{
+            if (btn.getText().equals("OK")){
+                try {
+                    servicoDisciplina.excluir(disciplina);
+                    servicoDisciplina.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Disciplina","Exclusão com Sucesso","Disciplina "+ disciplina.getTitulo() + " excluído com sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Disciplina","Erro ao excluir",e.getMessage()).showAndWait();
                 }
-            });
-        }
-        else {
-            Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Disciplina","Impossível Excluir","Selecione uma disciplina para excluir").showAndWait();
-        }
+            }
+        });
+
     }
 
 
@@ -156,5 +159,17 @@ public class DisciplinaListaController {
     }
 
     public void onBtnPreRequisitosClick(ActionEvent actionEvent) {
+        Disciplina disciplina = (Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (disciplina == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        PreRequisitosController controllerEdicao=new PreRequisitosController();
+        controllerEdicao.setDisciplinaSelecionada(disciplina);
+        try {
+            controllerEdicao.carregarModal();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

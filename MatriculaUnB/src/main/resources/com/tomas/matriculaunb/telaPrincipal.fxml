@@ -35,7 +35,7 @@
                 <Button fx:id="btnProfessor"  onAction="#onBtnProfessorClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Professor" />
                 <Button fx:id="btnSala"  onAction="#onBtnSalaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sala" />
                 <Button fx:id="btnTurma"  onAction="#onBtnTurmaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Turma" />
-                <Button fx:id="btnAvaliacaoPresenca"  onAction="#onBtnAvaliacaoPresencaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Avaliação/Presença" />
+                <Button fx:id="btnAvaliacaoPresenca"  onAction="#onBtnAvaliacaoPresencaClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Avaliação/Frequência" />
                 <Button fx:id="btnRelatorios"  onAction="#onBtnRelatoriosClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Relatórios" />
                 <Button fx:id="btnConfiguracao"  onAction="#onBtnConfiguracaoClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Configuração" />
                 <Button fx:id="btnSobre"  onAction="#onBtnSobreClick" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" text="Sobre" />

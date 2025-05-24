@@ -1,7 +1,6 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
 import com.tomas.matriculaunb.StarterApplication;
-import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Professor;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ButtonType;

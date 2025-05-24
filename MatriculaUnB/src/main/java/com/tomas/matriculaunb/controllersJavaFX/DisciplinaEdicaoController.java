@@ -1,11 +1,6 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 import com.tomas.matriculaunb.StarterApplication;
-import com.tomas.matriculaunb.modelo.Aluno;
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Disciplina;
-import com.tomas.matriculaunb.servicos.ServicoCurso;
-import com.tomas.matriculaunb.servicos.ServicoDisciplina;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 
@@ -42,7 +37,7 @@ public class DisciplinaEdicaoController {
         result.ifPresent(buttonType -> {
             if (buttonType.getText().equals("OK")) {
                 System.out.println("ok...");
-                if(txtCargaHoraria.getText().equals("") || txtCargaHoraria.getText().isBlank()){
+                if(txtCargaHoraria.getText().isEmpty() || txtCargaHoraria.getText().isBlank()){
                     txtCargaHoraria.setText("0");
                 }
                 if (this.getDisciplina()==null){

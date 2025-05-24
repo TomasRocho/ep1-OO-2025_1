@@ -1,8 +1,7 @@
 package com.tomas.matriculaunb.servicos;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Disciplina;
+import com.tomas.matriculaunb.modelo.*;
 
 import java.util.List;
 
@@ -122,6 +121,28 @@ public class ServicoDisciplina extends ClasseServicoBase{
     public void salvarArquivo() throws Exception{
         this.salvarListaParaArquivo(nomeArquivo);
     }
+
+    public void salvarArquivo(Disciplina disciplinaAlterada) throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+
+        //alterar as disciplinas da lista de turmas
+        ServicoTurma servicoTurma = ServicoTurma.getInstance();
+        List<ClasseBase> listaTurmas = servicoTurma.getTurmasPorDisciplina(disciplinaAlterada);
+        for(ClasseBase turma:listaTurmas){
+            ((Turma)turma).setDisciplina(disciplinaAlterada);
+        }
+        servicoTurma.salvarArquivo();
+
+        //alterar as disciplinas da lista de alunosMatriculados
+        ServicoAlunoMatriculado servicoAlunoMatriculado=ServicoAlunoMatriculado.getInstance();
+        List<ClasseBase> listaAlunosMatriculados = servicoAlunoMatriculado.getAlunosMatriculadosPorDisciplina(disciplinaAlterada);
+        for(ClasseBase alunoMatriculado:listaAlunosMatriculados){
+            ((AlunoMatriculado)alunoMatriculado).getTurma().setDisciplina(disciplinaAlterada);
+        }
+        servicoAlunoMatriculado.salvarArquivo();
+
+    }
+
     public void carregarArquivo() throws Exception{
         this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Disciplina>>() {});
     }

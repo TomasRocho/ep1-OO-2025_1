@@ -53,5 +53,8 @@ public class PreRequisito extends ClasseBase{
         if (this.getIdDisciplinaPreRequisito()==null || this.getIdDisciplinaPreRequisito().toString().isBlank()){
             throw new Exception("Pre Requisito invalido, idDisciplinaPreRequisito nao preenchido");
         }
+        if (this.getIdDisciplinaPreRequisito().equals(this.getIdDisciplina())){
+            throw new Exception("Pre Requisito invalido, a disciplina não pode ser pré-requisito dela própria");
+        }
     }
 }

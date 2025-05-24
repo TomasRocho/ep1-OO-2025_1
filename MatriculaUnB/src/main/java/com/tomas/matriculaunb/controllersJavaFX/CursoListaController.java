@@ -2,10 +2,7 @@ package com.tomas.matriculaunb.controllersJavaFX;
 
 import com.tomas.matriculaunb.modelo.*;
 import com.tomas.matriculaunb.servicos.ServicoCurso;
-import com.tomas.matriculaunb.servicos.ServicoProfessor;
 import com.tomas.matriculaunb.util.Util;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleSetProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,11 +11,9 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 public class CursoListaController {
 
@@ -78,54 +73,57 @@ public class CursoListaController {
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
         Curso curso = (Curso) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (curso != null){
-            CursoEdicaoController controllerEdicao=new CursoEdicaoController();
-            try {
-                controllerEdicao.setCurso((Curso) curso.clone());
-            } catch (CloneNotSupportedException e) {
-                throw new RuntimeException(e);
-            }
-            controllerEdicao.carregarModal();
+        if (curso == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            if (controllerEdicao.getCurso()!=null){
-                this.setCursoEditado(controllerEdicao.getCurso());
-                try {
-                    servicoCurso.alterar(this.getCursoEditado());
-                    servicoCurso.salvarArquivo();
-                    carregaListasTableView();
-                    tabela.setItems(this.listaFiltrada);
-                    tabela.refresh();
-                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Curso","Curso Salvo","Curso Salvo com Sucesso").showAndWait();
-                } catch (Exception e) {
-                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Curso","Erro ao Salvar",e.getMessage()).showAndWait();
-                }
+        CursoEdicaoController controllerEdicao=new CursoEdicaoController();
+        try {
+            controllerEdicao.setCurso((Curso) curso.clone());
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getCurso()!=null){
+            this.setCursoEditado(controllerEdicao.getCurso());
+            try {
+                servicoCurso.alterar(this.getCursoEditado());
+                servicoCurso.salvarArquivo(this.getCursoEditado());
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Curso","Curso Salvo","Curso Salvo com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Curso","Erro ao Salvar",e.getMessage()).showAndWait();
             }
         }
+
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         Curso curso = (Curso) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (curso != null){
-
-            Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Curso", "Excluir?","Deseja excluir o curso "+curso.getTitulo() + "?");
-            Optional<ButtonType> btnAlert = alert.showAndWait();
-            btnAlert.ifPresent(btn->{
-                if (btn.getText().equals("OK")){
-                    try {
-                        servicoCurso.excluir(curso);
-                        servicoCurso.salvarArquivo();
-                        carregaListasTableView();
-                        tabela.setItems(this.listaFiltrada);
-                        Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Curso","Exclusão com Sucesso","Curso "+ curso.getTitulo() + " excluído com sucesso").showAndWait();
-                    } catch (Exception e) {
-                        Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Curso","Erro ao excluir",e.getMessage()).showAndWait();
-                    }
+        if (curso == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Curso", "Excluir?","Deseja excluir o curso "+curso.getTitulo() + "?");
+        Optional<ButtonType> btnAlert = alert.showAndWait();
+        btnAlert.ifPresent(btn->{
+            if (btn.getText().equals("OK")){
+                try {
+                    servicoCurso.excluir(curso);
+                    servicoCurso.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Curso","Exclusão com Sucesso","Curso "+ curso.getTitulo() + " excluído com sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Curso","Erro ao excluir",e.getMessage()).showAndWait();
                 }
-            });
-        }
-        else {
-            Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Curso","Impossível Excluir","Selecione um curso para excluir").showAndWait();
-        }
+            }
+        });
+
     }
 
 

@@ -1,11 +1,8 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
 import com.tomas.matriculaunb.StarterApplication;
-import com.tomas.matriculaunb.modelo.Aluno;
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Professor;
-import com.tomas.matriculaunb.servicos.ServicoAluno;
 import com.tomas.matriculaunb.servicos.ServicoProfessor;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;

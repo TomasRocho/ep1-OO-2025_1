@@ -1,10 +1,7 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
-import com.tomas.matriculaunb.modelo.Aluno;
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Sala;
-import com.tomas.matriculaunb.servicos.ServicoAluno;
 import com.tomas.matriculaunb.servicos.ServicoSala;
 import com.tomas.matriculaunb.util.Util;
 import javafx.beans.property.SimpleStringProperty;
@@ -81,51 +78,53 @@ public class SalaListaController {
 
     public void onBtnAlteraClick(ActionEvent actionEvent) {
         Sala sala = (Sala) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (sala != null){
-            SalaEdicaoController controllerEdicao=new SalaEdicaoController();
-            controllerEdicao.setSala(sala);
-            controllerEdicao.carregarModal();
+        if (sala == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        SalaEdicaoController controllerEdicao=new SalaEdicaoController();
+        controllerEdicao.setSala(sala);
+        controllerEdicao.carregarModal();
 
-            if (controllerEdicao.getSala()!=null){
-                this.setSalaEditada(controllerEdicao.getSala());
-                try {
-                    servicoSala.alterar(this.getSalaEditada());
-                    servicoSala.salvarArquivo();
-                    carregaListasTableView();
-                    tabela.setItems(this.listaFiltrada);
-                    tabela.refresh();
-                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Sala","Sala Salva","Sala Salva com Sucesso").showAndWait();
-                } catch (Exception e) {
-                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Sala","Erro ao Salvar",e.getMessage()).showAndWait();
-                }
+        if (controllerEdicao.getSala()!=null){
+            this.setSalaEditada(controllerEdicao.getSala());
+            try {
+                servicoSala.alterar(this.getSalaEditada());
+                servicoSala.salvarArquivo(sala);
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Sala","Sala Salva","Sala Salva com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Sala","Erro ao Salvar",e.getMessage()).showAndWait();
             }
         }
+
 
     }
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         Sala sala = (Sala) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (sala != null){
-
-            Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Sala", "Excluir?","Deseja excluir a sala "+sala.getLocal() + "?");
-            Optional<ButtonType> btnAlert = alert.showAndWait();
-            btnAlert.ifPresent(btn->{
-                if (btn.getText().equals("OK")){
-                    try {
-                        servicoSala.excluir(sala);
-                        servicoSala.salvarArquivo();
-                        carregaListasTableView();
-                        tabela.setItems(this.listaFiltrada);
-                        Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Sala","Exclusão com Sucesso","Sala "+ sala.getLocal() + " excluído com sucesso").showAndWait();
-                    } catch (Exception e) {
-                        Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Sala","Erro ao excluir",e.getMessage()).showAndWait();
-                    }
+        if (sala == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Sala", "Excluir?","Deseja excluir a sala "+sala.getLocal() + "?");
+        Optional<ButtonType> btnAlert = alert.showAndWait();
+        btnAlert.ifPresent(btn->{
+            if (btn.getText().equals("OK")){
+                try {
+                    servicoSala.excluir(sala);
+                    servicoSala.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Sala","Exclusão com Sucesso","Sala "+ sala.getLocal() + " excluído com sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Sala","Erro ao excluir",e.getMessage()).showAndWait();
                 }
-            });
-        }
-        else {
-            Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Sala","Impossível Excluir","Selecione ums sala para excluir").showAndWait();
-        }
+            }
+        });
+
     }
 
 

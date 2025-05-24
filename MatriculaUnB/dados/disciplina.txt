@@ -1,149 +1,149 @@
 [ {
-  "id" : "534edd54-f55b-45ff-8dfb-21aa62729ec2",
+  "id" : "8a827485-9b14-4deb-b647-7c97a25ab0f5",
   "titulo" : "Disciplina-1",
   "codigo" : "1",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "e69e18f1-932f-42a1-945e-146d0735f03f",
+  "id" : "b7ab7791-9661-4567-9d50-c64fcbc09c4c",
   "titulo" : "Disciplina-2",
   "codigo" : "2",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "63f17e3c-4563-42ca-b16c-65df0f2f2297",
+  "id" : "de00c2fb-08db-4a5c-acb5-b1815d6568fe",
   "titulo" : "Disciplina-3",
   "codigo" : "3",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "834036b4-01b5-46e5-b4ca-83f676c33600",
+  "id" : "f58d721e-d16a-480f-9d77-7fbb4f9a74a3",
   "titulo" : "Disciplina-4",
   "codigo" : "4",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "53e01b1d-dd1b-4c2c-a931-12b6fdf9708e",
+  "id" : "ba6acc17-4fff-43a3-b435-dea53773160c",
   "titulo" : "Disciplina-5",
   "codigo" : "5",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "1f770c28-8277-4567-a3fc-7ae486fbbc13",
+  "id" : "d20cff49-97f0-49f8-8099-a039e17ed91c",
   "titulo" : "Disciplina-6",
   "codigo" : "6",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "72099f66-f188-4fa8-8947-2b576589a73c",
+  "id" : "9f1d12b7-1764-4346-958f-8e62474b90d3",
   "titulo" : "Disciplina-7",
   "codigo" : "7",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "9464244e-6c76-48ad-bbb5-1d72e5d462d1",
+  "id" : "fefdeaa0-61a3-4f5b-9a3a-75558cb1c08e",
   "titulo" : "Disciplina-8",
   "codigo" : "8",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "39293dee-5a59-445c-aead-017a28b056b0",
+  "id" : "f1524c7b-ace7-4097-9534-fb2e3537da8b",
   "titulo" : "Disciplina-9",
   "codigo" : "9",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "dc488c3a-2026-41e2-9b4f-a531e49c82ee",
+  "id" : "41ba7503-e0bc-4ef7-81b8-95ee5810b292",
   "titulo" : "Disciplina-10",
   "codigo" : "10",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "aeacdf1a-c649-4379-919b-6c3ce59fbec2",
+  "id" : "d33a83b6-b5b6-45b2-beab-84aabd92d39c",
   "titulo" : "Disciplina-11",
   "codigo" : "11",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "e7d78b2b-b294-442e-a585-f3b2ab872735",
+  "id" : "72ea1140-960f-4008-9af2-3eb00d3501d6",
   "titulo" : "Disciplina-12",
   "codigo" : "12",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "cadff910-6abd-43c3-add5-84b8d2fca9bb",
+  "id" : "5ea0a86a-b2ae-43fd-8f51-a6c8885599a1",
   "titulo" : "Disciplina-13",
   "codigo" : "13",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "c7b7ccdc-a5a5-4436-aad2-a90e817e30f6",
+  "id" : "5de0a093-3932-4ca4-91b8-0ac7db83e84e",
   "titulo" : "Disciplina-14",
   "codigo" : "14",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "2933b3e7-dd51-476f-bf67-0d83f0d7d696",
+  "id" : "21b0af9f-92e0-47bf-b779-ab12cdf6d080",
   "titulo" : "Disciplina-15",
   "codigo" : "15",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "c823de0a-83ee-44c8-b147-14d307de0a52",
+  "id" : "d8b8a899-8423-431e-bc89-84e74a612672",
   "titulo" : "Disciplina-16",
   "codigo" : "16",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "63a2dca0-7796-4183-a359-777fe363c28c",
+  "id" : "38ba1467-07ff-4f86-a03f-e986a741eaae",
   "titulo" : "Disciplina-17",
   "codigo" : "17",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "9a741c8d-e78c-42b2-bba1-c6f8dcc935f2",
+  "id" : "8b8ea78c-e0d6-4581-a068-c43ae487c70a",
   "titulo" : "Disciplina-18",
   "codigo" : "18",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "6ceea3f7-7042-495f-9a26-bbb6247197d2",
+  "id" : "7551cdfd-0c13-4a47-ac4d-a5272d457055",
   "titulo" : "Disciplina-19",
   "codigo" : "19",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "49743211-e120-402c-98b6-66c01b0f37b0",
+  "id" : "75d258a1-27db-46f8-8d21-b2dba06b7b43",
   "titulo" : "Disciplina-20",
   "codigo" : "20",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "128ac43f-bf88-4812-b9fc-d14cd2be4291",
+  "id" : "66feaa44-0262-490a-8d23-3ab65adc099f",
   "titulo" : "Disciplina-21",
   "codigo" : "21",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "a5f0f66d-b780-443c-a64c-54bb28aded9c",
+  "id" : "ebac85d1-41cb-4ed2-b666-fb12680ae885",
   "titulo" : "Disciplina-22",
   "codigo" : "22",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "2c5c131c-7d74-49a9-a110-000633b1782f",
+  "id" : "e8220235-38e2-4c01-b9bd-538e7c4b4999",
   "titulo" : "Disciplina-23",
   "codigo" : "23",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "46e41a49-5e8c-4a3e-ace6-e87d4fc64f56",
+  "id" : "786bc593-3c4d-4d9c-9a24-eaf70f8f5c78",
   "titulo" : "Disciplina-24",
   "codigo" : "24",
   "cargaHoraria" : 60,
   "listaPreRequisitos" : null
 }, {
-  "id" : "a6e3e45d-b6a1-4539-a3d3-2f93004c5a39",
+  "id" : "143b8bd9-ce01-420e-a878-b70059d41654",
   "titulo" : "Disciplina-25",
   "codigo" : "25",
   "cargaHoraria" : 60,

@@ -88,4 +88,16 @@ public class ServicoPreRequisito extends ClasseServicoBase{
         this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<PreRequisito>>() {});
     }
 
+    public void excluir(UUID idDisciplina, UUID idPreRequisito)throws Exception {
+        for(ClasseBase pre: this.getLista()){
+            if (((PreRequisito)pre).getIdDisciplina().equals(idDisciplina)
+                    && ((PreRequisito)pre).getIdDisciplinaPreRequisito().equals(idPreRequisito)){
+                this.getLista().remove(pre);
+                return;
+            }
+        }
+
+    }
+
+
 }

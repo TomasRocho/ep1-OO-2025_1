@@ -1,9 +1,7 @@
 package com.tomas.matriculaunb.servicos;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Disciplina;
-import com.tomas.matriculaunb.modelo.Turma;
+import com.tomas.matriculaunb.modelo.*;
 
 import java.util.List;
 import java.util.UUID;
@@ -82,6 +80,27 @@ public class ServicoTurma extends ClasseServicoBase{
             return (Disciplina) disciplinaRetornada.clone();
         }
         return null;
+    }
+
+    public List<ClasseBase> getTurmasPorDisciplina(Disciplina disciplina){
+
+        return this.getLista().stream()
+                .filter(turma->((Turma)turma).getDisciplina().equals(disciplina))
+                .toList();
+    }
+
+    public List<ClasseBase> getTurmasPorProfessor(Professor professor){
+
+        return this.getLista().stream()
+                .filter(turma->((Turma)turma).getProfessor().equals(professor))
+                .toList();
+    }
+
+    public List<ClasseBase> getTurmasPorSala(Sala sala){
+
+        return this.getLista().stream()
+                .filter(turma->((Turma)turma).getSala().equals(sala))
+                .toList();
     }
 
     //verifica duplicacao de disciplina,horario e semestre
@@ -163,5 +182,18 @@ public class ServicoTurma extends ClasseServicoBase{
     }
     public void carregarArquivo() throws Exception{
         this.lerArquivoParaLista(nomeArquivo,new TypeReference<List<Turma>>() {});
+    }
+
+    public void salvarArquivo(Turma turmaAlterada) throws Exception{
+        this.salvarListaParaArquivo(nomeArquivo);
+
+        //alterar as turmas da lista de alunosMatriculados
+        ServicoAlunoMatriculado servicoAlunoMatriculado=ServicoAlunoMatriculado.getInstance();
+        List<ClasseBase> listaAlunosMatriculados = servicoAlunoMatriculado.getAlunosMatriculadosPorTurma(turmaAlterada);
+        for(ClasseBase alunoMatriculado:listaAlunosMatriculados){
+            ((AlunoMatriculado)alunoMatriculado).setTurma(turmaAlterada);
+        }
+        servicoAlunoMatriculado.salvarArquivo();
+
     }
 }

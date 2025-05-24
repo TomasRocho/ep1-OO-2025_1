@@ -1,9 +1,7 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
 import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Professor;
-import com.tomas.matriculaunb.servicos.ServicoCurso;
 import com.tomas.matriculaunb.servicos.ServicoProfessor;
 import com.tomas.matriculaunb.util.Util;
 import javafx.beans.property.SimpleStringProperty;
@@ -82,27 +80,27 @@ public class ProfessorListaController {
 
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         Professor professor = (Professor) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (professor != null){
+        if (professor == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Professor", "Excluir?","Deseja excluir o professor "+professor.getNome() + "?");
-            Optional<ButtonType> btnAlert = alert.showAndWait();
-            btnAlert.ifPresent(btn->{
-                if (btn.getText().equals("OK")){
-                    try {
-                        servicoProfessor.excluir(professor);
-                        servicoProfessor.salvarArquivo();
-                        carregaListasTableView();
-                        tabela.setItems(this.listaFiltrada);
-                        Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Professor","Exclusão com Sucesso","Professor "+ professor.getNome() + " excluído com sucesso").showAndWait();
-                    } catch (Exception e) {
-                        Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Professor","Erro ao excluir",e.getMessage()).showAndWait();
-                    }
+        Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Professor", "Excluir?","Deseja excluir o professor "+professor.getNome() + "?");
+        Optional<ButtonType> btnAlert = alert.showAndWait();
+        btnAlert.ifPresent(btn->{
+            if (btn.getText().equals("OK")){
+                try {
+                    servicoProfessor.excluir(professor);
+                    servicoProfessor.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Professor","Exclusão com Sucesso","Professor "+ professor.getNome() + " excluído com sucesso").showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Professor","Erro ao excluir",e.getMessage()).showAndWait();
                 }
-            });
-        }
-        else {
-            Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Professor","Impossível Excluir","Selecione um Professor para excluir").showAndWait();
-        }
+            }
+        });
+
     }
 
 
@@ -126,28 +124,32 @@ public class ProfessorListaController {
     }
     public void onBtnAlteraClick(ActionEvent actionEvent) {
         Professor professor = (Professor) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (professor != null){
-            ProfessorEdicaoController controllerEdicao=new ProfessorEdicaoController();
-            try {
-                controllerEdicao.setProfessor((Professor) professor.clone());
-            } catch (CloneNotSupportedException e) {
-                throw new RuntimeException(e);
-            }
-            controllerEdicao.carregarModal();
+        if (professor == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            if (controllerEdicao.getProfessor()!=null){
-                this.setProfessorEditado(controllerEdicao.getProfessor());
-                try {
-                    servicoProfessor.alterar(this.getProfessorEditado());
-                    servicoProfessor.salvarArquivo();
-                    carregaListasTableView();
-                    tabela.setItems(this.listaFiltrada);
-                    tabela.refresh();
-                    Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Professor","Professor Salvo","Professor Salvo com Sucesso").showAndWait();
-                } catch (Exception e) {
-                    Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Professor","Erro ao Salvar",e.getMessage()).showAndWait();
-                }
+        ProfessorEdicaoController controllerEdicao=new ProfessorEdicaoController();
+        try {
+            controllerEdicao.setProfessor((Professor) professor.clone());
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getProfessor()!=null){
+            this.setProfessorEditado(controllerEdicao.getProfessor());
+            try {
+                servicoProfessor.alterar(this.getProfessorEditado());
+                servicoProfessor.salvarArquivo(professor);
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Professor","Professor Salvo","Professor Salvo com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Professor","Erro ao Salvar",e.getMessage()).showAndWait();
             }
         }
+
     }
 }

@@ -1,13 +1,8 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 
-import com.tomas.matriculaunb.modelo.AlunoMatriculado;
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
-import com.tomas.matriculaunb.modelo.Turma;
+import com.tomas.matriculaunb.modelo.*;
 import com.tomas.matriculaunb.servicos.ServicoAlunoMatriculado;
-import com.tomas.matriculaunb.servicos.ServicoTurma;
 import com.tomas.matriculaunb.util.Util;
-import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleFloatProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -16,7 +11,6 @@ import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
-import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,8 +24,17 @@ public class AvaliacaoFrequenciaListaController {
     private FilteredList<AlunoMatriculado> listaFiltrada;
     public TableView tabela;
     public TextField txtProcura;
+    private AlunoMatriculado alunoMatriculadoEditado;
     private Turma turmaSelecionada;
+    public Button btnNotas;
 
+    public AlunoMatriculado getAlunoMatriculadoEditado() {
+        return alunoMatriculadoEditado;
+    }
+
+    public void setAlunoMatriculadoEditado(AlunoMatriculado alunoMatriculadoEditado) {
+        this.alunoMatriculadoEditado = alunoMatriculadoEditado;
+    }
 
     public void initialize(){
 
@@ -74,15 +77,13 @@ public class AvaliacaoFrequenciaListaController {
         tabela.getColumns().addAll( alunoColumn,p1Column,p2Column,p3Column,p4Column,p5Column,faltaColumn,trancadoColumn,statusColumn,mediaFinalColumn,percentualFaltasColumn);
         tabela.setItems(listaFiltrada);
         tabela.setRowFactory( tv -> {
-            TableRow<Curso> row = new TableRow<>();
-            /*
+            TableRow<AlunoMatriculado> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
-                    btnAltera.fire();
+                    btnNotas.fire();
                 }
             });
 
-             */
             return row ;
         });
     }
@@ -100,38 +101,33 @@ public class AvaliacaoFrequenciaListaController {
     }
 
 
-
-    public void onBtnAlteraClick(ActionEvent actionEvent) {
-    }
-
     public void onBtnExcluirClick(ActionEvent actionEvent) {
         AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
-        if (alunoMatriculado != null){
+        if (alunoMatriculado == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
 
-            Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Matrícula", "Excluir?","Deseja excluir "+alunoMatriculado.getAluno().getNome() + " da turma " + alunoMatriculado.getTurma().getCodigo() + "?");
-            Optional<ButtonType> btnAlert = alert.showAndWait();
-            btnAlert.ifPresent(btn->{
-                if (btn.getText().equals("OK")){
-                    try {
-                        servicoAlunoMatriculado.excluir(alunoMatriculado);
-                        servicoAlunoMatriculado.salvarArquivo();
-                        carregaListasTableView();
-                        tabela.setItems(this.listaFiltrada);
-                        Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Matrícula","Exclusão com Sucesso",alunoMatriculado.getAluno().getNome() + " excluído com sucesso da turma " + alunoMatriculado.getTurma().getCodigo()).showAndWait();
-                    } catch (Exception e) {
-                        Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Matrícula","Erro ao excluir",e.getMessage()).showAndWait();
-                    }
+        Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Matrícula", "Excluir?","Deseja excluir "+alunoMatriculado.getAluno().getNome() + " da turma " + alunoMatriculado.getTurma().getCodigo() + "?");
+        Optional<ButtonType> btnAlert = alert.showAndWait();
+        btnAlert.ifPresent(btn->{
+            if (btn.getText().equals("OK")){
+                try {
+                    servicoAlunoMatriculado.excluir(alunoMatriculado);
+                    servicoAlunoMatriculado.salvarArquivo();
+                    carregaListasTableView();
+                    tabela.setItems(this.listaFiltrada);
+                    Util.getAlert(Alert.AlertType.INFORMATION,"Exclusão de Matrícula","Exclusão com Sucesso",alunoMatriculado.getAluno().getNome() + " excluído com sucesso da turma " + alunoMatriculado.getTurma().getCodigo()).showAndWait();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR,"Exclusão de Matrícula","Erro ao excluir",e.getMessage()).showAndWait();
                 }
-            });
-        }
-        else {
-            Util.getAlert(Alert.AlertType.WARNING,"Exclusão de Matrícula","Impossível Excluir","Selecione uma aluno para excluir dessa turma").showAndWait();
-        }
+            }
+        });
+
+
     }
 
 
-    public void onBtnNovoClick(ActionEvent actionEvent) {
-    }
 
     public void onBtnSelecionaTurma(ActionEvent actionEvent) {
         TurmaSelecaoController controllerSelecao=new TurmaSelecaoController();
@@ -152,11 +148,71 @@ public class AvaliacaoFrequenciaListaController {
     }
 
     public void onBtnNotasClick(ActionEvent actionEvent) {
+        AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (alunoMatriculado == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        NotaEdicaoController controllerEdicao=new NotaEdicaoController();
+        try {
+            controllerEdicao.setAlunoMatriculado((AlunoMatriculado) alunoMatriculado.clone());
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        controllerEdicao.carregarModal();
+
+        if (controllerEdicao.getAlunoMatriculado()!=null){
+            this.setAlunoMatriculadoEditado(controllerEdicao.getAlunoMatriculado());
+            try {
+                servicoAlunoMatriculado.alterar(this.getAlunoMatriculadoEditado());
+                servicoAlunoMatriculado.salvarArquivo();
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+                Util.getAlert(Alert.AlertType.INFORMATION,"Salvamento de Notas","Notas Salvas","Notas Salvas com Sucesso").showAndWait();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Salvamento de Notas","Erro ao Salvar",e.getMessage()).showAndWait();
+            }
+        }
+
     }
 
     public void mnuIncluirFalta(ActionEvent actionEvent) {
+        AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (alunoMatriculado == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        alunoMatriculado.setFaltas(alunoMatriculado.getFaltas()+1);
+        try {
+            servicoAlunoMatriculado.alterar(alunoMatriculado);
+            servicoAlunoMatriculado.salvarArquivo();
+            carregaListasTableView();
+            tabela.setItems(this.listaFiltrada);
+            tabela.refresh();
+        } catch (Exception e) {
+            Util.getAlert(Alert.AlertType.ERROR,"Inclusão de falta","Erro ao Salvar",e.getMessage()).showAndWait();
+        }
+
     }
 
     public void mnuExcluirFalta(ActionEvent actionEvent) {
+        AlunoMatriculado alunoMatriculado = (AlunoMatriculado) this.tabela.getSelectionModel().selectedItemProperty().get();
+        if (alunoMatriculado == null){
+            Util.getAlert(Alert.AlertType.WARNING,"Alteração/Exclusão de Registro","Impossível Alterar/Excluir","Selecione um registro para alterar/excluir").showAndWait();
+            return;
+        }
+        if (alunoMatriculado != null && alunoMatriculado.getFaltas() > 0){
+            alunoMatriculado.setFaltas(alunoMatriculado.getFaltas()-1);
+            try {
+                servicoAlunoMatriculado.alterar(alunoMatriculado);
+                servicoAlunoMatriculado.salvarArquivo();
+                carregaListasTableView();
+                tabela.setItems(this.listaFiltrada);
+                tabela.refresh();
+            } catch (Exception e) {
+                Util.getAlert(Alert.AlertType.ERROR,"Inclusão de falta","Erro ao Salvar",e.getMessage()).showAndWait();
+            }
+        }
     }
 }

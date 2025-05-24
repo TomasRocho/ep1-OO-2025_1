@@ -7,8 +7,6 @@ import com.tomas.matriculaunb.servicos.ServicoCurso;
 import com.tomas.matriculaunb.util.Util;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
-import javafx.stage.Modality;
-
 import java.io.IOException;
 import java.util.Optional;
 

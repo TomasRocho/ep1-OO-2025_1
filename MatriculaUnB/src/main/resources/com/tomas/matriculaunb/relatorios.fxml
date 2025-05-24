@@ -8,17 +8,27 @@
     <children>
         <VBox alignment="TOP_LEFT" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0">
             <children>
-                <Button fx:id="btnAvaliacaoTurma" text="Avaliação por Turma" onAction="#btnAvaliacaoTurmaClick">
+                <Button fx:id="btnAvaliacaoTurma" text="Avaliação por Turma" onAction="#btnAvaliacaoTurmaClick" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button text="Avaliação por Disciplina">
+                <Button text="Avaliação por Disciplina" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button text="Avaliação por Professor">
+                <Button text="Avaliação por Professor" prefWidth="200">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button text="Boletim Completo" prefWidth="200">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button text="Boletim Resumido" prefWidth="200">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>

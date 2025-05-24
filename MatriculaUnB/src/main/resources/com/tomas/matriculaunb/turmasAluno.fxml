@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="780.0">
+    <header>
+        <AnchorPane minWidth="0" minHeight="0" prefHeight="360" prefWidth="760">
+            <children>
+                <Button fx:id="btnTrancar" layoutX="31" layoutY="10"  onAction="#trancar" text="Trancar">
+
+                </Button>
+                <TableView fx:id="tabela" layoutX="31" layoutY="40" prefHeight="300" prefWidth="740">
+                    <columns>
+
+                    </columns>
+
+                </TableView>
+            </children>
+
+        </AnchorPane>
+
+    </header>
+    <buttonTypes>
+        <ButtonType fx:constant="OK"/>
+    </buttonTypes>
+
+</DialogPane>

@@ -3,7 +3,6 @@ package com.tomas.matriculaunb.modelo;
 
 import com.tomas.matriculaunb.util.Util;
 
-import java.util.List;
 import java.util.UUID;
 
 public class Turma extends ClasseBase{
@@ -162,9 +161,6 @@ public class Turma extends ClasseBase{
         }
     }
     public boolean turmaAtiva(){
-        if (this.getSemestreAno().equals(Util.getSemestreAtual())){
-            return true;
-        }
-        return false;
+        return this.getSemestreAno().equals(Util.getSemestreAtual());
     }
 }

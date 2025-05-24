@@ -1,7 +1,5 @@
 package com.tomas.matriculaunb.modelo;
 
-import java.util.List;
-
 public class Professor extends Pessoa {
 
 

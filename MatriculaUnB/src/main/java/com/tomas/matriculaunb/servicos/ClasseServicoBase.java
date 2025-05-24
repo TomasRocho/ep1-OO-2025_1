@@ -21,6 +21,7 @@ public abstract class ClasseServicoBase {
     final String diretorioArquivos="dados";
 
 
+
     public List<ClasseBase> getLista() {
         return lista;
     }
@@ -82,7 +83,7 @@ public abstract class ClasseServicoBase {
         }
         ClasseBase objRetornado;
         objRetornado = lista.stream()
-                .filter(obj -> obj.getId()==id)
+                .filter(obj -> obj.getId().equals(id))
                 .findFirst()
                 .orElse(null);
         if (objRetornado!=null){

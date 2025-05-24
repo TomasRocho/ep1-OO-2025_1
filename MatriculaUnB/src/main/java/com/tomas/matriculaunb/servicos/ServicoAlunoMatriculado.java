@@ -2,9 +2,9 @@ package com.tomas.matriculaunb.servicos;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.tomas.matriculaunb.modelo.*;
+import com.tomas.matriculaunb.util.Util;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 
@@ -93,6 +93,73 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                                 && !obj.getId().equals(alunoMatriculado.getId()));
     }
 
+    public List<ClasseBase> getAlunosMatriculadosPorCurso(Curso curso){
+
+        return this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getAluno().getCurso().equals(curso))
+                .toList();
+    }
+
+    public List<ClasseBase> getAlunosMatriculadosPorAluno(Aluno aluno){
+
+        return this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getAluno().equals(aluno))
+                .toList();
+    }
+
+    public List<ClasseBase> getAlunosMatriculadosPorAluno(Aluno aluno, boolean turmasAtuais, boolean turmasConcluidas){
+
+        //todas as turmas
+        if (turmasAtuais && turmasConcluidas){
+            return this.getLista().stream()
+                    .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getAluno().equals(aluno))
+                    .toList();
+        }
+        //turmas atuais
+        if (turmasAtuais){
+            return this.getLista().stream()
+                    .filter(alunoMatriculado->(
+                            (AlunoMatriculado)alunoMatriculado).getAluno().equals(aluno)
+                            && ((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(Util.getSemestreAtual()))
+                    .toList();
+        }
+        //turmas concluidas
+        return this.getLista().stream()
+                    .filter(alunoMatriculado->(
+                            (AlunoMatriculado)alunoMatriculado).getAluno().equals(aluno)
+                            && !((AlunoMatriculado)alunoMatriculado).getTurma().getSemestreAno().equals(Util.getSemestreAtual()))
+                    .toList();
+
+    }
+
+    public List<ClasseBase> getAlunosMatriculadosPorDisciplina(Disciplina disciplina){
+
+        return this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().getDisciplina().equals(disciplina))
+                .toList();
+    }
+
+    public List<ClasseBase> getAlunosMatriculadosPorProfessor(Professor professor){
+
+        return this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().getProfessor().equals(professor))
+                .toList();
+    }
+
+    public List<ClasseBase> getAlunosMatriculadosPorSala(Sala sala){
+
+        return this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().getSala().equals(sala))
+                .toList();
+    }
+
+    public List<ClasseBase> getAlunosMatriculadosPorTurma(Turma turma){
+
+        return this.getLista().stream()
+                .filter(alunoMatriculado->((AlunoMatriculado)alunoMatriculado).getTurma().equals(turma))
+                .toList();
+    }
+
     private boolean possuiVagasDisponiveis(Turma turma){
         long vagasUtilizadas = this.getLista().stream()
                 .filter(obj ->
@@ -139,8 +206,6 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
             }
         }
 
-        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
-                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
         return listaFinal;
     }
     public List<AlunoMatriculado> getListaMatriculasPorTurma(UUID idTurma){
@@ -150,8 +215,6 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                 listaFinal.add((AlunoMatriculado) alunoMatriculado);
             }
         }
-        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
-                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
         return listaFinal;
     }
 
@@ -163,8 +226,6 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                 listaFinal.add((AlunoMatriculado) alunoMatriculado);
             }
         }
-        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
-                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
         return listaFinal;
     }
 
@@ -176,8 +237,6 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
                 listaFinal.add((AlunoMatriculado) alunoMatriculado);
             }
         }
-        listaFinal.sort(Comparator.comparing( (AlunoMatriculado t) ->t.getTurma().formataSemestreAnoParaOrdenacao())
-                .thenComparing((AlunoMatriculado t) ->t.getAluno().getNome()));
         return listaFinal;
     }
 

@@ -1,11 +1,7 @@
 package com.tomas.matriculaunb.controllersJavaFX;
 import com.tomas.matriculaunb.StarterApplication;
-import com.tomas.matriculaunb.modelo.Aluno;
-import com.tomas.matriculaunb.modelo.ClasseBase;
-import com.tomas.matriculaunb.modelo.Curso;
 import com.tomas.matriculaunb.modelo.Sala;
 import com.tomas.matriculaunb.modelo.enumerations.EnumCampus;
-import com.tomas.matriculaunb.servicos.ServicoCurso;
 import com.tomas.matriculaunb.servicos.ServicoSala;
 import com.tomas.matriculaunb.util.Util;
 import javafx.fxml.FXMLLoader;

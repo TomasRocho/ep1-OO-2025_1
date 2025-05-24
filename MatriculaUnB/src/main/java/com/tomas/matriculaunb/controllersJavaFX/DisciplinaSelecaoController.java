@@ -5,7 +5,6 @@ import com.tomas.matriculaunb.modelo.ClasseBase;
 import com.tomas.matriculaunb.modelo.Disciplina;
 import com.tomas.matriculaunb.modelo.Sala;
 import com.tomas.matriculaunb.servicos.ServicoDisciplina;
-import com.tomas.matriculaunb.servicos.ServicoSala;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
