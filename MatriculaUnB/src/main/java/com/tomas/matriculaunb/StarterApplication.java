@@ -1,5 +1,7 @@
 package com.tomas.matriculaunb;
 
+import com.tomas.matriculaunb.controllersJavaFX.SelecaoModoController;
+import com.tomas.matriculaunb.controllersJavaFX.TelaPrincipalController;
 import com.tomas.matriculaunb.servicos.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,25 +17,32 @@ public class StarterApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
+
         FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("telaPrincipal.fxml"));
+        TelaPrincipalController telaPrincipalController = new TelaPrincipalController();
+        fxmlLoader.setController(telaPrincipalController);
         Scene scene = new Scene(fxmlLoader.load(), 1200, 600);
         stage.setTitle("Sistema UnB");
         stage.setScene(scene);
         stage.show();
 
-        /*
 
         Stage selecaoModo = new Stage();
         selecaoModo.initOwner(stage);
         selecaoModo.initModality(Modality.APPLICATION_MODAL);
         selecaoModo.initStyle(StageStyle.UNDECORATED);
         FXMLLoader fxmlLoader2 = new FXMLLoader(StarterApplication.class.getResource("selecaoModo.fxml"));
+        SelecaoModoController selecaoModoController = new SelecaoModoController();
+        fxmlLoader2.setController(selecaoModoController);
         Scene scene1 = new Scene(fxmlLoader2.load(),500,400);
         selecaoModo.setScene(scene1);
         selecaoModo.setTitle("SELEÇÃO DE MODO");
         selecaoModo.showAndWait();
 
-         */
+        telaPrincipalController.configuraTela(selecaoModoController.isModoAluno(), selecaoModoController.isModoDisciplina(), selecaoModoController.isModoAvaliacao());
+
+
 
 
     }

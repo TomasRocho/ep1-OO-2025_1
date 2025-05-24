@@ -13,7 +13,7 @@
             fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity"
             minHeight="-Infinity" minWidth="-Infinity"
             prefHeight="400.0" prefWidth="500.0"
-            fx:controller="com.tomas.matriculaunb.controllersJavaFX.SelecaoModoController">
+            >
 
    <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
       <children>
@@ -25,17 +25,17 @@
                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>
          </Label>
-         <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Aluno">
+         <Button fx:id="btnAluno" onAction="#btnAlunoClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Aluno">
             <VBox.margin>
                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>
          </Button>
-         <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Disciplina/Turma">
+         <Button fx:id="btnDisciplina" onAction="#btnDisciplinaClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Disciplina/Turma">
             <VBox.margin>
                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>
          </Button>
-         <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Avaliação/Frequência">
+         <Button fx:id="btnAvaliacao" onAction="#btnAvaliacaoClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Avaliação/Frequência">
             <VBox.margin>
                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>

@@ -6,6 +6,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
@@ -17,14 +18,43 @@ public class TelaPrincipalController {
 
     public AnchorPane telaCarregada;
     public Label lblNomeTela;
+    public Label lblNomeModo;
+    public Button btnAluno;
+    public Button btnCurso;
+    public Button btnDisciplina;
+    public Button btnProfessor;
+    public Button btnSala;
+    public Button btnTurma;
+    public Button btnAvaliacaoPresenca;
+    public Button btnRelatorios;
+    public Button btnConfiguracao;
 
-    public void initialize(){
-        /*
-        File file = new File("src/Images/7309681.jpg");
-        Image image = new Image(file.toURI().toString());
-        imageView.setImage(image);
-        
-         */
+    public void configuraTela(boolean modoAluno, boolean modoDisciplina, boolean modoAvaliacao){
+        btnAluno.setDisable(true);
+        btnCurso.setDisable(true);
+        btnDisciplina.setDisable(true);
+        btnProfessor.setDisable(true);
+        btnSala.setDisable(true);
+        btnTurma.setDisable(true);
+        btnAvaliacaoPresenca.setDisable(true);
+        btnRelatorios.setDisable(true);
+        btnConfiguracao.setDisable(true);
+        if (modoAluno){
+            btnAluno.setDisable(false);
+            lblNomeModo.setText("Modo ALUNO");
+        }
+        if (modoDisciplina){
+            btnCurso.setDisable(false);
+            btnDisciplina.setDisable(false);
+            btnProfessor.setDisable(false);
+            btnSala.setDisable(false);
+            btnTurma.setDisable(false);
+            btnConfiguracao.setDisable(false);
+        }
+        if (modoAvaliacao){
+            btnAvaliacaoPresenca.setDisable(false);
+            btnRelatorios.setDisable(false);
+        }
     }
 
 
