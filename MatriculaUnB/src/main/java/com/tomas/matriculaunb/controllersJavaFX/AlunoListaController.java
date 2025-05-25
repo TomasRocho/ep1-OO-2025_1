@@ -285,7 +285,7 @@ public class AlunoListaController {
             Util.getAlert(Alert.AlertType.WARNING,"Emissão de Boletim","Impossível Emitir o Boletim","Selecione um aluno para emitir o boletim").showAndWait();
             return;
         }
-        String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(aluno,null,null,null,"Boletim Completo",true,null);
+        String strRelatorio = servicoAlunoMatriculado.gerarHtmlBoletim(aluno,"Boletim Completo",true);
         TelaBrowserController telaBrowserController = new TelaBrowserController();
         telaBrowserController.carregarModal(strRelatorio);
     }
@@ -296,7 +296,7 @@ public class AlunoListaController {
             Util.getAlert(Alert.AlertType.WARNING,"Emissão de Boletim","Impossível Emitir o Boletim","Selecione um aluno para emitir o boletim").showAndWait();
             return;
         }
-        String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(aluno,null,null,null,"Boletim Resumido",true,null);
+        String strRelatorio = servicoAlunoMatriculado.gerarHtmlBoletim(aluno,"Boletim Resumido",false);
         TelaBrowserController telaBrowserController = new TelaBrowserController();
         telaBrowserController.carregarModal(strRelatorio);
     }

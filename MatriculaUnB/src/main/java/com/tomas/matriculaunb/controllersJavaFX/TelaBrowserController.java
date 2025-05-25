@@ -10,6 +10,7 @@ import javafx.print.Printer;
 import javafx.print.PrinterJob;
 import javafx.scene.control.*;
 import javafx.scene.web.WebView;
+import javafx.stage.Modality;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -28,6 +29,8 @@ public class TelaBrowserController {
         this.strHtml = strHtml;
     }
 
+
+
     public void carregarModal(String stringHTML){
         this.setStrHtml(stringHTML);
         FXMLLoader fxmlLoader = new FXMLLoader(StarterApplication.class.getResource("telaBrowser.fxml"));
@@ -35,13 +38,13 @@ public class TelaBrowserController {
         dialog = new Dialog<>();
         try {
             dialog.setDialogPane(fxmlLoader.load());
+            dialog.initModality(Modality.APPLICATION_MODAL);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equals("Previous")) {
                 System.out.println("imprimindo...");
                 try {
                     PrinterJob job = PrinterJob.createPrinterJob();
@@ -49,11 +52,9 @@ public class TelaBrowserController {
                     job.getJobSettings().setPageLayout(job.getPrinter().createPageLayout(Paper.A4, PageOrientation.PORTRAIT, Printer.MarginType.DEFAULT));
                     webView.getEngine().print(job);
                     job.endJob();
+                } catch (Exception e) {
+                    Util.getAlert(Alert.AlertType.ERROR, "Impressão de Relatório", "Impossível Imprimir o Relatório", "Nenhuma impressora selecionada").showAndWait();
                 }
-                catch (Exception e){
-                    Util.getAlert(Alert.AlertType.ERROR,"Impressão de Relatório","Impossível Imprimir o Relatório","Nenhuma impressora selecionada").showAndWait();
-                }
-
             }
         });
     }

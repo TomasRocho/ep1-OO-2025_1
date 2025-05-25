@@ -8,8 +8,10 @@ import com.tomas.matriculaunb.servicos.ServicoAlunoMatriculado;
 import com.tomas.matriculaunb.util.Util;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextInputDialog;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -17,6 +19,7 @@ import java.util.Optional;
 public class RelatoriosController {
 
     ServicoAlunoMatriculado servicoAlunoMatriculado = ServicoAlunoMatriculado.getInstance();
+    public Button btnAvaliacaoTurma;
 
     public void initialize(){
     }
@@ -48,7 +51,7 @@ public class RelatoriosController {
                 return;
             }
 
-            String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(null,null,null,turma,"Relatório de Avaliação por Turma",true,semestreInformado);
+            String strRelatorio = servicoAlunoMatriculado.gerarHtmlAvaliacao(null,null,turma,"Relatório de Avaliação por Turma",semestreInformado);
             TelaBrowserController telaBrowserController = new TelaBrowserController();
             telaBrowserController.carregarModal(strRelatorio);
         }
@@ -81,7 +84,7 @@ public class RelatoriosController {
                 return;
             }
 
-            String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(null,disciplina,null,null,"Relatório de Avaliação por Disciplina",true,semestreInformado);
+            String strRelatorio = servicoAlunoMatriculado.gerarHtmlAvaliacao(disciplina,null,null,"Relatório de Avaliação por Disciplina",semestreInformado);
             TelaBrowserController telaBrowserController = new TelaBrowserController();
             telaBrowserController.carregarModal(strRelatorio);
         }
@@ -114,7 +117,7 @@ public class RelatoriosController {
                 return;
             }
 
-            String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(null,null,professor,null,"Relatório de Avaliação por Professor",true,semestreInformado);
+            String strRelatorio = servicoAlunoMatriculado.gerarHtmlAvaliacao(null,professor,null,"Relatório de Avaliação por Professor",semestreInformado);
             TelaBrowserController telaBrowserController = new TelaBrowserController();
             telaBrowserController.carregarModal(strRelatorio);
         }
@@ -136,7 +139,7 @@ public class RelatoriosController {
             Util.getAlert(Alert.AlertType.WARNING,"Emissão de Boletim","Impossível Emitir o Boletim","Selecione um aluno para emitir o boletim").showAndWait();
             return;
         }
-        String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(aluno,null,null,null,"Boletim Completo",true,null);
+        String strRelatorio = servicoAlunoMatriculado.gerarHtmlBoletim(aluno,"Boletim Completo",true);
         TelaBrowserController telaBrowserController = new TelaBrowserController();
         telaBrowserController.carregarModal(strRelatorio);
     }
@@ -156,7 +159,7 @@ public class RelatoriosController {
             Util.getAlert(Alert.AlertType.WARNING,"Emissão de Boletim","Impossível Emitir o Boletim","Selecione um aluno para emitir o boletim").showAndWait();
             return;
         }
-        String strRelatorio = servicoAlunoMatriculado.gerarHtmlMatriculas(aluno,null,null,null,"Boletim Resumido",false,null);
+        String strRelatorio = servicoAlunoMatriculado.gerarHtmlBoletim(aluno,"Boletim Resumido",false);
         TelaBrowserController telaBrowserController = new TelaBrowserController();
         telaBrowserController.carregarModal(strRelatorio);
     }
