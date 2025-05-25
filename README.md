@@ -27,13 +27,19 @@ Para compilar é necessário ir para pasta do projeto(MatriculaUnb) e executar o
 
 3. **Estrutura de Pastas:**  
    [
-    -MatriculaUnb(Pasta raiz do projeto, contém o pom.xml que configura as dependências do projeto) 
-    ---src.main.java.com.tomas.matriculaunb.modelo(Classes dos objetos do modelo de dados)
-    ---src.main.java.com.tomas.matriculaunb.servicos(Classes que manipulam as listas dos objetos do modelo de dados)
-    ---src.main.java.com.tomas.matriculaunb.util(Classes utilitárias em geral)
-    ---src.main.java.com.tomas.matriculaunb.controllersJavaFX(Classes necessárias para o controle das interfaces javafx)
-    ---src.main.resources.com.tomas.matriculaunb.controllersJavaFX(Definição das telas javafx)
-    ---dados(Pasta que irá armazenar os arquivos que contém os dados em formato json)
+    ->MatriculaUnb(Pasta raiz do projeto, contém o pom.xml que configura as dependências do projeto
+ 
+    --->src.main.java.com.tomas.matriculaunb.modelo(Classes dos objetos do modelo de dados)
+
+    --->src.main.java.com.tomas.matriculaunb.servicos(Classes que manipulam as listas dos objetos do modelo de dados)
+
+    --->src.main.java.com.tomas.matriculaunb.util(Classes utilitárias em geral)
+
+    --->src.main.java.com.tomas.matriculaunb.controllersJavaFX(Classes necessárias para o controle das interfaces javafx)
+
+    --->src.main.resources.com.tomas.matriculaunb.controllersJavaFX(Definição das telas javafx)
+
+    --->dados(Pasta que irá armazenar os arquivos que contém os dados em formato json)
 ]
 
 3. **Versão do JAVA utilizada:**  
@@ -50,13 +56,13 @@ Para compilar é necessário ir para pasta do projeto(MatriculaUnb) e executar o
 ## Prints da Execução
 
 1. Menu Principal:  
-   ![telaPrincipal.png]
+   ![telaPrincipal.png](telaPrincipal.png)
 
 2. Cadastro de Aluno:  
-   ![CadastroAluno.png]
+   ![CadastroAluno.png](CadastroAluno.png)
 
 3. Relatório de Frequência/Notas:  
-   ![Relatorios.png]
+   ![Relatorios.png](Relatorios.png)
 
 ---
 
