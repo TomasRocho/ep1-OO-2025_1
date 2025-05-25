@@ -38,4 +38,16 @@
   "id" : "16fdc622-670a-4663-b173-6f7e76d905d7",
   "idDisciplina" : "5534249c-ae0c-4106-a508-587b9c276a0e",
   "idDisciplinaPreRequisito" : "42b690ca-5a1d-48ab-8651-a0f3840b2423"
+}, {
+  "id" : "36187c15-27c0-4457-af8d-5e0ae191a3bb",
+  "idDisciplina" : "fab3a509-d836-4d50-8842-2578b585b6c9",
+  "idDisciplinaPreRequisito" : "7be865e9-6090-44a9-afc9-6e0e77e9c50f"
+}, {
+  "id" : "c3451bc0-10ce-4d4f-94cd-eb8650a54023",
+  "idDisciplina" : "03934fc0-a723-4cde-a3cc-ca7b64249813",
+  "idDisciplinaPreRequisito" : "4f23f7b1-03a1-4aa7-abe5-fe36bdb2603a"
+}, {
+  "id" : "4fc79ecd-6d88-4753-a79d-036e3ce39354",
+  "idDisciplina" : "a1b3f648-f953-4fd0-9e06-648208195bf5",
+  "idDisciplinaPreRequisito" : "35b4b16c-b80e-4389-a26d-ed8b733a10d9"
 } ]

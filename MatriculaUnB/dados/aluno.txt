@@ -198,7 +198,7 @@
   "especial" : false
 }, {
   "id" : "c40b1a0a-005a-4a89-88b7-cff0034b343b",
-  "matricula" : "23",
+  "matricula" : "432",
   "nome" : "Aluno-23",
   "curso" : {
     "id" : "a2ac1ca5-1bd8-4d85-837b-f2c4997471ea",
@@ -710,15 +710,6 @@
   },
   "especial" : false
 }, {
-  "id" : "b5c3f447-f7ca-41de-829d-71bb5db48537",
-  "matricula" : "80",
-  "nome" : "Aluno-80",
-  "curso" : {
-    "id" : "a2ac1ca5-1bd8-4d85-837b-f2c4997471ea",
-    "titulo" : "Curso-3"
-  },
-  "especial" : false
-}, {
   "id" : "23a22f83-d048-4698-a28c-907321de2cef",
   "matricula" : "81",
   "nome" : "Aluno-81",
@@ -891,11 +882,11 @@
   "especial" : false
 }, {
   "id" : "c9edb231-a0a3-4fb0-9c0d-c68b9236f8ae",
-  "matricula" : "100",
-  "nome" : "Aluno-100",
+  "matricula" : "660",
+  "nome" : "fernando",
   "curso" : {
-    "id" : "d7c4b0b1-8685-41f2-adaf-01c60de70f72",
-    "titulo" : "Curso-2"
+    "id" : "07fe23c2-45be-4c4b-8224-b1c8c6f2ce6f",
+    "titulo" : "Curso-5"
   },
   "especial" : false
 } ]

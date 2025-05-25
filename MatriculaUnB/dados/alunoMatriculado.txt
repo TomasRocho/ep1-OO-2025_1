@@ -711,7 +711,7 @@
     },
     "especial" : false
   },
-  "notaP1" : 0.0,
+  "notaP1" : 10.0,
   "notaP2" : 0.0,
   "notaP3" : 0.0,
   "notaL" : 0.0,
@@ -3501,7 +3501,7 @@
     },
     "especial" : false
   },
-  "notaP1" : 0.0,
+  "notaP1" : 9.0,
   "notaP2" : 0.0,
   "notaP3" : 0.0,
   "notaL" : 0.0,
@@ -4038,6 +4038,51 @@
     "curso" : {
       "id" : "d7c4b0b1-8685-41f2-adaf-01c60de70f72",
       "titulo" : "Curso-2"
+    },
+    "especial" : false
+  },
+  "notaP1" : 0.0,
+  "notaP2" : 0.0,
+  "notaP3" : 0.0,
+  "notaL" : 0.0,
+  "notaS" : 0.0,
+  "faltas" : 0,
+  "trancado" : false
+}, {
+  "id" : "f32d0023-8290-4565-a11b-89a02e9472a6",
+  "turma" : {
+    "id" : "b09a2be3-538a-4ed8-b146-0cc9b1506774",
+    "codigo" : "T1",
+    "disciplina" : {
+      "id" : "db126934-486c-4701-8037-ec2b72da72a6",
+      "titulo" : "Disciplina-7",
+      "codigo" : "7",
+      "cargaHoraria" : 60,
+      "listaPreRequisitos" : null
+    },
+    "professor" : {
+      "id" : "9d042ba1-5c5a-4482-9d19-66953191fe0d",
+      "matricula" : "2",
+      "nome" : "Professor-2"
+    },
+    "sala" : {
+      "id" : "d992862a-3aa2-47a9-bc6b-b8b92385e234",
+      "local" : "Sala-2",
+      "campus" : "Gama"
+    },
+    "horario" : "SQ1",
+    "avaliacaoMediaAritmetica" : true,
+    "semestreAno" : "2/2024",
+    "presencial" : true,
+    "qtdMaxAlunos" : 100
+  },
+  "aluno" : {
+    "id" : "859c3f87-e7bc-437a-917d-503a8705555d",
+    "matricula" : "12",
+    "nome" : "Aluno-12",
+    "curso" : {
+      "id" : "3017b77d-5e62-4640-9067-0480c13c3012",
+      "titulo" : "Curso-1"
     },
     "especial" : false
   },

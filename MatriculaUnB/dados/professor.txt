@@ -35,10 +35,6 @@
   "matricula" : "9",
   "nome" : "Professor-9"
 }, {
-  "id" : "c2016b83-c792-4b99-a229-77dc20d2d055",
-  "matricula" : "10",
-  "nome" : "Professor-10"
-}, {
   "id" : "6d2852d0-887e-430e-b1fe-d62fc17a81e7",
   "matricula" : "11",
   "nome" : "Professor-11"
