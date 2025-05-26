@@ -366,7 +366,6 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
         for (List<ClasseBase> lista : turmasOrdenadas.values()) {
             lista.sort(Comparator.comparing((ClasseBase mat)->((AlunoMatriculado)mat).getAluno().getNome()));
         }
-
         // Gerar o conteúdo HTML
         StringBuilder html = new StringBuilder();
         html.append("<!DOCTYPE html>\n");
