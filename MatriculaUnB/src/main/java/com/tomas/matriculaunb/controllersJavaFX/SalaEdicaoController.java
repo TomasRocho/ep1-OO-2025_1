@@ -38,7 +38,7 @@ public class SalaEdicaoController {
         dialog.setTitle("Edição de Sala");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")) {
                 System.out.println("ok...");
                 if (cboCampus.getValue()==null){
                     Util.getAlert(Alert.AlertType.ERROR,"Sala Inválida","Salvamento de Sala", "Selecione um Campus").showAndWait();
@@ -60,7 +60,7 @@ public class SalaEdicaoController {
 
                 dialog.close();
             }
-            if (buttonType.getText().equals("Cancel")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Cancel") || buttonType.getText().trim().equalsIgnoreCase("Cancelar")) {
                 this.setSala(null);
                 System.out.println("fechei...");
 

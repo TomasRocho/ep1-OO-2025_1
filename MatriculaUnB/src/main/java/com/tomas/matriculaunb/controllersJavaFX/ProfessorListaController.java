@@ -90,7 +90,7 @@ public class ProfessorListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Professor", "Excluir?","Deseja excluir o professor "+professor.getNome() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoProfessor.excluir(professor);
                     servicoProfessor.salvarArquivo();

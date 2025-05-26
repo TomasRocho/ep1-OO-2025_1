@@ -114,7 +114,7 @@ public class SalaListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Sala", "Excluir?","Deseja excluir a sala "+sala.getLocal() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoSala.excluir(sala);
                     servicoSala.salvarArquivo();

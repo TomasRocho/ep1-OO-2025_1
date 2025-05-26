@@ -15,7 +15,7 @@ public class ConfiguracaoController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Geração de dados para teste", "Dados teste","Deseja criar dados para teste?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     DadosTeste dadosTeste = new DadosTeste();
                     dadosTeste.geraTudo();
@@ -30,7 +30,7 @@ public class ConfiguracaoController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Apagar dados", "Apagar dados","Deseja apagar todos os dados?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     DadosTeste dadosTeste = new DadosTeste();
                     dadosTeste.apagaTudo();

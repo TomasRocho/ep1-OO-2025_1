@@ -134,7 +134,7 @@ public class AlunoListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Aluno", "Excluir?","Deseja excluir o aluno "+aluno.getNome() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoAluno.excluir(aluno);
                     servicoAluno.salvarArquivo();
@@ -266,7 +266,7 @@ public class AlunoListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Trancamento de Semestre", "Trancar o semestre?","Deseja trancar o semestre do aluno "+aluno.getNome() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn-> {
-            if (btn.getText().equals("OK")) {
+            if (btn.getText().trim().equalsIgnoreCase("OK")) {
                 servicoAluno.trancarSemestre(aluno,Util.getSemestreAtual());
                 try {
                     servicoAluno.salvarArquivo();

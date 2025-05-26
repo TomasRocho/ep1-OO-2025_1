@@ -95,7 +95,7 @@ public class PreRequisitosController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Pré-requisito", "Excluir?","Deseja excluir o pré-requisito "+disciplina.getTitulo() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoPreRequisito.excluir(this.getDisciplinaSelecionada().getId(),disciplina.getId());
                     servicoPreRequisito.salvarArquivo();

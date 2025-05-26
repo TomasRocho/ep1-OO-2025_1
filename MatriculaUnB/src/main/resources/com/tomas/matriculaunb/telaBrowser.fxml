@@ -8,7 +8,7 @@
         <WebView fx:id="webView" />
     </content>
     <buttonTypes>
-        <ButtonType   fx:constant="PREVIOUS" />
+        <ButtonType   fx:constant="APPLY" />
         <ButtonType   fx:constant="OK" />
     </buttonTypes>
 </DialogPane>

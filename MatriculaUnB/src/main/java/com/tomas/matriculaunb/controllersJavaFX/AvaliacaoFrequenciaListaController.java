@@ -113,7 +113,7 @@ public class AvaliacaoFrequenciaListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Matrícula", "Excluir?","Deseja excluir "+alunoMatriculado.getAluno().getNome() + " da turma " + alunoMatriculado.getTurma().getCodigo() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoAlunoMatriculado.excluir(alunoMatriculado);
                     servicoAlunoMatriculado.salvarArquivo();

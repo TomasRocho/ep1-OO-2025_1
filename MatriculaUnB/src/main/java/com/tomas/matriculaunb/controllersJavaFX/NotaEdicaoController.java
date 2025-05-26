@@ -37,7 +37,7 @@ public class NotaEdicaoController {
         dialog.setTitle("Edição de Nota");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")) {
                 System.out.println("ok...");
                 //alteração
                 this.getAlunoMatriculado().setNotaP1(Float.valueOf(txtNota1.getText()));
@@ -48,7 +48,7 @@ public class NotaEdicaoController {
 
                 dialog.close();
             }
-            if (buttonType.getText().equals("Cancel")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Cancel") || buttonType.getText().trim().equalsIgnoreCase("Cancelar")) {
                 this.setAlunoMatriculado(null);
                 System.out.println("fechei...");
 

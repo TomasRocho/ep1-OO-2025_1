@@ -360,11 +360,11 @@ public class ServicoAlunoMatriculado extends ClasseServicoBase{
         Map<String, List<ClasseBase>> matriculasPorTurma = matriculas.stream()
                 .collect(Collectors.groupingBy(mat->((AlunoMatriculado)mat).getTurma().getCodigo()));
 
-        // Ordenar os semestres
+        // Ordenar as turmas
         Map<String, List<ClasseBase>> turmasOrdenadas = new TreeMap<>(matriculasPorTurma);
 
         for (List<ClasseBase> lista : turmasOrdenadas.values()) {
-            lista.sort(Comparator.comparing((ClasseBase mat)->((AlunoMatriculado)mat).getTurma().getCodigo()));
+            lista.sort(Comparator.comparing((ClasseBase mat)->((AlunoMatriculado)mat).getAluno().getNome()));
         }
 
         // Gerar o conteúdo HTML

@@ -47,7 +47,7 @@ public class SelecaoModoController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Sair do Sistema", "Encerrar?","Deseja fechar o sistema?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")) {
+            if (btn.getText().trim().equalsIgnoreCase("OK")) {
 
                 System.exit(0);
             }

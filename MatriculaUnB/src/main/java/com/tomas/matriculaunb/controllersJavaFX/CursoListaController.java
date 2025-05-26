@@ -113,7 +113,7 @@ public class CursoListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Curso", "Excluir?","Deseja excluir o curso "+curso.getTitulo() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoCurso.excluir(curso);
                     servicoCurso.salvarArquivo();

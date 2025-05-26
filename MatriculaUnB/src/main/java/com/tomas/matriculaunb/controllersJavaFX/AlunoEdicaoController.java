@@ -40,7 +40,7 @@ public class AlunoEdicaoController  {
         dialog.setTitle("Edição de Aluno");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")) {
                 System.out.println("ok...");
                 if (cboCurso.getValue()==null){
                     Util.getAlert(Alert.AlertType.ERROR,"Aluno Inválido","Salvamento de Aluno", "Selecione um Curso").showAndWait();
@@ -69,7 +69,7 @@ public class AlunoEdicaoController  {
 
                 dialog.close();
             }
-            if (buttonType.getText().equals("Cancel")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Cancel") || buttonType.getText().trim().equalsIgnoreCase("Cancelar")) {
                 this.setAluno(null);
                 System.out.println("fechei...");
 

@@ -74,7 +74,7 @@ public class DisciplinaSelecaoController {
         dialog.setTitle("Seleção de Disciplina");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")){
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")){
                 if (this.tabela.getSelectionModel().selectedItemProperty().get()!=null){
                     this.setDisciplinaSelecionada((Disciplina) this.tabela.getSelectionModel().selectedItemProperty().get());
                 }

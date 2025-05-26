@@ -125,7 +125,7 @@ public class DisciplinaListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Disciplina", "Excluir?","Deseja excluir a disciplina "+disciplina.getTitulo() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoDisciplina.excluir(disciplina);
                     servicoDisciplina.salvarArquivo();

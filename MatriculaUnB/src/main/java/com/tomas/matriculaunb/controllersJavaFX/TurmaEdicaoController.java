@@ -76,7 +76,7 @@ public class TurmaEdicaoController {
         dialog.setTitle("Edição de Turma");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")) {
                 System.out.println("ok...");
                 if(txtVagas.getText().isEmpty() || txtVagas.getText().isBlank()){
                     txtVagas.setText("0");
@@ -114,7 +114,7 @@ public class TurmaEdicaoController {
 
                 dialog.close();
             }
-            if (buttonType.getText().equals("Cancel")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Cancel") || buttonType.getText().trim().equalsIgnoreCase("Cancelar")) {
                 this.setTurma(null);
                 System.out.println("fechei...");
 

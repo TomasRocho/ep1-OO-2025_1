@@ -35,7 +35,7 @@ public class DisciplinaEdicaoController {
         dialog.setTitle("Edição de Disciplina");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")) {
                 System.out.println("ok...");
                 if(txtCargaHoraria.getText().isEmpty() || txtCargaHoraria.getText().isBlank()){
                     txtCargaHoraria.setText("0");
@@ -59,7 +59,7 @@ public class DisciplinaEdicaoController {
 
                 dialog.close();
             }
-            if (buttonType.getText().equals("Cancel")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Cancel") || buttonType.getText().trim().equalsIgnoreCase("Cancelar")) {
                 this.setDisciplina(null);
                 System.out.println("fechei...");
 

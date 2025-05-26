@@ -75,7 +75,7 @@ public class ProfessorSelecaoController {
         dialog.setTitle("Seleção de Professor");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")){
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")){
                 if (this.tabela.getSelectionModel().selectedItemProperty().get()!=null){
                     this.setProfessorSelecionado((Professor) this.tabela.getSelectionModel().selectedItemProperty().get());
                 }

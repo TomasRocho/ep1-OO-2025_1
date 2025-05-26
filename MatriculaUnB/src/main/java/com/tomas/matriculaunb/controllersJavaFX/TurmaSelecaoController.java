@@ -81,7 +81,7 @@ public class TurmaSelecaoController {
         dialog.setTitle("Seleção de Turma");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")){
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")){
                 if (this.tabela.getSelectionModel().selectedItemProperty().get()!=null){
                     this.setTurmaSelecionado((Turma) this.tabela.getSelectionModel().selectedItemProperty().get());
                 }

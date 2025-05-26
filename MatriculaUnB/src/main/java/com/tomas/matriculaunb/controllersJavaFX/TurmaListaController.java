@@ -136,7 +136,7 @@ public class TurmaListaController {
         Alert alert = Util.getAlert(Alert.AlertType.CONFIRMATION,"Exclusão de Turma", "Excluir?","Deseja excluir a Turma "+turma.getCodigo() + "?");
         Optional<ButtonType> btnAlert = alert.showAndWait();
         btnAlert.ifPresent(btn->{
-            if (btn.getText().equals("OK")){
+            if (btn.getText().trim().equalsIgnoreCase("OK")){
                 try {
                     servicoTurma.excluir(turma);
                     servicoTurma.salvarArquivo();

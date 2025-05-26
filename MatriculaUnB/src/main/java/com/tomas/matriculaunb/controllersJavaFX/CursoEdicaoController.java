@@ -33,7 +33,7 @@ public class CursoEdicaoController {
         dialog.setTitle("Edição de Curso");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")) {
                 System.out.println("ok...");
                 if (this.getCurso()==null){
                     //inclusao
@@ -45,7 +45,7 @@ public class CursoEdicaoController {
                 }
                 dialog.close();
             }
-            if (buttonType.getText().equals("Cancel")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Cancel") || buttonType.getText().trim().equalsIgnoreCase("Cancelar")) {
                 this.setCurso(null);
                 System.out.println("fechei...");
 

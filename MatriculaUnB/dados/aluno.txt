@@ -91,7 +91,7 @@
 }, {
   "id" : "8f5c5def-026d-40d9-b7f4-869d6f254cb7",
   "matricula" : "11",
-  "nome" : "Aluno-11",
+  "nome" : "Aluno-1111",
   "curso" : {
     "id" : "a2ac1ca5-1bd8-4d85-837b-f2c4997471ea",
     "titulo" : "Curso-3"

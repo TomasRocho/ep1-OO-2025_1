@@ -44,7 +44,8 @@ public class TelaBrowserController {
         }
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().trim().equals("Previous")) {
+            if (buttonType.getText().trim().equalsIgnoreCase("Apply")
+                || buttonType.getText().trim().equalsIgnoreCase("Aplicar")) {
                 System.out.println("imprimindo...");
                 try {
                     PrinterJob job = PrinterJob.createPrinterJob();

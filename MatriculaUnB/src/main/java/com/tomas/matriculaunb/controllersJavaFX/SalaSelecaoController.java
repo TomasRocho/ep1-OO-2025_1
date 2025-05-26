@@ -76,7 +76,7 @@ public class SalaSelecaoController {
         dialog.setTitle("Seleção de Sala");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")){
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")){
                 if (this.tabela.getSelectionModel().selectedItemProperty().get()!=null){
                     this.setSalaSelecionada((Sala) this.tabela.getSelectionModel().selectedItemProperty().get());
                     System.out.println("tem sala");

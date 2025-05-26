@@ -76,7 +76,7 @@ public class AlunoSelecaoController {
         dialog.setTitle("Seleção de Aluno");
         Optional<ButtonType> result = dialog.showAndWait();
         result.ifPresent(buttonType -> {
-            if (buttonType.getText().equals("OK")){
+            if (buttonType.getText().trim().equalsIgnoreCase("OK")){
                 if (this.tabela.getSelectionModel().selectedItemProperty().get()!=null){
                     this.setAlunoSelecionado((Aluno) this.tabela.getSelectionModel().selectedItemProperty().get());
                     System.out.println("tem aluno");
